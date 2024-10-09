@@ -47,7 +47,7 @@ def webhook_get():
 def handle_message(sender_psid, received_message):
     if received_message["text"]:
         response = {
-            "text": f"You sent the message: '{received_message["text"]}. Now send me an image!'"
+            "text": f"You sent the message: '{received_message['text']}. Now send me an image!'"
         }
     call_send_api(sender_psid,response)
 def handle_postback(sender_psid, received_postback):
