@@ -17,6 +17,7 @@ def home():
 @app.route('/webhook', methods=['POST']) 
 def webhook_post():
     body = request.form
+    print(body["object"])
     if body["object"] == "page":
         for entry in body["entry"]:
             webhook_event = entry["messaging"][0]
@@ -71,6 +72,7 @@ def call_send_api(sender_psid, response):
         print('Message sent!')
     else:
         print(f"Unable to send message: {res.status_code} - {res.text}")
+        
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))  
     app.run(host='0.0.0.0', port=port, debug=True) 
