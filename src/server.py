@@ -10,12 +10,15 @@ app = Flask(__name__)
 config = {
     'verifyToken': os.getenv("VERIFY_TOKEN")
 }
-print(f"Verify Token: {config['verifyToken']}")
+
+# Route Home
 
 
 @app.route('/')
 def home():
     return render_template("HomePage.html")
+
+# route webhook_post
 
 
 @app.route('/webhook', methods=['POST'])
@@ -33,14 +36,18 @@ def webhook_post():
         sender_psid = webhook_event["sender"]["id"]
         print("Sender PSID:", sender_psid)
 
+        # nếu message tồn tại gọi handle_message
         if "message" in webhook_event:
             handle_message(sender_psid, webhook_event["message"])
+        # nếu postback tồn tại gọi handle_postback
         elif "postback" in webhook_event:
             handle_postback(sender_psid, webhook_event["postback"])
         else:
             print("No message or postback found in the webhook event.")
 
     return "EVENT_RECEIVED", 200
+
+# route webhook_get
 
 
 @app.route('/webhook')
@@ -55,9 +62,12 @@ def webhook_get():
         else:
             return "Forbidden", 403
 
+# handle_message
+
 
 def handle_message(sender_psid, received_message):
     if "text" in received_message:
+        # response text cho người dùng
         response = {
             "text": f"You sent the message: '{received_message['text']}. Now send me an image!'"
         }
@@ -65,10 +75,14 @@ def handle_message(sender_psid, received_message):
     else:
         print("No text found in the message")
 
+# handle_postback
+
 
 def handle_postback(sender_psid, received_postback):
     # Xử lý sự kiện postback nếu cần
     print("Postback received:", received_postback)
+
+# call_send_api
 
 
 def call_send_api(sender_psid, response):
@@ -79,7 +93,7 @@ def call_send_api(sender_psid, response):
         "message": response
     }
 
-    # Gửi yêu cầu HTTP đến Messenger Platform
+    # Gửi Post đến Messenger Platform
     res = requests.post(
         "https://graph.facebook.com/v21.0/me/messages",
         params={"access_token": os.getenv("PAGE_ACCESS_TOKEN")},
