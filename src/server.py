@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request
 from dotenv import load_dotenv
 import os
 import requests
@@ -12,32 +12,36 @@ config = {
 }
 print(f"Verify Token: {config['verifyToken']}")
 
+
 @app.route('/')
 def home():
     return render_template("HomePage.html")
 
-@app.route('/webhook', methods=['POST']) 
+
+@app.route('/webhook', methods=['POST'])
 def webhook_post():
     body = request.get_json()  # Nhận dữ liệu JSON
-    print("Received body:", body)  # In ra toàn bộ body nhận được
 
     if not body or "object" not in body or body["object"] != "page":
         return "Invalid request", 400  # Trả về lỗi 400 nếu body không hợp lệ
 
     for entry in body["entry"]:
+        # chỉ cần lấy giá trị đầu tiên, để lấy psid
         webhook_event = entry["messaging"][0]
-        print("Webhook Event:", webhook_event)  # In ra để kiểm tra webhook_event
+
+        print("Webhook Event:", webhook_event)
         sender_psid = webhook_event["sender"]["id"]
         print("Sender PSID:", sender_psid)
 
         if "message" in webhook_event:
             handle_message(sender_psid, webhook_event["message"])
-        elif "postback" in webhook_event:  # Kiểm tra sự kiện postback
+        elif "postback" in webhook_event:
             handle_postback(sender_psid, webhook_event["postback"])
         else:
             print("No message or postback found in the webhook event.")
 
     return "EVENT_RECEIVED", 200
+
 
 @app.route('/webhook')
 def webhook_get():
@@ -48,9 +52,9 @@ def webhook_get():
         if mode == "subscribe" and token == config['verifyToken']:
             print("WEBHOOK_VERIFIED")
             return challenge, 200
-        else: 
+        else:
             return "Forbidden", 403
-    return render_template("webhook.html")
+
 
 def handle_message(sender_psid, received_message):
     if "text" in received_message:
@@ -60,11 +64,12 @@ def handle_message(sender_psid, received_message):
         call_send_api(sender_psid, response)
     else:
         print("No text found in the message")
-        # Có thể gửi phản hồi cho người dùng nếu cần
+
 
 def handle_postback(sender_psid, received_postback):
     # Xử lý sự kiện postback nếu cần
     print("Postback received:", received_postback)
+
 
 def call_send_api(sender_psid, response):
     request_body = {
@@ -76,7 +81,7 @@ def call_send_api(sender_psid, response):
 
     # Gửi yêu cầu HTTP đến Messenger Platform
     res = requests.post(
-        "https://graph.facebook.com/v21.0/me/messages", 
+        "https://graph.facebook.com/v21.0/me/messages",
         params={"access_token": os.getenv("PAGE_ACCESS_TOKEN")},
         json=request_body
     )
@@ -86,6 +91,7 @@ def call_send_api(sender_psid, response):
     else:
         print(f"Unable to send message: {res.status_code} - {res.text}")
 
+
 if __name__ == "__main__":
-    port = int(os.environ.get('PORT', 5000))  
+    port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port, debug=True)
