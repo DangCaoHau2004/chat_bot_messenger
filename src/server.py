@@ -76,7 +76,7 @@ def call_send_api(sender_psid, response):
 
     # Gửi yêu cầu HTTP đến Messenger Platform
     res = requests.post(
-        "https://graph.facebook.com/v12.0/me/messages", 
+        "https://graph.facebook.com/v21.0/me/messages", 
         params={"access_token": os.getenv("PAGE_ACCESS_TOKEN")},
         json=request_body
     )
