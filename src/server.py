@@ -70,7 +70,7 @@ def handle_message(sender_psid, received_message):
     if "text" in received_message:
         # response text cho người dùng
         response = {
-            "text": f"You sent the message: '{received_message['text']}. Now send me an image!'"
+            "text": f"Xin Chào '{received_message['text']}'"
         }
         call_send_api(sender_psid, response)
     else:
