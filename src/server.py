@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 import os
 import requests
 
+# Kiểm tra đồng bộ giữa git và heroku
 # Tải các biến môi trường từ .env file
 load_dotenv()
 
