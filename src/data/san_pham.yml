@@ -133,6 +133,134 @@ ao_so_mi:
 
 giay:
   giay_loafer_da:
+    - id: 1
+      ten:
+      mau_sac: "Đen"
+      kch_co:
+      kieu_dang:
+      gia:
+      mo_ta:
+    - id: 2
+      ten:
+      mau_sac: "Nâu"
+      kch_co:
+      kieu_dang:
+      gia:
+      mo_ta:
+    - id: 3
+      ten:
+      mau_sac: "Nâu sáng"
+      kch_co:
+      kieu_dang:
+      gia:
+      mo_ta:
+  giay_tay_cao_cap:
+    - id: 1
+      ten:
+      mau_sac: "Đen bóng"
+      kch_co:
+      kieu_dang:
+      gia:
+      mo_ta:
+    - id: 2
+      ten:
+      mau_sac: "Đen"
+      kch_co:
+      kieu_dang:
+      gia:
+      mo_ta:
+    - id: 3
+      ten:
+      mau_sac: "Nâu"
+      kch_co:
+      kieu_dang:
+      gia:
+      mo_ta:
+
+quan_au:
+
+
+phu_kien:
+  ca_vat:
     - id:
       ten:
+      mau_sac:
+      gia:
+      mo_ta:
+    - id:
+      ten:
+      mau_sac:
+      gia:
+      mo_ta:
+    - id:
+      ten:
+      mau_sac:
+      gia:
+      mo_ta:
+  ghim:
+    - id:
+      ten:
+      mau_sac:
+      gia:
+      mo_ta:
+    - id:
+      ten:
+      mau_sac:
+      gia:
+      mo_ta:
+    - id:
+      ten:
+      mau_sac:
+      gia:
+      mo_ta:
+  kep_ca_vat:
+    - id:
+      ten:
+      mau_sac:
+      gia:
+      mo_ta:
+    - id:
+      ten:
+      mau_sac:
+      gia:
+      mo_ta:
+    - id:
+      ten:
+      mau_sac:
+      gia:
+      mo_ta:
+  no:
+    - id:
+      ten:
+      mau_sac:
+      gia:
+      mo_ta:
+    - id:
+      ten:
+      mau_sac:
+      gia:
+      mo_ta:
+    - id:
+      ten:
+      mau_sac:
+      gia:
+      mo_ta:
+  khan_vuong:
+    - id:
+      ten:
+      mau_sac:
+      gia:
+      mo_ta:
+    - id:
+      ten:
+      mau_sac:
+      gia:
+      mo_ta:
+    - id:
+      ten:
+      mau_sac:
+      gia:
+      mo_ta:
+
+
 
