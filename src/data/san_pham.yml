@@ -1,0 +1,73 @@
+Suit_vest:
+	suit_hai_manh:
+    - id: 1
+      ten: 
+      mau_sac:
+      kich_co:
+      kieu_dang:
+      gia:
+      mo_ta:
+    - id: 2
+      ten: 
+      mau_sac:
+      kich_co:
+      kieu_dang:
+      gia:
+      mo_ta:
+    - id: 3
+      ten: 
+      mau_sac:
+      kich_co:
+      kieu_dang:
+      gia:
+      mo_ta:
+    - id: 4
+      ten: 
+      mau_sac:
+      kich_co:
+      kieu_dang:
+      gia:
+      mo_ta:
+    - id: 5
+      ten: 
+      mau_sac:
+      kich_co:
+      kieu_dang:
+      gia:
+      mo_ta:
+  suit_ba_manh:
+    - id: 1
+      ten: 
+      mau_sac:
+      kich_co:
+      kieu_dang:
+      gia:
+      mo_ta:
+    - id: 2
+      ten: 
+      mau_sac:
+      kich_co:
+      kieu_dang:
+      gia:
+      mo_ta:
+    - id: 3
+      ten: 
+      mau_sac:
+      kich_co:
+      kieu_dang:
+      gia:
+      mo_ta:
+    - id: 4
+      ten: 
+      mau_sac:
+      kich_co:
+      kieu_dang:
+      gia:
+      mo_ta:
+    - id: 5
+      ten: 
+      mau_sac:
+      kich_co:
+      kieu_dang:
+      gia:
+      mo_ta:
