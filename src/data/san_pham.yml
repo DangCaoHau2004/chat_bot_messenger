@@ -2,35 +2,35 @@ Suit_vest:
   suit_hai_manh:
     - id: 1
       ten: 
-      mau_sac:
+      mau_sac: "Đen sọc xước xám"
       kich_co:
       kieu_dang:
       gia:
       mo_ta:
     - id: 2
       ten: 
-      mau_sac:
+      mau_sac: "Xám trắng gân"
       kich_co:
       kieu_dang:
       gia:
       mo_ta:
     - id: 3
       ten: 
-      mau_sac:
+      mau_sac: "Xám tro"
       kich_co:
       kieu_dang:
       gia:
       mo_ta:
     - id: 4
       ten: 
-      mau_sac:
+      mau_sac: "Xanh đậm sọc"
       kich_co:
       kieu_dang:
       gia:
       mo_ta:
     - id: 5
       ten: 
-      mau_sac:
+      mau_sac: "Xanh gân"
       kich_co:
       kieu_dang:
       gia:
@@ -70,4 +70,69 @@ Suit_vest:
       kich_co:
       kieu_dang:
       gia:
-      mo_ta:
+      mo_ta: 
+ghile:
+  - id: 1
+    ten: 
+    mau_sac: "Đen sọc xước xám"
+    kich_co:
+    kieu_dang:
+    gia:
+    mo_ta:
+  - id: 2
+    ten: 
+    mau_sac: "Xám trắng gân"
+    kich_co:
+    kieu_dang:
+    gia:
+    mo_ta:
+  - id: 3
+    ten: 
+    mau_sac: "Xám tro"
+    kich_co:
+    kieu_dang:
+    gia:
+    mo_ta:
+  - id: 4
+    ten: 
+    mau_sac: "Xanh đậm sọc"
+    kich_co:
+    kieu_dang:
+    gia:
+    mo_ta:
+  - id: 5
+    ten: 
+    mau_sac: "Xanh gân"
+    kich_co:
+    kieu_dang:
+    gia:
+    mo_ta:
+
+ao_so_mi:
+  - id: 1
+    ten:
+    mau_sac: "Sọc kẻ xanh"
+    kich_co:
+    kieu_dang:
+    gia:
+    mo_ta:
+  - id: 2
+    ten:
+    mau_sac: "Trắng"
+    kich_co:
+    kieu_dang:
+    gia:
+    mo_ta:
+  - id: 3
+    ten:
+    mau_sac: "Trắng có đốm"
+    kich_co:
+    kieu_dang:
+    gia:
+    mo_ta:
+
+giay:
+  giay_loafer_da:
+    - id:
+      ten:
+
