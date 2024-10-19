@@ -208,84 +208,94 @@ quan_au:
 
 phu_kien:
   ca_vat:
-    - id:
-      ten:
-      mau_sac:
-      gia:
+    - id: 1
+      ten: 'Caravat đen sọc ẩn'
+      mau_sac: 'Đen'
+      gia: 249000
       mo_ta:
-    - id:
-      ten:
-      mau_sac:
-      gia:
+    - id: 2
+      ten: 'Caravat đỏ đô ô vuông nhỏ TGC364'
+      mau_sac: 'Đỏ đô'
+      gia: 249000
       mo_ta:
-    - id:
-      ten:
-      mau_sac:
-      gia:
+    - id: 3
+      ten: 'Caravat xanh đen họa tiết nhỏ TGC358'
+      mau_sac: 'Xanh đen'
+      gia: 249000
       mo_ta:
   ghim:
-    - id:
-      ten:
-      mau_sac:
-      gia:
+    - id: 1
+      ten: 'TGP99 - Ghim cài họa tiết hươu Bạc'
+      mau_sac: 'Bạc'
+      gia: 129000
       mo_ta:
-    - id:
-      ten:
-      mau_sac:
-      gia:
+    - id: 2
+      ten: 'TGP103 - Ghim cài họa tiết mỏ neo Bạc'
+      mau_sac: 'Bạc'
+      gia: 129000
       mo_ta:
-    - id:
-      ten:
-      mau_sac:
-      gia:
+    - id: 3
+      ten: 'TGP97 - Ghim cài sư tử đôi vàng'
+      mau_sac: 'Vàng'
+      gia: 129000
+      mo_ta:
+    - id: 4
+      ten: 'TGP101 - Ghim cài họa tiết bông lúa'
+      mau_sac: 'Vàng'
+      gia: 129000 
       mo_ta:
   kep_ca_vat:
-    - id:
-      ten:
-      mau_sac:
-      gia:
+    - id: 1
+      ten: 'KẸP CARAVAT TGKI49'
+      mau_sac: 'Bạc'
+      gia: 99000
       mo_ta:
-    - id:
-      ten:
-      mau_sac:
-      gia:
+    - id: 2
+      ten: 'KẸP CARAVAT TGKI51'
+      mau_sac: 'Bạc'
+      gia: 99000
       mo_ta:
-    - id:
-      ten:
-      mau_sac:
-      gia:
+    - id: 3
+      ten: 'KẸP CARAVAT TGKI52'
+      mau_sac: 'Bạc'
+      gia: 99000
+      mo_ta:
+    - id: 4
+      ten: 'KẸP CARAVAT TGKI54'
+      mau_sac: 'Bạc'
+      gia: 99000
       mo_ta:
   no:
-    - id:
-      ten:
-      mau_sac:
-      gia:
+    - id: 1
+      ten: 'Nơ Đeo Cổ Nam NBDE013 '
+      mau_sac: 'Đen'
+      gia: 65000
       mo_ta:
-    - id:
-      ten:
-      mau_sac:
-      gia:
+    - id: 2 
+      ten: 'Nơ Đeo Cổ Nam NPDO003'
+      mau_sac: 'Đỏ'
+      gia: 35000
       mo_ta:
-    - id:
-      ten:
-      mau_sac:
-      gia:
+    - id: 3
+      ten: 'Nơ Tự Thắt NTDE001'
+      mau_sac: 'Đen'
+      gia: 275000
       mo_ta:
   khan_vuong:
-    - id:
-      ten:
-      mau_sac:
-      gia:
+    - id: 1 
+      ten: 'TGK20 - Khăn xanh dương họa tiết'
+      mau_sac: 'Xanh dương'
+      gia: 99000
       mo_ta:
-    - id:
-      ten:
-      mau_sac:
-      gia:
+    - id: 2
+      ten: 'TGK119 - Khăn xanh lá họa tiết sao'
+      mau_sac: 'Xanh lá'
+      gia: 99000
       mo_ta:
-    - id:
-      ten:
-      mau_sac:
-      gia:
+    - id: 3
+      ten: 'KHĂN CÀI TÚI ÁO VEST TGK110'
+      mau_sac: 'Trắng'
+      gia: 99000
       mo_ta:
 
 
