@@ -102,10 +102,11 @@ def handle_message(sender_psid, received_message):
 def handle_postback(sender_psid, received_postback):
     # Xử lý sự kiện postback nếu cần
     print("Postback received:", received_postback)
-    payload = received_postback.payload
+    payload = received_postback["payload"]
     if payload.lower == "GET_STARTED":
         response = "Chào bạn đến với shop Thế Giới Vest"
         # call_send_api
+    call_send_api(sender_psid=sender_psid, response=response)
 
 
 def call_send_api(sender_psid, response):
