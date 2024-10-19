@@ -1,76 +1,76 @@
 Suit_vest:
   suit_hai_manh:
     - id: 1
-      ten: 
+      ten: "Classic Fit TGS363"
       mau_sac: "Đen sọc xước xám"
-      kich_co:
-      kieu_dang:
-      gia:
-      mo_ta:
+      kich_co: [43,44,45,46,47,48]
+      kieu_dang: "Form suông"
+      gia: 1789000
+      mo_ta: "Sản phẩm gồm 1 áo và 1 quần tây cùng màu"
     - id: 2
-      ten: 
+      ten: "Classic Fit TGS352"
       mau_sac: "Xám trắng gân"
-      kich_co:
-      kieu_dang:
-      gia:
-      mo_ta:
+      kich_co: [43,44,45,46,47,48]
+      kieu_dang: "Form suông"
+      gia: 1589000
+      mo_ta: "Sản phẩm gồm 1 áo và 1 quần tây cùng màu"
     - id: 3
-      ten: 
-      mau_sac: "Xám tro"
-      kich_co:
-      kieu_dang:
-      gia:
-      mo_ta:
+      ten: "Classic Fit TGS302"
+      mau_sac: "Xám tro "
+      kich_co: [43,44,45,46,47,48]
+      kieu_dang: "Form suông"
+      gia: 1098300
+      mo_ta: "Sản phẩm gồm 1 áo và 1 quần tây cùng màu"
     - id: 4
-      ten: 
+      ten: "Classic Fit TGS367"
       mau_sac: "Xanh đậm sọc"
-      kich_co:
-      kieu_dang:
-      gia:
-      mo_ta:
+      kich_co: [43,44,45,46,47,48]
+      kieu_dang: "Form suông"
+      gia: 1789000
+      mo_ta: "Sản phẩm gồm 1 áo và 1 quần tây cùng màu"
     - id: 5
-      ten: 
+      ten: Classic Fit TGS361
       mau_sac: "Xanh gân"
-      kich_co:
-      kieu_dang:
-      gia:
-      mo_ta:
+      kich_co: [43,44,45,46,47,48]
+      kieu_dang: "Form suông"
+      gia: 1769000
+      mo_ta: "Sản phẩm gồm 1 áo và 1 quần tây cùng màu"
   suit_ba_manh:
     - id: 1
-      ten: 
-      mau_sac:
-      kich_co:
-      kieu_dang:
-      gia:
-      mo_ta:
+      ten: 'Modern Fit TGS348'
+      mau_sac: 'Đen'
+      kich_co: [43,44,45,46,47,48]
+      kieu_dang: "Form slimfit"
+      gia: 1739000
+      mo_ta: "Sản phẩm gồm 1 áo và 1 quần tây cùng màu"
     - id: 2
-      ten: 
-      mau_sac:
-      kich_co:
-      kieu_dang:
-      gia:
-      mo_ta:
+      ten: 'Modern Fit TGS379'
+      mau_sac: 'Xám Đậm'
+      kich_co: [43,44,45,46,47,48]
+      kieu_dang: "Form slimfit"
+      gia: 1889000
+      mo_ta: "Sản phẩm gồm 1 áo và 1 quần tây cùng màu" 
     - id: 3
-      ten: 
-      mau_sac:
-      kich_co:
-      kieu_dang:
-      gia:
-      mo_ta:
+      ten: 'Modern Fit TGS371'
+      mau_sac: 'Xám Xanh'
+      kich_co: [43,44,45,46,47,48]
+      kieu_dang: "Form slimfit"
+      gia: 1839000
+      mo_ta: "Sản phẩm gồm 1 áo và 1 quần tây cùng màu"
     - id: 4
-      ten: 
-      mau_sac:
-      kich_co:
-      kieu_dang:
-      gia:
-      mo_ta:
+      ten: 'Modern Fit TGS377'
+      mau_sac: 'Xanh Đen'
+      kich_co: [43,44,45,46,47,48]
+      kieu_dang: "Form slimfit"
+      gia: 2239000
+      mo_ta: "Sản phẩm gồm 1 áo và 1 quần tây cùng màu"
     - id: 5
-      ten: 
-      mau_sac:
-      kich_co:
-      kieu_dang:
-      gia:
-      mo_ta: 
+      ten: 'Modern Fit TGS360'
+      mau_sac: 'Xanh Navy'
+      kich_co: [43,44,45,46,47,48]
+      kieu_dang: "Form slimfit"
+      gia: 1789000
+      mo_ta: "Sản phẩm gồm 1 áo và 1 quần tây cùng màu"
 ghile:
   - id: 1
     ten: 
