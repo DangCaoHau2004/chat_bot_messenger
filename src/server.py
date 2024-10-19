@@ -104,7 +104,7 @@ def handle_postback(sender_psid, received_postback):
     payload = received_postback["payload"]
 
     if payload.lower() == "get_started":
-        response = "Chào bạn đến với shop Thế Giới Vest"
+        response = {"text": "Chào bạn đến với shop Thế Giới Vest"}
         call_send_api(sender_psid=sender_psid, response=response)
 
 
