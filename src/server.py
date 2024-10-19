@@ -65,24 +65,24 @@ def webhook_get():
             return "Forbidden", 403
 
 
-@app.route('/setup-profile')
+@app.route('/setup-profile', methods=['GET', 'POST'])
 def setup_profile():
-    # gọi api facebook
+    # Prepare the request body for the Facebook API
     request_body = {
-        "get_started": "GET STARTED"
+        "get_started": {"payload": "GET_STARTED"}
     }
 
-    # Gửi Post đến Messenger Platform
+    # Send POST request to Messenger Platform
     res = requests.post(
-        f"https://graph.facebook.com/v21.0/me/messenger_profile?access_token={PAGE_ACCESS_TOKEN}",
+        f"https://graph.facebook.com/v21.0/me/messenger_profile",
         params={"access_token": PAGE_ACCESS_TOKEN},
         json=request_body
     )
 
     if res.status_code == 200:
-        print('Message sent!')
+        return 'Message sent!', 200
     else:
-        print(f"Unable to send message: {res.status_code} - {res.text}")
+        return f"Unable to send message: {res.status_code} - {res.text}", res.status_code
 
 
 # handle_message
