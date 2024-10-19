@@ -12,6 +12,7 @@ config = {
     'verifyToken': os.getenv("VERIFY_TOKEN")
 }
 
+PAGE_ACCESS_TOKEN = os.getenv("PAGE_ACCESS_TOKEN")
 # Route Home
 
 
@@ -63,9 +64,28 @@ def webhook_get():
         else:
             return "Forbidden", 403
 
+
+@app.route('/setup-profile')
+def setup_profile():
+    # gọi api facebook
+    request_body = {
+        "get_started": "GET STARTED"
+    }
+
+    # Gửi Post đến Messenger Platform
+    res = requests.post(
+        f"https://graph.facebook.com/v21.0/me/messenger_profile?access_token={PAGE_ACCESS_TOKEN}",
+        params={"access_token": PAGE_ACCESS_TOKEN},
+        json=request_body
+    )
+
+    if res.status_code == 200:
+        print('Message sent!')
+    else:
+        print(f"Unable to send message: {res.status_code} - {res.text}")
+
+
 # handle_message
-
-
 def handle_message(sender_psid, received_message):
     if "text" in received_message:
         # response text cho người dùng
@@ -97,7 +117,7 @@ def call_send_api(sender_psid, response):
     # Gửi Post đến Messenger Platform
     res = requests.post(
         "https://graph.facebook.com/v21.0/me/messages",
-        params={"access_token": os.getenv("PAGE_ACCESS_TOKEN")},
+        params={"access_token": PAGE_ACCESS_TOKEN},
         json=request_body
     )
 
