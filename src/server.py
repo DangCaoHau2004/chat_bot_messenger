@@ -64,25 +64,27 @@ def webhook_get():
         else:
             return "Forbidden", 403
 
+# setup-profile
 
-@app.route('/setup-profile')
+
+@app.route('/setup-profile', methods=['POST'])
 def setup_profile():
-    # gọi api facebook
     request_body = {
-        "get_started": "GET STARTED"
+        "get_started": {"payload": "GET_STARTED"}
     }
 
-    # Gửi Post đến Messenger Platform
+    # post
     res = requests.post(
-        f"https://graph.facebook.com/v21.0/me/messenger_profile?access_token={PAGE_ACCESS_TOKEN}",
+        f"https://graph.facebook.com/v21.0/me/messenger_profile",
         params={"access_token": PAGE_ACCESS_TOKEN},
         json=request_body
     )
 
+    # kiểm tra
     if res.status_code == 200:
-        print('Message sent!')
+        return {"message": "Profile setup successful"}, 200
     else:
-        print(f"Unable to send message: {res.status_code} - {res.text}")
+        return {"error": res.text}, res.status_code
 
 
 # handle_message
@@ -100,10 +102,21 @@ def handle_message(sender_psid, received_message):
 
 
 def handle_postback(sender_psid, received_postback):
-    # Xử lý sự kiện postback nếu cần
     print("Postback received:", received_postback)
-
-# call_send_api
+    payload = received_postback["payload"]
+    # xử lý khi người dùng click vào nút bắt đầu
+    if payload.lower() == "get_started":
+        # đọc dữ liệu từ tên người dùng
+        res = requests.get(
+            f"https://graph.facebook.com/{sender_psid}?fields=first_name,last_name,profile_pic",
+            params={"access_token": PAGE_ACCESS_TOKEN})
+        if res.status_code == 200:
+            user = res.json()
+            name = user["first_name"] + " " + user["last_name"]
+            response = {"text": f"Chào {name} đến với shop Thế Giới Vest"}
+            call_send_api(sender_psid=sender_psid, response=response)
+        else:
+            print("Yêu cầu thất bại:", res.status_code, res.text)
 
 
 def call_send_api(sender_psid, response):
