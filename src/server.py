@@ -67,23 +67,24 @@ def webhook_get():
 # setup-profile
 
 
-@app.route('/setup-profile', methods=['GET', 'POST'])
+@app.route('/setup-profile', methods=['POST'])
 def setup_profile():
     request_body = {
         "get_started": {"payload": "GET_STARTED"}
     }
 
-    # gửi phương thức post
+    # post
     res = requests.post(
         f"https://graph.facebook.com/v21.0/me/messenger_profile",
         params={"access_token": PAGE_ACCESS_TOKEN},
         json=request_body
     )
 
+    # kiểm tra
     if res.status_code == 200:
-        return 'Message sent!', 200
+        return {"message": "Profile setup successful"}, 200
     else:
-        return f"Unable to send message: {res.status_code} - {res.text}", res.status_code
+        return {"error": res.text}, res.status_code
 
 
 # handle_message
