@@ -74,39 +74,39 @@ Suit_vest:
 
 ghile:
   - id: 1
-    ten: 
+    ten: 'ZVQ372'
     mau_sac: "Đen sọc xước xám"
-    kich_co:
-    kieu_dang:
-    gia:
+    kich_co: ['S','M','L','XL']
+    kieu_dang: 'áo gile'
+    gia: 600000
     mo_ta:
   - id: 2
-    ten: 
-    mau_sac: "Xám trắng gân"
-    kich_co:
-    kieu_dang:
-    gia:
+    ten: 'ZVQ495'
+    mau_sac: "Ghi sáng"
+    kich_co: ['S','M','L','XL']
+    kieu_dang: 'áo gile'
+    gia: 1300000
     mo_ta:
   - id: 3
-    ten: 
-    mau_sac: "Xám tro"
-    kich_co:
-    kieu_dang:
-    gia:
+    ten: 'ZVQ376'
+    mau_sac: "Xám trắng gân"
+    kich_co: ['S','M','L','XL']
+    kieu_dang: 'áo gile'
+    gia: 600000
     mo_ta:
   - id: 4
-    ten: 
+    ten: 'ZVQ345'
     mau_sac: "Xanh đậm sọc"
-    kich_co:
-    kieu_dang:
-    gia:
+    kich_co: ['S','M','L','XL']
+    kieu_dang: 'áo gile' 
+    gia: 650000
     mo_ta:
   - id: 5
-    ten: 
+    ten: 'ZVF176'
     mau_sac: "Xanh gân"
-    kich_co:
-    kieu_dang:
-    gia:
+    kich_co: ['S','M','L','XL']
+    kieu_dang: 'áo gile'
+    gia: 650000
     mo_ta:
 
 ao_so_mi:
@@ -133,53 +133,78 @@ ao_so_mi:
     mo_ta:
 
 giay:
-  giay_loafer_da:
-    - id: 1
-      ten: 'SIR CLASSIC LOAFER'
-      mau_sac: "Đen"
-      kich_co: [38,39,40,41,42,43]
-      kieu_dang: 
-      gia: 1750000
-      mo_ta:
-    - id: 2
-      ten: 'SIR CLASSIC LOAFER'
-      mau_sac: "Nâu"
-      kich_co: [38,39,40,41,42,43]
-      kieu_dang: 
-      gia: 1750000
-      mo_ta:
-    - id: 3
-      ten: 'SIR CLASSIC LOAFER'
-      mau_sac: "Nâu sáng"
-      kich_co: [38,39,40,41,42,43]
-      kieu_dang: 
-      gia: 1750000
-      mo_ta: 
-    - id: 4
-      ten:
-      mau_sac: "Đen bóng"
-      kich_co: [37,38,39,40,41,42,43,44,45]
-      kieu_dang: 'loafer'
-      gia: 1850000
-      mo_ta:
-  giay_tay_cao_cap:
-    - id: 1
-      ten: 'COUNTRYMAN DERBY'
-      mau_sac: "Đen"
-      kich_co: [37,38,39,40,41,42,43,44,45]
-      kieu_dang: 
-      gia: 1850000
-      mo_ta:
-    - id: 2
-      ten: 'COUNTRYMAN DERBY'
-      mau_sac: "Nâu"
-      kich_co: [37,38,39,40,41,42,43,44,45]
-      kieu_dang:
-      gia: 1850000
-      mo_ta:
+  - id: 1
+    ten: 'SIR CLASSIC LOAFER'
+    mau_sac: "Đen"
+    kich_co: [38,39,40,41,42,43]
+    kieu_dang: 
+    gia: 1750000
+    mo_ta:
+  - id: 2
+    ten: 'SIR CLASSIC LOAFER'
+    mau_sac: "Nâu"
+    kich_co: [38,39,40,41,42,43]
+    kieu_dang: 
+    gia: 1750000
+    mo_ta:
+  - id: 3
+    ten: 'SIR CLASSIC LOAFER'
+    mau_sac: "Nâu sáng"
+    kich_co: [38,39,40,41,42,43]
+    kieu_dang: 
+    gia: 1750000
+    mo_ta: 
+  - id: 4
+    ten:
+    mau_sac: "Đen bóng"
+    kich_co: [37,38,39,40,41,42,43,44,45]
+    kieu_dang: 'loafer'
+    gia: 1850000
+    mo_ta:
+  - id: 5
+    ten: 'COUNTRYMAN DERBY'
+    mau_sac: "Đen"
+    kich_co: [37,38,39,40,41,42,43,44,45]
+    kieu_dang: 
+    gia: 1850000
+    mo_ta:
+  - id: 6
+    ten: 'COUNTRYMAN DERBY'
+    mau_sac: "Nâu"
+    kich_co: [37,38,39,40,41,42,43,44,45]
+    kieu_dang:
+    gia: 1850000
+    mo_ta:
 
 quan_au:
-
+  - id: 1
+    ten: 'QACOL515'
+    mau_sac: 'Đen'
+    kich_co: [29,30,31,32,34]
+    kieu_dang: 'Slim crop'
+    gia: 420000
+    mo_ta: 
+  - id: 2
+    ten: 'QASTK503'
+    mau_sac: 'Xám đậm'
+    kich_co: [29,30,31,32,34]
+    kieu_dang: 'slim'
+    gia: 489000 
+    mo_ta:  
+  - id: 3
+    ten: 'QACOL420'
+    mau_sac: 'Xám'
+    kich_co: [29,30,31,32,34]
+    kieu_dang: 'Slim crop'
+    gia: 380000 
+    mo_ta: 
+  - id: 4
+    ten: 'QDSTK501'
+    mau_sac: 'Be'
+    kich_co: [29,30,31,32,34]
+    kieu_dang: 'Regular'
+    gia: 419000 
+    mo_ta: 
 
 phu_kien:
   ca_vat:
