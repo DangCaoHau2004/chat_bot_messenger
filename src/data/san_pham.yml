@@ -6,35 +6,35 @@ Suit_vest:
       kich_co: [43,44,45,46,47,48]
       kieu_dang: "Form suông"
       gia: 1789000
-      mo_ta: "Sản phẩm gồm 1 áo và 1 quần tây cùng màu"
+      mo_ta: 
     - id: 2
       ten: "Classic Fit TGS352"
       mau_sac: "Xám trắng gân"
       kich_co: [43,44,45,46,47,48]
       kieu_dang: "Form suông"
       gia: 1589000
-      mo_ta: "Sản phẩm gồm 1 áo và 1 quần tây cùng màu"
+      mo_ta: 
     - id: 3
       ten: "Classic Fit TGS302"
       mau_sac: "Xám tro "
       kich_co: [43,44,45,46,47,48]
       kieu_dang: "Form suông"
       gia: 1098300
-      mo_ta: "Sản phẩm gồm 1 áo và 1 quần tây cùng màu"
+      mo_ta: 
     - id: 4
       ten: "Classic Fit TGS367"
       mau_sac: "Xanh đậm sọc"
       kich_co: [43,44,45,46,47,48]
       kieu_dang: "Form suông"
       gia: 1789000
-      mo_ta: "Sản phẩm gồm 1 áo và 1 quần tây cùng màu"
+      mo_ta: 
     - id: 5
       ten: Classic Fit TGS361
       mau_sac: "Xanh gân"
       kich_co: [43,44,45,46,47,48]
       kieu_dang: "Form suông"
       gia: 1769000
-      mo_ta: "Sản phẩm gồm 1 áo và 1 quần tây cùng màu"
+      mo_ta: 
   suit_ba_manh:
     - id: 1
       ten: 'Modern Fit TGS348'
@@ -42,35 +42,36 @@ Suit_vest:
       kich_co: [43,44,45,46,47,48]
       kieu_dang: "Form slimfit"
       gia: 1739000
-      mo_ta: "Sản phẩm gồm 1 áo và 1 quần tây cùng màu"
+      mo_ta: 
     - id: 2
       ten: 'Modern Fit TGS379'
       mau_sac: 'Xám Đậm'
       kich_co: [43,44,45,46,47,48]
       kieu_dang: "Form slimfit"
       gia: 1889000
-      mo_ta: "Sản phẩm gồm 1 áo và 1 quần tây cùng màu" 
+      mo_ta:  
     - id: 3
       ten: 'Modern Fit TGS371'
       mau_sac: 'Xám Xanh'
       kich_co: [43,44,45,46,47,48]
       kieu_dang: "Form slimfit"
       gia: 1839000
-      mo_ta: "Sản phẩm gồm 1 áo và 1 quần tây cùng màu"
+      mo_ta: 
     - id: 4
       ten: 'Modern Fit TGS377'
       mau_sac: 'Xanh Đen'
       kich_co: [43,44,45,46,47,48]
       kieu_dang: "Form slimfit"
       gia: 2239000
-      mo_ta: "Sản phẩm gồm 1 áo và 1 quần tây cùng màu"
+      mo_ta: 
     - id: 5
       ten: 'Modern Fit TGS360'
       mau_sac: 'Xanh Navy'
       kich_co: [43,44,45,46,47,48]
       kieu_dang: "Form slimfit"
       gia: 1789000
-      mo_ta: "Sản phẩm gồm 1 áo và 1 quần tây cùng màu"
+      mo_ta: 
+
 ghile:
   - id: 1
     ten: 
@@ -110,71 +111,71 @@ ghile:
 
 ao_so_mi:
   - id: 1
-    ten:
+    ten: 'Áo sơ mi - AS230608D'
     mau_sac: "Sọc kẻ xanh"
-    kich_co:
-    kieu_dang:
-    gia:
+    kich_co: [38,39,40,41,42,43]
+    kieu_dang: 'Form slimfit'
+    gia: 610000
     mo_ta:
   - id: 2
-    ten:
+    ten: 'Áo sơ mi - AR230332DT'
     mau_sac: "Trắng"
-    kich_co:
-    kieu_dang:
-    gia:
+    kich_co: [38,39,40,41,42,43]
+    kieu_dang: 'Form Regular Fit'
+    gia: 420000
     mo_ta:
   - id: 3
-    ten:
+    ten: 'Áo sơ mi - AS23409D'
     mau_sac: "Trắng có đốm"
-    kich_co:
-    kieu_dang:
-    gia:
+    kich_co: [38,42,43]
+    kieu_dang: 'Form slimfit'
+    gia: 598000
     mo_ta:
 
 giay:
   giay_loafer_da:
     - id: 1
-      ten:
+      ten: 'SIR CLASSIC LOAFER'
       mau_sac: "Đen"
-      kch_co:
-      kieu_dang:
-      gia:
+      kich_co: [38,39,40,41,42,43]
+      kieu_dang: 
+      gia: 1750000
       mo_ta:
     - id: 2
-      ten:
+      ten: 'SIR CLASSIC LOAFER'
       mau_sac: "Nâu"
-      kch_co:
-      kieu_dang:
-      gia:
+      kich_co: [38,39,40,41,42,43]
+      kieu_dang: 
+      gia: 1750000
       mo_ta:
     - id: 3
-      ten:
+      ten: 'SIR CLASSIC LOAFER'
       mau_sac: "Nâu sáng"
-      kch_co:
-      kieu_dang:
-      gia:
+      kich_co: [38,39,40,41,42,43]
+      kieu_dang: 
+      gia: 1750000
+      mo_ta: 
+    - id: 4
+      ten:
+      mau_sac: "Đen bóng"
+      kich_co: [37,38,39,40,41,42,43,44,45]
+      kieu_dang: 'loafer'
+      gia: 1850000
       mo_ta:
   giay_tay_cao_cap:
     - id: 1
-      ten:
-      mau_sac: "Đen bóng"
-      kch_co:
-      kieu_dang:
-      gia:
+      ten: 'COUNTRYMAN DERBY'
+      mau_sac: "Đen"
+      kich_co: [37,38,39,40,41,42,43,44,45]
+      kieu_dang: 
+      gia: 1850000
       mo_ta:
     - id: 2
-      ten:
-      mau_sac: "Đen"
-      kch_co:
-      kieu_dang:
-      gia:
-      mo_ta:
-    - id: 3
-      ten:
+      ten: 'COUNTRYMAN DERBY'
       mau_sac: "Nâu"
-      kch_co:
+      kich_co: [37,38,39,40,41,42,43,44,45]
       kieu_dang:
-      gia:
+      gia: 1850000
       mo_ta:
 
 quan_au:
