@@ -102,7 +102,6 @@ def handle_message(sender_psid, received_message):
 
 
 def handle_postback(sender_psid, received_postback):
-    print("Postback received:", received_postback)
     payload = received_postback["payload"]
     # xử lý khi người dùng click vào nút bắt đầu
     if payload.lower() == "get_started":

@@ -3,297 +3,297 @@ Suit_vest:
     - id: 1
       ten: "Classic Fit TGS363"
       mau_sac: "Đen sọc xước xám"
-      kich_co: ['S','M','L','XL']
+      kich_co: ["S", "M", "L", "XL"]
       kieu_dang: "Form suông"
       gia: 1789000
-      mo_ta: 
+      mo_ta:
     - id: 2
       ten: "Classic Fit TGS352"
       mau_sac: "Xám trắng gân"
-      kich_co: ['S','M','L','XL']
+      kich_co: ["S", "M", "L", "XL"]
       kieu_dang: "Form suông"
       gia: 1589000
-      mo_ta: 
+      mo_ta:
     - id: 3
       ten: "Classic Fit TGS302"
       mau_sac: "Xám tro "
-      kich_co: ['S','M','L','XL']
+      kich_co: ["S", "M", "L", "XL"]
       kieu_dang: "Form suông"
       gia: 1098300
-      mo_ta: 
+      mo_ta:
     - id: 4
       ten: "Classic Fit TGS367"
       mau_sac: "Xanh đậm sọc"
-      kich_co: ['S','M','L','XL']
+      kich_co: ["S", "M", "L", "XL"]
       kieu_dang: "Form suông"
       gia: 1789000
-      mo_ta: 
+      mo_ta:
     - id: 5
       ten: Classic Fit TGS361
       mau_sac: "Xanh gân"
-      kich_co: ['S','M','L','XL']
+      kich_co: ["S", "M", "L", "XL"]
       kieu_dang: "Form suông"
       gia: 1769000
-      mo_ta: 
+      mo_ta:
   suit_ba_manh:
     - id: 1
-      ten: 'Modern Fit TGS348'
-      mau_sac: 'Đen'
-      kich_co: ['S','M','L','XL']
+      ten: "Modern Fit TGS348"
+      mau_sac: "Đen"
+      kich_co: ["S", "M", "L", "XL"]
       kieu_dang: "Form slimfit"
       gia: 1739000
-      mo_ta: 
+      mo_ta:
     - id: 2
-      ten: 'Modern Fit TGS379'
-      mau_sac: 'Xám Đậm'
-      kich_co: ['S','M','L','XL']
+      ten: "Modern Fit TGS379"
+      mau_sac: "Xám Đậm"
+      kich_co: ["S", "M", "L", "XL"]
       kieu_dang: "Form slimfit"
       gia: 1889000
-      mo_ta:  
+      mo_ta:
     - id: 3
-      ten: 'Modern Fit TGS371'
-      mau_sac: 'Xám Xanh'
-      kich_co: ['S','M','L','XL']
+      ten: "Modern Fit TGS371"
+      mau_sac: "Xám Xanh"
+      kich_co: ["S", "M", "L", "XL"]
       kieu_dang: "Form slimfit"
       gia: 1839000
-      mo_ta: 
+      mo_ta:
     - id: 4
-      ten: 'Modern Fit TGS377'
-      mau_sac: 'Xanh Đen'
-      kich_co: ['S','M','L','XL']
+      ten: "Modern Fit TGS377"
+      mau_sac: "Xanh Đen"
+      kich_co: ["S", "M", "L", "XL"]
       kieu_dang: "Form slimfit"
       gia: 2239000
-      mo_ta: 
+      mo_ta:
     - id: 5
-      ten: 'Modern Fit TGS360'
-      mau_sac: 'Xanh Navy'
-      kich_co: ['S','M','L','XL']
+      ten: "Modern Fit TGS360"
+      mau_sac: "Xanh Navy"
+      kich_co: ["S", "M", "L", "XL"]
       kieu_dang: "Form slimfit"
       gia: 1789000
-      mo_ta: 
+      mo_ta:
 
 ghile:
   - id: 1
-    ten: 'ZVQ372'
+    ten: "ZVQ372"
     mau_sac: "Đen sọc xước xám"
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 'áo gile'
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang: "áo gile"
     gia: 600000
     mo_ta:
   - id: 2
-    ten: 'ZVQ495'
+    ten: "ZVQ495"
     mau_sac: "Ghi sáng"
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 'áo gile'
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang: "áo gile"
     gia: 1300000
     mo_ta:
   - id: 3
-    ten: 'ZVQ376'
+    ten: "ZVQ376"
     mau_sac: "Xám trắng gân"
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 'áo gile'
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang: "áo gile"
     gia: 600000
     mo_ta:
   - id: 4
-    ten: 'ZVQ345'
+    ten: "ZVQ345"
     mau_sac: "Xanh đậm sọc"
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 'áo gile' 
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang: "áo gile"
     gia: 650000
     mo_ta:
   - id: 5
-    ten: 'ZVF176'
+    ten: "ZVF176"
     mau_sac: "Xanh gân"
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 'áo gile'
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang: "áo gile"
     gia: 650000
     mo_ta:
 
 ao_so_mi:
   - id: 1
-    ten: 'Áo sơ mi - AS230608D'
+    ten: "Áo sơ mi - AS230608D"
     mau_sac: "Sọc kẻ xanh"
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 'Form slimfit'
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang: "Form slimfit"
     gia: 610000
     mo_ta:
   - id: 2
-    ten: 'Áo sơ mi - AR230332DT'
+    ten: "Áo sơ mi - AR230332DT"
     mau_sac: "Trắng"
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 'Form Regular Fit'
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang: "Form Regular Fit"
     gia: 420000
     mo_ta:
   - id: 3
-    ten: 'Áo sơ mi - AS23409D'
+    ten: "Áo sơ mi - AS23409D"
     mau_sac: "Trắng có đốm"
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 'Form slimfit'
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang: "Form slimfit"
     gia: 598000
     mo_ta:
 
 giay:
   - id: 1
-    ten: 'SIR CLASSIC LOAFER'
+    ten: "SIR CLASSIC LOAFER"
     mau_sac: "Đen"
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang:
     gia: 1750000
     mo_ta:
   - id: 2
-    ten: 'SIR CLASSIC LOAFER'
+    ten: "SIR CLASSIC LOAFER"
     mau_sac: "Nâu"
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang:
     gia: 1750000
     mo_ta:
   - id: 3
-    ten: 'SIR CLASSIC LOAFER'
+    ten: "SIR CLASSIC LOAFER"
     mau_sac: "Nâu sáng"
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang:
     gia: 1750000
-    mo_ta: 
+    mo_ta:
   - id: 4
     ten:
     mau_sac: "Đen bóng"
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 'loafer'
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang: "loafer"
     gia: 1850000
     mo_ta:
   - id: 5
-    ten: 'COUNTRYMAN DERBY'
+    ten: "COUNTRYMAN DERBY"
     mau_sac: "Đen"
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang:
     gia: 1850000
     mo_ta:
   - id: 6
-    ten: 'COUNTRYMAN DERBY'
+    ten: "COUNTRYMAN DERBY"
     mau_sac: "Nâu"
-    kich_co: ['S','M','L','XL']
+    kich_co: ["S", "M", "L", "XL"]
     kieu_dang:
     gia: 1850000
     mo_ta:
 
 quan_au:
   - id: 1
-    ten: 'QACOL515'
-    mau_sac: 'Đen'
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 'Slim crop'
+    ten: "QACOL515"
+    mau_sac: "Đen"
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang: "Slim crop"
     gia: 420000
-    mo_ta: 
+    mo_ta:
   - id: 2
-    ten: 'QASTK503'
-    mau_sac: 'Xám đậm'
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 'slim'
-    gia: 489000 
-    mo_ta:  
+    ten: "QASTK503"
+    mau_sac: "Xám đậm"
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang: "slim"
+    gia: 489000
+    mo_ta:
   - id: 3
-    ten: 'QACOL420'
-    mau_sac: 'Xám'
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 'Slim crop'
-    gia: 380000 
-    mo_ta: 
+    ten: "QACOL420"
+    mau_sac: "Xám"
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang: "Slim crop"
+    gia: 380000
+    mo_ta:
   - id: 4
-    ten: 'QDSTK501'
-    mau_sac: 'Be'
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 'Regular'
-    gia: 419000 
-    mo_ta: 
+    ten: "QDSTK501"
+    mau_sac: "Be"
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang: "Regular"
+    gia: 419000
+    mo_ta:
 
 phu_kien:
   ca_vat:
     - id: 1
-      ten: 'Caravat đen sọc ẩn'
-      mau_sac: 'Đen'
+      ten: "Caravat đen sọc ẩn"
+      mau_sac: "Đen"
       gia: 249000
       mo_ta:
     - id: 2
-      ten: 'Caravat đỏ đô ô vuông nhỏ TGC364'
-      mau_sac: 'Đỏ đô'
+      ten: "Caravat đỏ đô ô vuông nhỏ TGC364"
+      mau_sac: "Đỏ đô"
       gia: 249000
       mo_ta:
     - id: 3
-      ten: 'Caravat xanh đen họa tiết nhỏ TGC358'
-      mau_sac: 'Xanh đen'
+      ten: "Caravat xanh đen họa tiết nhỏ TGC358"
+      mau_sac: "Xanh đen"
       gia: 249000
       mo_ta:
   ghim:
     - id: 1
-      ten: 'TGP99 - Ghim cài họa tiết hươu Bạc'
-      mau_sac: 'Bạc'
+      ten: "TGP99 - Ghim cài họa tiết hươu Bạc"
+      mau_sac: "Bạc"
       gia: 129000
       mo_ta:
     - id: 2
-      ten: 'TGP103 - Ghim cài họa tiết mỏ neo Bạc'
-      mau_sac: 'Bạc'
+      ten: "TGP103 - Ghim cài họa tiết mỏ neo Bạc"
+      mau_sac: "Bạc"
       gia: 129000
       mo_ta:
     - id: 3
-      ten: 'TGP97 - Ghim cài sư tử đôi vàng'
-      mau_sac: 'Vàng'
+      ten: "TGP97 - Ghim cài sư tử đôi vàng"
+      mau_sac: "Vàng"
       gia: 129000
       mo_ta:
     - id: 4
-      ten: 'TGP101 - Ghim cài họa tiết bông lúa'
-      mau_sac: 'Vàng'
-      gia: 129000 
+      ten: "TGP101 - Ghim cài họa tiết bông lúa"
+      mau_sac: "Vàng"
+      gia: 129000
       mo_ta:
   kep_ca_vat:
     - id: 1
-      ten: 'KẸP CARAVAT TGKI49'
-      mau_sac: 'Bạc'
+      ten: "KẸP CARAVAT TGKI49"
+      mau_sac: "Bạc"
       gia: 99000
       mo_ta:
     - id: 2
-      ten: 'KẸP CARAVAT TGKI51'
-      mau_sac: 'Bạc'
+      ten: "KẸP CARAVAT TGKI51"
+      mau_sac: "Bạc"
       gia: 99000
       mo_ta:
     - id: 3
-      ten: 'KẸP CARAVAT TGKI52'
-      mau_sac: 'Bạc'
+      ten: "KẸP CARAVAT TGKI52"
+      mau_sac: "Bạc"
       gia: 99000
       mo_ta:
     - id: 4
-      ten: 'KẸP CARAVAT TGKI54'
-      mau_sac: 'Bạc'
+      ten: "KẸP CARAVAT TGKI54"
+      mau_sac: "Bạc"
       gia: 99000
       mo_ta:
   no:
     - id: 1
-      ten: 'Nơ Đeo Cổ Nam NBDE013 '
-      mau_sac: 'Đen'
+      ten: "Nơ Đeo Cổ Nam NBDE013 "
+      mau_sac: "Đen"
       gia: 65000
       mo_ta:
-    - id: 2 
-      ten: 'Nơ Đeo Cổ Nam NPDO003'
-      mau_sac: 'Đỏ'
+    - id: 2
+      ten: "Nơ Đeo Cổ Nam NPDO003"
+      mau_sac: "Đỏ"
       gia: 35000
       mo_ta:
     - id: 3
-      ten: 'Nơ Tự Thắt NTDE001'
-      mau_sac: 'Đen'
+      ten: "Nơ Tự Thắt NTDE001"
+      mau_sac: "Đen"
       gia: 275000
       mo_ta:
   khan_vuong:
-    - id: 1 
-      ten: 'TGK20 - Khăn xanh dương họa tiết'
-      mau_sac: 'Xanh dương'
+    - id: 1
+      ten: "TGK20 - Khăn xanh dương họa tiết"
+      mau_sac: "Xanh dương"
       gia: 99000
       mo_ta:
     - id: 2
-      ten: 'TGK119 - Khăn xanh lá họa tiết sao'
-      mau_sac: 'Xanh lá'
+      ten: "TGK119 - Khăn xanh lá họa tiết sao"
+      mau_sac: "Xanh lá"
       gia: 99000
       mo_ta:
     - id: 3
-      ten: 'KHĂN CÀI TÚI ÁO VEST TGK110'
-      mau_sac: 'Trắng'
+      ten: "KHĂN CÀI TÚI ÁO VEST TGK110"
+      mau_sac: "Trắng"
       gia: 99000
       mo_ta:
