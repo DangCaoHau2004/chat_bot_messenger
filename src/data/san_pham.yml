@@ -3,71 +3,71 @@ Suit_vest:
     - id: 1
       ten: "Classic Fit TGS363"
       mau_sac: "Đen sọc xước xám"
-      kich_co: ['S','M','L','XL']
+      kich_co: ["S", "M", "L", "XL"]
       kieu_dang: "Form suông"
       gia: 1789000
       mo_ta: 'Thanh lịch và sang trọng, bộ suit đen 2 mảnh là lựa chọn lý tưởng cho các dịp trang trọng hoặc sự kiện ban đêm'
     - id: 2
       ten: "Classic Fit TGS352"
       mau_sac: "Xám trắng gân"
-      kich_co: ['S','M','L','XL']
+      kich_co: ["S", "M", "L", "XL"]
       kieu_dang: "Form suông"
       gia: 1589000
       mo_ta: 'Hiện đại và tinh tế, bộ suit xám 2 mảnh phù hợp cho cả môi trường công sở lẫn những buổi gặp gỡ xã hội. Màu sắc trung tính dễ dàng kết hợp với nhiều loại phụ kiện.'
     - id: 3
       ten: "Classic Fit TGS302"
       mau_sac: "Xám tro "
-      kich_co: ['S','M','L','XL']
+      kich_co: ["S", "M", "L", "XL"]
       kieu_dang: "Form suông"
       gia: 1098300
       mo_ta: 'Hiện đại và tinh tế, bộ suit xám 2 mảnh phù hợp cho cả môi trường công sở lẫn những buổi gặp gỡ xã hội. Màu sắc trung tính dễ dàng kết hợp với nhiều loại phụ kiện.'
     - id: 4
       ten: "Classic Fit TGS367"
       mau_sac: "Xanh đậm sọc"
-      kich_co: ['S','M','L','XL']
+      kich_co: ["S", "M", "L", "XL"]
       kieu_dang: "Form suông"
       gia: 1789000
       mo_ta: 'Tươi mới và phong cách, bộ suit xanh 2 mảnh mang đến vẻ ngoài hiện đại nhưng vẫn lịch lãm.'
     - id: 5
       ten: Classic Fit TGS361
       mau_sac: "Xanh gân"
-      kich_co: ['S','M','L','XL']
+      kich_co: ["S", "M", "L", "XL"]
       kieu_dang: "Form suông"
       gia: 1769000
       mo_ta: 'Tươi mới và phong cách, bộ suit xanh 2 mảnh mang đến vẻ ngoài hiện đại nhưng vẫn lịch lãm.'
   suit_ba_manh:
     - id: 1
-      ten: 'Modern Fit TGS348'
-      mau_sac: 'Đen'
-      kich_co: ['S','M','L','XL']
+      ten: "Modern Fit TGS348"
+      mau_sac: "Đen"
+      kich_co: ["S", "M", "L", "XL"]
       kieu_dang: "Form slimfit"
       gia: 1739000
       mo_ta: 'Đẳng cấp và sang trọng, bộ suit đen 3 mảnh bao gồm áo vest, quần tây, và áo ghi-lê, mang đến vẻ ngoài hoàn hảo cho các sự kiện trang trọng'
     - id: 2
-      ten: 'Modern Fit TGS379'
-      mau_sac: 'Xám Đậm'
-      kich_co: ['S','M','L','XL']
+      ten: "Modern Fit TGS379"
+      mau_sac: "Xám Đậm"
+      kich_co: ["S", "M", "L", "XL"]
       kieu_dang: "Form slimfit"
       gia: 1889000
       mo_ta: 'Tinh tế và linh hoạt, kết hợp giữa hiện đại và truyền thống, suit xám 3 mảnh là lựa chọn phù hợp cho các sự kiện từ công sở đến tiệc tùng.'
     - id: 3
-      ten: 'Modern Fit TGS371'
-      mau_sac: 'Xám Xanh'
-      kich_co: ['S','M','L','XL']
+      ten: "Modern Fit TGS371"
+      mau_sac: "Xám Xanh"
+      kich_co: ["S", "M", "L", "XL"]
       kieu_dang: "Form slimfit"
       gia: 1839000
       mo_ta: 'Tinh tế và linh hoạt, kết hợp giữa hiện đại và truyền thống, suit xám 3 mảnh là lựa chọn phù hợp cho các sự kiện từ công sở đến tiệc tùng.'
     - id: 4
-      ten: 'Modern Fit TGS377'
-      mau_sac: 'Xanh Đen'
-      kich_co: ['S','M','L','XL']
+      ten: "Modern Fit TGS377"
+      mau_sac: "Xanh Đen"
+      kich_co: ["S", "M", "L", "XL"]
       kieu_dang: "Form slimfit"
       gia: 2239000
       mo_ta: 'Phong cách và trẻ trung, màu xanh thể hiện sự sáng tạo và tươi mới, mang đến phong cách cá nhân ấn tượng, bộ suit xanh 3 mảnh giúp người mặc nổi bật trong các sự kiện'
     - id: 5
-      ten: 'Modern Fit TGS360'
-      mau_sac: 'Xanh Navy'
-      kich_co: ['S','M','L','XL']
+      ten: "Modern Fit TGS360"
+      mau_sac: "Xanh Navy"
+      kich_co: ["S", "M", "L", "XL"]
       kieu_dang: "Form slimfit"
       gia: 1789000
       mo_ta: 'Phong cách và trẻ trung, màu xanh thể hiện sự sáng tạo và tươi mới, mang đến phong cách cá nhân ấn tượng, bộ suit xanh 3 mảnh giúp người mặc nổi bật trong các sự kiện'
@@ -75,106 +75,106 @@ Suit_vest:
 
 ghile:
   - id: 1
-    ten: 'ZVQ372'
+    ten: "ZVQ372"
     mau_sac: "Đen sọc xước xám"
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 'áo gile'
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang: "áo gile"
     gia: 600000
     mo_ta: 'Sang trọng và tinh tế, màu đen mang lại sự đẳng cấp và dễ dàng kết hợp với nhiều phong cách và màu sắc khác nhau.'
   - id: 2
-    ten: 'ZVQ495'
+    ten: "ZVQ495"
     mau_sac: "Ghi sáng"
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 'áo gile'
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang: "áo gile"
     gia: 1300000
     mo_ta: 'Hiện đại và thời thượng, áo ghi-lê màu ghi mang lại vẻ ngoài nhã nhặn'
   - id: 3
-    ten: 'ZVQ376'
+    ten: "ZVQ376"
     mau_sac: "Xám trắng gân"
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 'áo gile'
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang: "áo gile"
     gia: 600000
     mo_ta: 'Lịch lãm và đa dụng, mang đến vẻ ngoài hiện đại, chuyên nghiệp'
   - id: 4
-    ten: 'ZVQ345'
+    ten: "ZVQ345"
     mau_sac: "Xanh đậm sọc"
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 'áo gile' 
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang: "áo gile"
     gia: 650000
     mo_ta: 'Phong cách và nổi bật, màu xanh thể hiện sự trẻ trung và sáng tạo'
   - id: 5
-    ten: 'ZVF176'
+    ten: "ZVF176"
     mau_sac: "Xanh gân"
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 'áo gile'
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang: "áo gile"
     gia: 650000
     mo_ta: 'Phong cách và nổi bật, màu xanh thể hiện sự trẻ trung và sáng tạo'
 
 
 ao_so_mi:
   - id: 1
-    ten: 'Áo sơ mi - AS230608D'
+    ten: "Áo sơ mi - AS230608D"
     mau_sac: "Sọc kẻ xanh"
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 'Form slimfit'
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang: "Form slimfit"
     gia: 610000
     mo_ta: 'Áo sơ mi dài tay, kiểu dáng slimfit dễ mặc, hợp form dáng. Màu sắc và kiểu dáng trẻ trung, kiểu dáng hiện đại, dễ phối đồ.'
   - id: 2
-    ten: 'Áo sơ mi - AR230332DT'
+    ten: "Áo sơ mi - AR230332DT"
     mau_sac: "Trắng"
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 'Form Regular Fit'
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang: "Form Regular Fit"
     gia: 420000
     mo_ta: Áo sơ mi dài tay, kiểu dáng Regular Fit dễ mặc, hợp form dáng. Màu sắc và kiểu dáng trẻ trung, kiểu dáng hiện đại, dễ phối đồ.
   - id: 3
-    ten: 'Áo sơ mi - AS23409D'
+    ten: "Áo sơ mi - AS23409D"
     mau_sac: "Trắng có đốm"
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 'Form slimfit'
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang: "Form slimfit"
     gia: 598000
     mo_ta: 'Áo sơ mi dài tay, kiểu dáng slimfit dễ mặc, hợp form dáng. Màu sắc và kiểu dáng trẻ trung, kiểu dáng hiện đại, dễ phối đồ.'
 
 
 giay:
   - id: 1
-    ten: 'SIR CLASSIC LOAFER'
+    ten: "SIR CLASSIC LOAFER"
     mau_sac: "Đen"
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang:
     gia: 1750000
     mo_ta: 'Tôn vinh sự thoải mái và tối giản, Sir Classic Loafer sở hữu gam màu trung tính giúp dễ dàng phối đồ. Đây sẽ là lựa chọn hàng đầu dành cho bạn khi có nhu cầu xuống phố hoặc đi làm.'
   - id: 2
-    ten: 'SIR CLASSIC LOAFER'
+    ten: "SIR CLASSIC LOAFER"
     mau_sac: "Nâu"
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang:
     gia: 1750000
     mo_ta: 'Tôn vinh sự thoải mái và tối giản, Sir Classic Loafer sở hữu gam màu trung tính giúp dễ dàng phối đồ. Đây sẽ là lựa chọn hàng đầu dành cho bạn khi có nhu cầu xuống phố hoặc đi làm.'
   - id: 3
-    ten: 'SIR CLASSIC LOAFER'
+    ten: "SIR CLASSIC LOAFER"
     mau_sac: "Nâu sáng"
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang:
     gia: 1750000
     mo_ta: 'Tôn vinh sự thoải mái và tối giản, Sir Classic Loafer sở hữu gam màu trung tính giúp dễ dàng phối đồ. Đây sẽ là lựa chọn hàng đầu dành cho bạn khi có nhu cầu xuống phố hoặc đi làm.'
   - id: 4
     ten: 'NEWGEN LOAFER'
     mau_sac: "Đen bóng"
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 'loafer'
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang: "loafer"
     gia: 1850000
     mo_ta: 'NEWGEN LOAFER được cải tiến với thiết kế tối giản và trẻ trung, các quý ông có thể linh hoạt sử dụng chúng trong bất cứ trang phục nào, từ phong cách thanh lịch với quần tây hay cá tính với những chiếc trouser.'
   - id: 5
-    ten: 'COUNTRYMAN DERBY'
+    ten: "COUNTRYMAN DERBY"
     mau_sac: "Đen"
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang:
     gia: 1850000
     mo_ta: 'form dáng dễ mang, rất vừa vặn cho người Việt, dễ dàng phối hợp với nhiều trang phục từ quần Tây và áo sơ mi thanh lịch cho đến phong cách Casual trẻ trung, đầy cá tính.'
   - id: 6
-    ten: 'COUNTRYMAN DERBY'
+    ten: "COUNTRYMAN DERBY"
     mau_sac: "Nâu"
-    kich_co: ['S','M','L','XL']
+    kich_co: ["S", "M", "L", "XL"]
     kieu_dang:
     gia: 1850000
     mo_ta: 'form dáng dễ mang, rất vừa vặn cho người Việt, dễ dàng phối hợp với nhiều trang phục từ quần Tây và áo sơ mi thanh lịch cho đến phong cách Casual trẻ trung, đầy cá tính.'
@@ -182,10 +182,10 @@ giay:
 
 quan_au:
   - id: 1
-    ten: 'QACOL515'
-    mau_sac: 'Đen'
-    kich_co: ['S','M','L','XL']
-    kieu_dang: 'Slim crop'
+    ten: "QACOL515"
+    mau_sac: "Đen"
+    kich_co: ["S", "M", "L", "XL"]
+    kieu_dang: "Slim crop"
     gia: 420000
     mo_ta: 'Quần dài âu trượt cạp dáng slim crop form trẻ trung, lịch sự. Chi tiết thiết kế trượt dùng cho nhiều dáng cơ thể – bụng nhỏ – bụng vừa – bụng to. Các đường may tinh tế khiến quần có form dáng quốc dân đa dụng.'
   - id: 2
@@ -213,34 +213,34 @@ quan_au:
 phu_kien:
   ca_vat:
     - id: 1
-      ten: 'Caravat đen sọc ẩn'
-      mau_sac: 'Đen'
+      ten: "Caravat đen sọc ẩn"
+      mau_sac: "Đen"
       gia: 249000
       mo_ta: 'Cổ điển và đa dạng, cà vạt là phụ kiện không thể thiếu để tạo điểm nhấn lịch lãm cho trang phục nam giới, giúp thể hiện phong cách cá nhân và dễ dàng phối hợp với suit hoặc sơ mi.'
     - id: 2
-      ten: 'Caravat đỏ đô ô vuông nhỏ TGC364'
-      mau_sac: 'Đỏ đô'
+      ten: "Caravat đỏ đô ô vuông nhỏ TGC364"
+      mau_sac: "Đỏ đô"
       gia: 249000
       mo_ta: 'Cổ điển và đa dạng, cà vạt là phụ kiện không thể thiếu để tạo điểm nhấn lịch lãm cho trang phục nam giới, giúp thể hiện phong cách cá nhân và dễ dàng phối hợp với suit hoặc sơ mi.'
     - id: 3
-      ten: 'Caravat xanh đen họa tiết nhỏ TGC358'
-      mau_sac: 'Xanh đen'
+      ten: "Caravat xanh đen họa tiết nhỏ TGC358"
+      mau_sac: "Xanh đen"
       gia: 249000
       mo_ta: 'Cổ điển và đa dạng, cà vạt là phụ kiện không thể thiếu để tạo điểm nhấn lịch lãm cho trang phục nam giới, giúp thể hiện phong cách cá nhân và dễ dàng phối hợp với suit hoặc sơ mi.'
   ghim:
     - id: 1
-      ten: 'TGP99 - Ghim cài họa tiết hươu Bạc'
-      mau_sac: 'Bạc'
+      ten: "TGP99 - Ghim cài họa tiết hươu Bạc"
+      mau_sac: "Bạc"
       gia: 129000
       mo_ta: 'Tinh tế và sang trọng, thiết kế nhỏ gọn, thể hiện cá tính hoặc gắn liền với một biểu tượng đặc biệt, tạo nên điểm nhấn trang trọng cho bộ trang phục.'
     - id: 2
-      ten: 'TGP103 - Ghim cài họa tiết mỏ neo Bạc'
-      mau_sac: 'Bạc'
+      ten: "TGP103 - Ghim cài họa tiết mỏ neo Bạc"
+      mau_sac: "Bạc"
       gia: 129000
       mo_ta: 'Tinh tế và sang trọng, thiết kế nhỏ gọn, thể hiện cá tính hoặc gắn liền với một biểu tượng đặc biệt, tạo nên điểm nhấn trang trọng cho bộ trang phục.'
     - id: 3
-      ten: 'TGP97 - Ghim cài sư tử đôi vàng'
-      mau_sac: 'Vàng'
+      ten: "TGP97 - Ghim cài sư tử đôi vàng"
+      mau_sac: "Vàng"
       gia: 129000
       mo_ta: 'Tinh tế và sang trọng, thiết kế nhỏ gọn, thể hiện cá tính hoặc gắn liền với một biểu tượng đặc biệt, tạo nên điểm nhấn trang trọng cho bộ trang phục.'
     - id: 4
@@ -250,29 +250,29 @@ phu_kien:
       mo_ta: 'Tinh tế và sang trọng, thiết kế nhỏ gọn, thể hiện cá tính hoặc gắn liền với một biểu tượng đặc biệt, tạo nên điểm nhấn trang trọng cho bộ trang phục.'
   kep_ca_vat:
     - id: 1
-      ten: 'KẸP CARAVAT TGKI49'
-      mau_sac: 'Bạc'
+      ten: "KẸP CARAVAT TGKI49"
+      mau_sac: "Bạc"
       gia: 99000
       mo_ta: 'Thực dụng và thanh lịch, chất liệu kim loại sáng bóng, thường có thiết kế đơn giản nhưng sang trọng.'
     - id: 2
-      ten: 'KẸP CARAVAT TGKI51'
-      mau_sac: 'Bạc'
+      ten: "KẸP CARAVAT TGKI51"
+      mau_sac: "Bạc"
       gia: 99000
       mo_ta: 'Thực dụng và thanh lịch, chất liệu kim loại sáng bóng, thường có thiết kế đơn giản nhưng sang trọng.'
     - id: 3
-      ten: 'KẸP CARAVAT TGKI52'
-      mau_sac: 'Bạc'
+      ten: "KẸP CARAVAT TGKI52"
+      mau_sac: "Bạc"
       gia: 99000
       mo_ta: 'Thực dụng và thanh lịch, chất liệu kim loại sáng bóng, thường có thiết kế đơn giản nhưng sang trọng.'
     - id: 4
-      ten: 'KẸP CARAVAT TGKI54'
-      mau_sac: 'Bạc'
+      ten: "KẸP CARAVAT TGKI54"
+      mau_sac: "Bạc"
       gia: 99000
       mo_ta: 'Thực dụng và thanh lịch, chất liệu kim loại sáng bóng, thường có thiết kế đơn giản nhưng sang trọng.'
   no:
     - id: 1
-      ten: 'Nơ Đeo Cổ Nam NBDE013 '
-      mau_sac: 'Đen'
+      ten: "Nơ Đeo Cổ Nam NBDE013 "
+      mau_sac: "Đen"
       gia: 65000
       mo_ta: 'Phong cách và cá tính, mang lại vẻ ngoài trẻ trung và phá cách'
     - id: 2 
@@ -281,23 +281,23 @@ phu_kien:
       gia: 35000
       mo_ta: 'Phong cách và cá tính, mang lại vẻ ngoài trẻ trung và phá cách'
     - id: 3
-      ten: 'Nơ Tự Thắt NTDE001'
-      mau_sac: 'Đen'
+      ten: "Nơ Tự Thắt NTDE001"
+      mau_sac: "Đen"
       gia: 275000
       mo_ta: 'Phong cách và cá tính, mang lại vẻ ngoài trẻ trung và phá cách'
   khan_vuong:
-    - id: 1 
-      ten: 'TGK20 - Khăn xanh dương họa tiết'
-      mau_sac: 'Xanh dương'
+    - id: 1
+      ten: "TGK20 - Khăn xanh dương họa tiết"
+      mau_sac: "Xanh dương"
       gia: 99000
       mo_ta: 'Tinh tế và trang nhã, được làm từ vải satin với nhiều kiểu gấp khác nhau giúp thể hiện gu thẩm mỹ và phong cách cá nhân.'
     - id: 2
-      ten: 'TGK119 - Khăn xanh lá họa tiết sao'
-      mau_sac: 'Xanh lá'
+      ten: "TGK119 - Khăn xanh lá họa tiết sao"
+      mau_sac: "Xanh lá"
       gia: 99000
       mo_ta: 'Tinh tế và trang nhã, được làm từ vải satin với nhiều kiểu gấp khác nhau giúp thể hiện gu thẩm mỹ và phong cách cá nhân.'
     - id: 3
-      ten: 'KHĂN CÀI TÚI ÁO VEST TGK110'
-      mau_sac: 'Trắng'
+      ten: "KHĂN CÀI TÚI ÁO VEST TGK110"
+      mau_sac: "Trắng"
       gia: 99000
       mo_ta: 'Tinh tế và trang nhã, được làm từ vải satin với nhiều kiểu gấp khác nhau giúp thể hiện gu thẩm mỹ và phong cách cá nhân.'
