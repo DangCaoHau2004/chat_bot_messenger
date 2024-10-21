@@ -6,10 +6,14 @@ tu_van:
     answer: "Hiện tại shop mình đang rao bán một số loại trang phục: SuitVest, áo gile, áo sơ mi, quần âu, giày; ngoài ra còn có các phụ kiện: cà vạt, ghim cài, kẹp cà vạt, nơ, khăn vuông."
     
   - response: bao_hanh
-    answer: "Shop cung cấp chính sách bảo hành trong vòng 6 tháng (kể từ ngày mua) đối với các loại trang phục, 3 tháng (kể từ ngày mua) đối với các loại phụ kiện"
+    answer: " Để đảm bảo quyền lợi cho quý khách, shop cung cấp chính sách bảo hành như sau:
+            - Thời gian bảo hành: Shop cung cấp chính sách bảo hành trong vòng 6 tháng (kể từ ngày mua) đối với các loại trang phục, 3 tháng (kể từ ngày mua) đối với các loại phụ kiện.
+            - Điều kiện bảo hành: Sản phẩm còn trong thời gian bảo hành và có hóa đơn mua hàng.
+            - Quy Trình Bảo Hành: Khách hàng vui lòng mang sản phẩm cùng hóa đơn đến cửa hàng để kiểm tra. Sau khi kiểm tra, nếu sản phẩm thuộc diện bảo hành, chúng tôi sẽ sửa chữa miễn phí hoặc thay thế bằng sản phẩm tương tự nếu không thể sửa chữa được.
+            - Thời gian xử lý bảo hành: Từ 7 đến 10 ngày làm việc kể từ ngày tiếp nhận sản phẩm."
 
   - respone: van_chuyen
-    answer: "Shop hỗ trợ giao hàng trên toàn quốc qua các đơn vị vận chuyển uy tín như 'Giao Hàng Nhanh', 'Giao Hàng Tiết Kiệm' , 'Viettel Post'. "
+    answer: "Shop hỗ trợ giao hàng trên toàn quốc qua các đơn vị vận chuyển uy tín như 'Giao Hàng Nhanh', 'Giao Hàng Tiết Kiệm' , 'Viettel Post'."
 
   - response: uu_dai
     answer: "Hiện tại shop đang có các chương trình ưu đãi: 
@@ -18,4 +22,4 @@ tu_van:
             - Miễn phi vẫn chuyển với những đơn hàng từ 15.000.000 trở lên"
 
   - response: thong_tin_shop
-    answer: "Thế Giới Vest là điểm đến hàng đầu cho những quý ông yêu thích phong cách lịch lãm và đẳng cấp, chuyên cung cấp các sản phẩm vest cao cấp và phụ kiện thời trang, giúp quý khách hoàn thiện phong cách thời trang sang trọng."
+    answer: "Thế Giới Vest là điểm đến hàng đầu cho những quý ông yêu thích phong cách lịch lãm và đẳng cấp, chuyên cung cấp các sản phẩm vest cao cấp và phụ kiện thời trang, giúp quý khách hoàn thiện phong cách thời trang sang trọng. Chúng tôi cam kết chỉ mang đến những sản phẩm được làm từ chất liệu cao cấp với đường may tỉ mỉ, tạo nên sự thoải mái và vẻ ngoài sang trọng cho người mặc."
