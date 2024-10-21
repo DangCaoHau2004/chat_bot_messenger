@@ -1,18 +1,23 @@
 tu_van: 
   - response: kich_co
     answer: "Hiện tại bên shop mình đang có các size S, M, L, XL cho các sản phẩm trang phục. "
+
   - response: san_pham 
     answer: "Hiện tại shop mình đang rao bán một số loại trang phục: SuitVest, áo gile, áo sơ mi, quần âu, giày; ngoài ra còn có các phụ kiện: cà vạt, ghim cài, kẹp cà vạt, nơ, khăn vuông."
+    
   - response: bao_hanh
     answer: "Shop cung cấp chính sách bảo hành trong vòng 6 tháng (kể từ ngày mua) đối với các loại trang phục, 3 tháng (kể từ ngày mua) đối với các loại phụ kiện"
+
   - respone: van_chuyen
-    answer: ""
+    answer: "Shop hỗ trợ giao hàng trên toàn quốc qua các đơn vị vận chuyển uy tín như 'Giao Hàng Nhanh', 'Giao Hàng Tiết Kiệm' , 'Viettel Post'. "
 
-van_chuyen:
+  - response: uu_dai
+    answer: "Hiện tại shop đang có các chương trình ưu đãi: 
+            - Giảm 5% cho tất cả các sản phẩm từ ngày 27/12/2024 đến ngày 1/1/2025.
+            - Với mỗi đơn hàng mua suitvest, khách hàng sẽ được tặng một cà vạt miễn phí.
+            - Miễn phi vẫn chuyển với những đơn hàng từ 15.000.000 trở lên"
 
+  - response: thong_tin_shop
+    answer: "Thế Giới Vest là điểm đến hàng đầu cho những quý ông yêu thích phong cách lịch lãm và đẳng cấp, chuyên cung cấp các sản phẩm vest cao cấp và phụ kiện thời trang, giúp quý khách hoàn thiện phong cách thời trang sang trọng."
 
-uu_dai:
-
-
-thong_tin_shop:
 
