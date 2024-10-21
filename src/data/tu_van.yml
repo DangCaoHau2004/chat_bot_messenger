@@ -1,0 +1,18 @@
+tu_van: 
+  - response: kich_co
+    answer: "Hiện tại bên shop mình đang có các size S, M, L, XL cho các sản phẩm trang phục. "
+  - response: san_pham 
+    answer: "Hiện tại shop mình đang rao bán một số loại trang phục: SuitVest, áo gile, áo sơ mi, quần âu, giày; ngoài ra còn có các phụ kiện: cà vạt, ghim cài, kẹp cà vạt, nơ, khăn vuông."
+  - response: bao_hanh
+    answer: "Shop cung cấp chính sách bảo hành trong vòng 6 tháng (kể từ ngày mua) đối với các loại trang phục, 3 tháng (kể từ ngày mua) đối với các loại phụ kiện"
+  - respone: van_chuyen
+    answer: ""
+
+van_chuyen:
+
+
+uu_dai:
+
+
+thong_tin_shop:
+
