@@ -1,0 +1,43 @@
+chao_hoi:
+  - "Xin chào! Có ai ở đây không?"
+
+tu_van:
+  - "Mình cần mua suitvest"
+  - "Mình cần mua áo sơ mi"
+  - "Mình cần mua áo gile"
+  - "Mình cần mua quần âu"
+  - "Mình cần mua giày"
+  - "Mình cần mua phụ kiện"
+
+id_1_suit_hai_manh:
+  - "Mình cần một mẫu áo suitvest hai mảnh thanh lịch và sang trọng"
+
+id_2_suit_hai_manh:
+  - "Mình cần một mẫu áo suitvest hai mảnh hiện đại và tinh tế"
+
+id_3_suit_hai_manh:
+  - "Mình cần một mẫu áo suitvest hai mảnh hiện đại và tinh tế"
+
+id_4_suit_hai_manh:
+  - "Mình cần một mẫu áo suitvest hai mảnh tươi mới và phong cách"
+
+id_5_suit_hai_manh:
+  - "Mình cần một mẫu áo suitvest hai mảnh tươi mới và phong cách"
+
+id_1_suit_ba_manh:
+  - "Mình cần một mẫu áo suitvest ba mảnh Đẳng cấp và sang trọng"
+
+id_2_suit_ba_manh:
+  - "Mình cần một mẫu áo suitvest ba mảnh tinh tế và linh hoạt"
+
+id_3_suit_ba_manh:
+  - "Mình cần một mẫu áo suitvest ba mảnh tinh tế và linh hoạt"
+
+id_4_suit_ba_manh:
+  - "Mình cần một mẫu áo suitvest ba mảnh phong cách và trẻ trung"
+
+id_5_suit_ba_manh:
+  - "Mình cần một mẫu áo suitvest ba mảnh phong cách và trẻ trung"
+
+id_1_ghile:
+  - "Mình cần một mẫu áo suitvest ba mảnh phong cách và trẻ trung"
