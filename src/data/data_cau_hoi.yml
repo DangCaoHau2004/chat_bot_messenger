@@ -2,7 +2,7 @@ chao_hoi:
   - "Xin chào! Có ai ở đây không?"
 
 tu_van:
-  - "Mình cần mua suitvest"
+  - "Mình cần mua vest"
   - "Mình cần mua áo sơ mi"
   - "Mình cần mua áo gile"
   - "Mình cần mua quần âu"
@@ -10,34 +10,48 @@ tu_van:
   - "Mình cần mua phụ kiện"
 
 id_1_suit_hai_manh:
-  - "Mình cần một mẫu áo suitvest hai mảnh thanh lịch và sang trọng"
+  - "Mình cần một mẫu áo vest hai mảnh thanh lịch và sang trọng"
+  - "Mình cần một bộ vest cổ điển"
+  - "Mình cần bộ vest thanh lịch"
+  - "Mình muốn mua bộ vest hai mảnh"
+  - "Mình muốn mua bộ vest 2 mảnh sang trọng"
+  - "Mình cần một bộ vest sang trọng giá rẻ"
+  - "Minh cần một bộ vest cho đám cưới"
+  - "Mình cần mua một bộ vest cho sự kiện sắp tới."
+  - "Tôi cần một bộ vest lịch sự để đi làm."
+  - "Tôi muốn đặt mua một bộ vest ngay bây giờ."
+  - "Tôi muốn mua một bộ vest size M."
+  - "Mình thích bộ vest có kiểu dáng hiện đại."
+  - "Tôi muốn mua vest nhưng phải chất liệu thoáng mát."
+  - "Bên bạn có bán vest không? Mình cần mua một bộ."
+  - "Mình muốn mua một bộ vest, bên bạn có mẫu nào đẹp không?"
 
 id_2_suit_hai_manh:
-  - "Mình cần một mẫu áo suitvest hai mảnh hiện đại và tinh tế"
+  - "Mình cần một mẫu áo vest hai mảnh hiện đại và tinh tế"
 
 id_3_suit_hai_manh:
-  - "Mình cần một mẫu áo suitvest hai mảnh hiện đại và tinh tế"
+  - "Mình cần một mẫu áo vest hai mảnh hiện đại và tinh tế"
 
 id_4_suit_hai_manh:
-  - "Mình cần một mẫu áo suitvest hai mảnh tươi mới và phong cách"
+  - "Mình cần một mẫu áo vest hai mảnh tươi mới và phong cách"
 
 id_5_suit_hai_manh:
-  - "Mình cần một mẫu áo suitvest hai mảnh tươi mới và phong cách"
+  - "Mình cần một mẫu áo vest hai mảnh tươi mới và phong cách"
 
 id_1_suit_ba_manh:
-  - "Mình cần một mẫu áo suitvest ba mảnh Đẳng cấp và sang trọng"
+  - "Mình cần một mẫu áo vest ba mảnh Đẳng cấp và sang trọng"
 
 id_2_suit_ba_manh:
-  - "Mình cần một mẫu áo suitvest ba mảnh tinh tế và linh hoạt"
+  - "Mình cần một mẫu áo vest ba mảnh tinh tế và linh hoạt"
 
 id_3_suit_ba_manh:
-  - "Mình cần một mẫu áo suitvest ba mảnh tinh tế và linh hoạt"
+  - "Mình cần một mẫu áo vest ba mảnh tinh tế và linh hoạt"
 
 id_4_suit_ba_manh:
-  - "Mình cần một mẫu áo suitvest ba mảnh phong cách và trẻ trung"
+  - "Mình cần một mẫu áo vest ba mảnh phong cách và trẻ trung"
 
 id_5_suit_ba_manh:
-  - "Mình cần một mẫu áo suitvest ba mảnh phong cách và trẻ trung"
+  - "Mình cần một mẫu áo vest ba mảnh phong cách và trẻ trung"
 
 id_1_ghile:
   - "Mình cần một mẫu áo ghile Sang trọng và tinh tế"
