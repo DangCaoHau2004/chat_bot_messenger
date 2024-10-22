@@ -40,4 +40,101 @@ id_5_suit_ba_manh:
   - "Mình cần một mẫu áo suitvest ba mảnh phong cách và trẻ trung"
 
 id_1_ghile:
-  - "Mình cần một mẫu áo suitvest ba mảnh phong cách và trẻ trung"
+  - "Mình cần một mẫu áo ghile Sang trọng và tinh tế"
+
+id_2_ghile:
+  - "Mình cần một mẫu áo ghile Hiện đại và thời thượng"
+
+id_3_ghile:
+  - "Mình cần một mẫu áo ghile Lịch lãm và đa dụng"
+
+id_4_ghile:
+  - "Mình cần một mẫu áo ghile Phong cách và nổi bật"
+
+id_5_ghile:
+  - "Mình cần một mẫu áo ghile Phong cách và nổi bật"
+
+id_1_ao_so_mi:
+  - "Mình cần một mẫu áo sơ mi dài tay"
+
+id_2_ao_so_mi:
+  - "Mình cần một mẫu áo sơ mi dài tay"
+
+id_3_ao_so_mi:
+  - "Mình cần một mẫu áo sơ mi dài tay"
+
+id_1_giay:
+  - "Mình cần một mẫu giày"
+
+id_2_giay:
+  - "Mình cần một mẫu giày"
+
+id_3_giay:
+  - "Mình cần một mẫu giày"
+
+id_4_giay:
+  - "Mình cần một mẫu giày"
+
+id_5_giay:
+  - "Mình cần một mẫu giày"
+
+id_6_giay:
+  - "Mình cần một mẫu giày"
+
+id_1_quan:
+  - "Mình cần một mẫu quần âu"
+
+id_2_quan:
+  - "Mình cần một mẫu quần âu"
+
+id_3_quan:
+  - "Mình cần một mẫu quần âu"
+
+id_4_quan:
+  - "Mình cần một mẫu quần âu"
+
+id_1_phu_kien:
+  ca_vat:
+    id_1_ca_vat:
+      - "Mình cần một một chiếc cà vạt"
+    id_2_ca_vat:
+      - "Mình cần một một chiếc cà vạt"
+    id_3_ca_vat:
+      - "Mình cần một một chiếc cà vạt"
+  
+  ghim:
+    id_1_ghim:
+      - "Mình cần một chiếc ghim cài"
+    id_2_ghim:
+      - "Mình cần một chiếc ghim cài"
+    id_3_ghim:
+      - "Mình cần một chiếc ghim cài"
+    id_4_ghim:
+      - "Mình cần một chiếc ghim cài"
+    
+  kep_ca_vat:
+    id_1_ca_vat:
+      - "Mình cần một chiếc kẹp"  
+    id_2_ca_vat:
+      - "Mình cần một chiếc kẹp"  
+    id_3_ca_vat:
+      - "Mình cần một chiếc kẹp"  
+    id_4_ca_vat:
+      - "Mình cần một chiếc kẹp"  
+  
+  no:
+    id_1_no:
+      - "Mình cần một chiếc nơ"
+    id_2_no:
+      - "Mình cần một chiếc nơ"
+    id_3_no:
+      - "Mình cần một chiếc nơ"
+  
+  khan_vuong:
+    id_1_khan_vuong:
+      - "Mình cần một chiếc khăn vuông"
+    id_2_khan_vuong:
+      - "Mình cần một chiếc khăn vuông"
+    id_3_khan_vuong:
+      - "Mình cần một chiếc khăn vuông"
+    
