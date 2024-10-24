@@ -1,19 +1,19 @@
-data, label
-"Tôi cần được tư vấn về kích cỡ", kich_co
-"Tôi muốn hỏi về kích cỡ", kich_co
-"kích cỡ", kich_co
-"tôi cần được tư vấn về sản phẩm", san_pham 
-"Tôi muốn hỏi về sản phẩm", san_pham
-"sản phẩm", san_pham
-"tôi cần được tư vấn về bảo hành", bao_hanh
-"Tôi muốn hỏi về bảo hành", bao_hanh
-"bảo hành", bao_hanh
-"tôi cần được tư vấn về vận chuyển", van_chuyen
-"Tôi muốn hỏi về vận chuyển", van_chuyen
-"vận chuyển", van_chuyen
-"tôi cần được tư vấn về ưu đãi", uu_dai
-"Tôi muốn hỏi về ưu đãi", uu_dai
-"ưu đãi", uu_dai
-"tôi cần được tư vấn về thông tin shop", thong_tin_shop
-"Tôi muốn hỏi về thông tin shop", thong_tin_shop
-"thông tin shop", thong_tin_shop
+data,label
+"Tôi cần được tư vấn về kích cỡ",kich_co
+"Tôi muốn hỏi về kích cỡ",kich_co
+"kích cỡ",kich_co
+"tôi cần được tư vấn về sản phẩm",san_pham 
+"Tôi muốn hỏi về sản phẩm",san_pham
+"sản phẩm",san_pham
+"tôi cần được tư vấn về bảo hành",bao_hanh
+"Tôi muốn hỏi về bảo hành",bao_hanh
+"bảo hành",bao_hanh
+"tôi cần được tư vấn về vận chuyển",van_chuyen
+"Tôi muốn hỏi về vận chuyển",van_chuyen
+"vận chuyển",van_chuyen
+"tôi cần được tư vấn về ưu đãi",uu_dai
+"Tôi muốn hỏi về ưu đãi",uu_dai
+"ưu đãi",uu_dai
+"tôi cần được tư vấn về thông tin shop",thong_tin_shop
+"Tôi muốn hỏi về thông tin shop",thong_tin_shop
+"thông tin shop",thong_tin_shop
