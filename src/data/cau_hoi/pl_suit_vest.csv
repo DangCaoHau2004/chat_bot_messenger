@@ -5,7 +5,6 @@ mình cần mua bộ vest màu xám,0,1,1,0,1,0
 mình muốn mua bộ vest màu xanh,0,0,0,1,0,1
 mình muốn mua bộ vest màu đen,1,0,0,1,0,0
 mình muốn mua bộ vest màu xám,0,1,1,0,1,0
-mình cần bộ vest màu xanh,0,0,0,1,0,1
 mình cần mua bộ vest sang trọng,1,0,0,1,0,0
 mình cần mua bộ vest hiện đại,0,1,1,0,0,0
 mình cần mua bộ vest tinh tế,0,1,1,0,1,0
@@ -26,6 +25,9 @@ mình cần mua bộ vest đi sự kiện,1,1,1,1,1,1
 mình thích màu tối giản nên chọn bộ nào,1,1,1,1,0,0
 mình thích màu nổi nên chọn bộ nào,0,1,1,0,1,1
 mình cần bộ mặc hàng ngày thì chọn bộ nào,0,1,1,0,0,0
+mình muốn mua bộ vest giá rẻ nhất,0,0,1,0,0,0
+mình muốn mua bộ vest giá đắt nhất,0,0,0,0,1,0
+mình muốn mua bộ vest giá trung,1,0,0,1,0,0
 tôi cần mua bộ vest màu xanh,0,0,0,1,0,1
 tôi cần mua bộ vest màu đen,1,0,0,1,0,0
 tôi cần mua bộ vest màu xám,0,1,1,0,1,0
@@ -52,5 +54,8 @@ tôi cần mua bộ vest đi sự kiện,1,1,1,1,1,1
 tôi thích màu tối giản nên chọn bộ nào,1,1,1,1,0,0
 tôi thích màu nổi nên chọn bộ nào,0,1,1,0,1,1
 tôi cần bộ mặc hàng ngày thì chọn bộ nào,0,1,1,0,0,0
+tôi muốn mua bộ vest giá rẻ nhất,0,0,1,0,0,0
+tôi muốn mua bộ vest giá đắt nhất,0,0,0,0,1,0
+tôi muốn mua bộ vest giá trung,1,0,0,1,0,0
 chất liệu mặc thoáng mát,1,1,1,0,0,0
 chất liệu mặc ôm vừa vặn,0,0,0,1,1,1

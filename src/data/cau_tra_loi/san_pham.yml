@@ -47,35 +47,35 @@ ghile:
     ten: "ZVQ372"
     mau_sac: "Đen sọc xước xám"
     kich_co: ["S", "M", "L", "XL"]
-    kieu_dang: "áo gile"
+    kieu_dang: "áo ghile"
     gia: 600000
     mo_ta: "Sang trọng và tinh tế, màu đen mang lại sự đẳng cấp và dễ dàng kết hợp với nhiều phong cách và màu sắc khác nhau."
   - id: 2
     ten: "ZVQ495"
     mau_sac: "Ghi sáng"
     kich_co: ["S", "M", "L", "XL"]
-    kieu_dang: "áo gile"
+    kieu_dang: "áo ghile"
     gia: 1300000
     mo_ta: "Hiện đại và thời thượng, áo ghi-lê màu ghi mang lại vẻ ngoài nhã nhặn"
   - id: 3
     ten: "ZVQ376"
     mau_sac: "Xám trắng gân"
     kich_co: ["S", "M", "L", "XL"]
-    kieu_dang: "áo gile"
+    kieu_dang: "áo ghile"
     gia: 600000
     mo_ta: "Lịch lãm và đa dụng, mang đến vẻ ngoài hiện đại, chuyên nghiệp"
   - id: 4
     ten: "ZVQ345"
     mau_sac: "Xanh đậm sọc"
     kich_co: ["S", "M", "L", "XL"]
-    kieu_dang: "áo gile"
+    kieu_dang: "áo ghile"
     gia: 650000
     mo_ta: "Phong cách và nổi bật, màu xanh thể hiện sự trẻ trung và sáng tạo"
   - id: 5
     ten: "ZVF176"
     mau_sac: "Xanh gân"
     kich_co: ["S", "M", "L", "XL"]
-    kieu_dang: "áo gile"
+    kieu_dang: "áo ghile"
     gia: 650000
     mo_ta: "Phong cách và nổi bật, màu xanh thể hiện sự trẻ trung và sáng tạo"
 
