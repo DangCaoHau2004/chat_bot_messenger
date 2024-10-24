@@ -1,2 +1,81 @@
 data,id_1,id_2,id_3,id_4,id_5,id_6
-mình cần mua một bộ vest màu xanh,0,0,0,1,0,1
+mình cần mua bộ vest màu xanh,0,0,0,1,0,1
+mình cần mua bộ vest màu đen,1,0,0,1,0,0
+mình cần mua bộ vest màu xám,0,1,1,0,1,0
+mình muốn mua bộ vest màu xanh,0,0,0,1,0,1
+mình muốn mua bộ vest màu đen,1,0,0,1,0,0
+mình muốn mua bộ vest màu xám,0,1,1,0,1,0
+mình cần bộ vest màu xanh,0,0,0,1,0,1
+mình cần bộ vest màu đen,1,0,0,1,0,0
+mình cần bộ vest màu xám,0,1,1,0,1,0
+mình muốn bộ vest màu xanh,0,0,0,1,0,1
+mình muốn bộ vest màu đen,1,0,0,1,0,0
+mình muốn bộ vest màu xám,0,1,1,0,1,0
+mình cần mua bộ vest sang trọng,1,0,0,1,0,0
+mình cần mua bộ vest hiện đại,0,1,1,0,0,0
+mình cần mua bộ vest tinh tế,0,1,1,0,1,0
+mình muốn mua bộ vest sang trọng,1,0,0,1,0,0
+mình muốn mua bộ vest hiện đại,0,1,1,0,0,0
+mình muốn mua bộ vest tinh tế,0,1,1,0,1,0
+mình cần bộ vest sang trọng,1,0,0,1,0,0
+mình cần bộ vest hiện đại,0,1,1,0,0,0
+mình cần bộ vest tinh tế,0,1,1,0,1,0
+mình muốn bộ vest sang trọng,1,0,0,1,0,0
+mình muốn bộ vest hiện đại,0,1,1,0,0,0
+mình muốn bộ vest tinh tế,0,1,1,0,1,0
+mình cần mua bộ vest dáng suông,1,1,1,0,0,0
+mình cần mua bộ vest dáng slimfit,0,0,0,1,1,1
+mình cần mua bộ vest dáng slim,0,0,0,1,1,1
+mình muốn mua bộ vest dáng suông,1,1,1,0,0,0
+mình muốn mua bộ vest dáng slimfit,0,0,0,1,1,1
+mình muốn mua bộ vest dáng slim,0,0,0,1,1,1
+mình cần bộ vest dáng suông,1,1,1,0,0,0
+mình cần bộ vest dáng slimfit,0,0,0,1,1,1
+mình cần bộ vest dáng slim,0,0,0,1,1,1
+mình muốn bộ vest dáng suông,1,1,1,0,0,0
+mình muốn bộ vest dáng slimfit,0,0,0,1,1,1
+mình muốn bộ vest dáng slim,0,0,0,1,1,1
+mình muốn bộ vest đi sự kiện,1,1,1,1,1,1
+mình cần bộ vest đi sự kiện,1,1,1,1,1,1
+mình muốn mua bộ vest đi sự kiện,1,1,1,1,1,1
+mình cần mua bộ vest đi sự kiện,1,1,1,1,1,1
+tôi cần mua bộ vest màu xanh,0,0,0,1,0,1
+tôi cần mua bộ vest màu đen,1,0,0,1,0,0
+tôi cần mua bộ vest màu xám,0,1,1,0,1,0
+tôi muốn mua bộ vest màu xanh,0,0,0,1,0,1
+tôi muốn mua bộ vest màu đen,1,0,0,1,0,0
+tôi muốn mua bộ vest màu xám,0,1,1,0,1,0
+tôi cần bộ vest màu xanh,0,0,0,1,0,1
+tôi cần bộ vest màu đen,1,0,0,1,0,0
+tôi cần bộ vest màu xám,0,1,1,0,1,0
+tôi muốn bộ vest màu xanh,0,0,0,1,0,1
+tôi muốn bộ vest màu đen,1,0,0,1,0,0
+tôi muốn bộ vest màu xám,0,1,1,0,1,0
+tôi cần mua bộ vest sang trọng,1,0,0,1,0,0
+tôi cần mua bộ vest hiện đại,0,1,1,0,0,0
+tôi cần mua bộ vest tinh tế,0,1,1,0,1,0
+tôi muốn mua bộ vest sang trọng,1,0,0,1,0,0
+tôi muốn mua bộ vest hiện đại,0,1,1,0,0,0
+tôi muốn mua bộ vest tinh tế,0,1,1,0,1,0
+tôi cần bộ vest sang trọng,1,0,0,1,0,0
+tôi cần bộ vest hiện đại,0,1,1,0,0,0
+tôi cần bộ vest tinh tế,0,1,1,0,1,0
+tôi muốn bộ vest sang trọng,1,0,0,1,0,0
+tôi muốn bộ vest hiện đại,0,1,1,0,0,0
+tôi muốn bộ vest tinh tế,0,1,1,0,1,0
+tôi cần mua bộ vest dáng suông,1,1,1,0,0,0
+tôi cần mua bộ vest dáng slimfit,0,0,0,1,1,1
+tôi cần mua bộ vest dáng slim,0,0,0,1,1,1
+tôi muốn mua bộ vest dáng suông,1,1,1,0,0,0
+tôi muốn mua bộ vest dáng slimfit,0,0,0,1,1,1
+tôi muốn mua bộ vest dáng slim,0,0,0,1,1,1
+tôi cần bộ vest dáng suông,1,1,1,0,0,0
+tôi cần bộ vest dáng slimfit,0,0,0,1,1,1
+tôi cần bộ vest dáng slim,0,0,0,1,1,1
+tôi muốn bộ vest dáng suông,1,1,1,0,0,0
+tôi muốn bộ vest dáng slimfit,0,0,0,1,1,1
+tôi muốn bộ vest dáng slim,0,0,0,1,1,1
+tôi muốn bộ vest đi sự kiện,1,1,1,1,1,1
+tôi cần bộ vest đi sự kiện,1,1,1,1,1,1
+tôi muốn mua bộ vest đi sự kiện,1,1,1,1,1,1
+tôi cần mua bộ vest đi sự kiện,1,1,1,1,1,1
