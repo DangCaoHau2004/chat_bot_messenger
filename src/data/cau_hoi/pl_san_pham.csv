@@ -1,36 +1,41 @@
 data,label
-"tôi cần mua vest",suit_vest
-"tôi muốn mua vest",suit_vest
-"tôi cần xem vest",suit_vest
-"tôi muốn xem vest",suit_vest
-"vest",suit_vest
-"suit vest",suit_vest
-"suit",suit_vest
-"tôi cần mua áo ghile",ghile
-"tôi muốn mua áo ghile",ghile
-"tôi cần xem áo ghile",ghile
-"tôi muốn xem áo ghile",ghile
-"ghile",ghile
-"áo ghile",ghile
-"tôi cần mua áo sơ mi",ao_so_mi
-"tôi muốn mua áo sơ mi",ao_so_mi
-"tôi cần xem áo sơ mi",ao_so_mi
-"tôi muốn xem áo sơ mi",ao_so_mi
-"áo sơ mi",ao_so_mi
-"sơ mi",ao_so_mi
-"tôi cần mua giày",giay
-"tôi muốn mua giày",giay
-"tôi muốn xem giày",giay
-"tôi cần xem giày",giay
-"giày",giay
-"tôi cần mua quần âu",quan_au
-"tôi muốn mua quần âu",quan_au
-"tôi cần xem quần âu",quan_au
-"tôi muốn xem quần âu",quan_au
-"quần âu",quan_au
-"quần",quan_au
-"tôi cần mua phụ kiện",phu_kien
-"tôi cần xem phụ kiện",phu_kien
-"tôi muốn mua phụ kiện",phu_kien
-"tôi muốn mua phụ kiện",phu_kien
-"phụ kiện",phu_kien
+tôi cần mua vest,suit_vest
+tôi muốn mua vest,suit_vest
+tôi cần xem vest,suit_vest
+tôi muốn xem vest,suit_vest
+vest,suit_vest
+suit vest,suit_vest
+suit,suit_vest
+shop có những loại vest nào vậy,suit_vest
+tôi cần mua áo ghile,ghile
+tôi muốn mua áo ghile,ghile
+tôi cần xem áo ghile,ghile
+tôi muốn xem áo ghile,ghile
+ghile,ghile
+áo ghile,ghile
+cho tôi xem các mẫu áo ghile,ghile
+tôi cần mua áo sơ mi,ao_so_mi
+tôi muốn mua áo sơ mi,ao_so_mi
+tôi cần xem áo sơ mi,ao_so_mi
+tôi muốn xem áo sơ mi,ao_so_mi
+áo sơ mi,ao_so_mi
+sơ mi,ao_so_mi
+tôi cần mua giày,giay
+tôi muốn mua giày,giay
+tôi muốn xem giày,giay
+tôi cần xem giày,giay
+giày,giay
+mình cần xem một vài mẫu giày,giay
+tôi cần mua quần âu,quan_au
+tôi muốn mua quần âu,quan_au
+tôi cần xem quần âu,quan_au
+tôi muốn xem quần âu,quan_au
+quần âu,quan_au
+quần,quan_au
+shop có các loại quần nào nhỉ,quan_au
+tôi cần mua phụ kiện,phu_kien
+tôi cần xem phụ kiện,phu_kien
+tôi muốn mua phụ kiện,phu_kien
+tôi muốn mua phụ kiện,phu_kien
+phụ kiện,phu_kien
+shop mình có các loại phụ kiện nào ạ,phu_kien

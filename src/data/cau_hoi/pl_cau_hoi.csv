@@ -1,27 +1,35 @@
 data,label
-"tôi cần mua hàng",tu_van
-"tôi muốn mua hàng",tu_van
-"tôi muốn tham khảo hàng",tu_van
-"tôi muốn đặt hàng",tu_van
-"tôi cần đặt hàng",tu_van
-"tôi cần tham khảo hàng",tu_van
-"mua hàng",tu_van
-"đặt hàng",tu_van
-"tham khảo",tu_van
-"xem hàng",tu_van
-"tư vấn",tu_van
-"tôi muốn xem hàng",tu_van
-"tôi cần xem hàng",tu_van
-"tôi cần tư vấn",tu_van
-"tôi muốn được tư vấn",tu_van
-"hỏi",tu_van
-"tôi muốn hỏi về hàng",tu_van
-"xin chào",chao_hoi
-"chào",chao_hoi
-"hi",chao_hoi
-"hello",chao_hoi
-"có ai ở đây không",chao_hoi
-"đâu rồi",chao_hoi
-"alo",chao_hoi
-"lô",chao_hoi
-"lo",chao_hoi
+tôi cần mua hàng,tu_van
+tôi muốn mua hàng,tu_van
+tôi muốn tham khảo hàng,tu_van
+tôi muốn đặt hàng,tu_van
+tôi cần đặt hàng,tu_van
+tôi cần tham khảo hàng,tu_van
+mua hàng,tu_van
+đặt hàng,tu_van
+tham khảo,tu_van
+xem hàng,tu_van
+tư vấn,tu_van
+tôi muốn xem hàng,tu_van
+tôi cần xem hàng,tu_van
+tôi cần tư vấn,tu_van
+tôi muốn được tư vấn,tu_van
+hỏi,tu_van
+tôi muốn hỏi về hàng,tu_van
+xin chào,chao_hoi
+chào,chao_hoi
+hi,chao_hoi
+hello,chao_hoi
+có ai ở đây không,chao_hoi
+đâu rồi,chao_hoi
+alo,chao_hoi
+lô,chao_hoi
+lo,chao_hoi
+shop ơi,chao_hoi
+nè,chao_hoi
+oi,chao_hoi
+chào shop,chao_hoi
+hế lu,chao_hoi
+chào buổi sáng,chao_hoi
+2,chao_hoi
+hai,chao_hoi
