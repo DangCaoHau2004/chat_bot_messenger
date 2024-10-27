@@ -125,10 +125,15 @@ def setup_persitent_menu():
 
 
 @app.route('/Order')
-def handleOrder():
+def Order():
     return render_template("/Order.html")
 
 
+@app.route("/handle-order", methods=['POST'])
+def handleOrder():
+    data = request.get_json()
+    call_send_api(
+        sender_psid=data['psid'], response="Cảm ơn quý khách đã tin tưởng đặt hàng bên mình")
 # handle_message
 
 
@@ -184,7 +189,7 @@ def handle_postback(sender_psid, received_postback):
                             "type": "web_url",
                             "url": URL_WEB_ORDER,
                             "title": "URL Button",
-                            "webview_height_ratio": "full",
+                            "webview_height_ratio": "tall",
                             "messenger_extensions": True,  # nếu bằng false sẽ sang một trang khác
                         }
                     ]

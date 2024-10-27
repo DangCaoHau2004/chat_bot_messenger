@@ -9,11 +9,17 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../public/css/style.css" />
+    <script src="../public/js/Order.js"></script>
   </head>
   <body>
-    <div class="container mt-5">
+    <div class="container-fluid mt-5">
       <h2 class="text-center">Đặt Hàng</h2>
       <form action="#" method="POST" class="was-validated" novalidate>
+        <!-- psid -->
+
+        <input type="text" id="psid" hidden />
+
         <!-- Tên -->
         <div class="mb-3">
           <label for="name" class="form-label">Họ và Tên:</label>
@@ -38,7 +44,7 @@
             id="sdt"
             placeholder="Nhập số điện thoại"
             name="sdt"
-            pattern="[0-9]{10}"
+            pattern="[0][0-9]{9}"
             required
           />
           <div class="valid-feedback">Hợp lệ.</div>
@@ -47,6 +53,7 @@
           </div>
         </div>
 
+        <!-- Địa chỉ -->
         <div class="mb-3">
           <label for="adress" class="form-label">Địa Chỉ:</label>
           <input
@@ -60,10 +67,11 @@
           <div class="valid-feedback">Hợp lệ.</div>
           <div class="invalid-feedback">Vui lòng điền địa chỉ.</div>
         </div>
+
         <!-- Menu Sản Phẩm -->
         <div id="selectMenu"></div>
 
-        <!--thêm sản phẩm -->
+        <!-- Thêm sản phẩm -->
         <div class="text-center mb-3">
           <button type="button" class="btn btn-success" id="themSanPham">
             <i class="bi bi-plus-lg"></i> Thêm sản phẩm
@@ -71,11 +79,14 @@
         </div>
 
         <!-- Đặt Hàng -->
-        <button type="submit" class="btn btn-primary w-100">Đặt Hàng</button>
+        <button type="submit" class="btn btn-primary w-100" id="Order">
+          Đặt Hàng
+        </button>
       </form>
     </div>
 
     <script>
+      // Dữ liệu sản phẩm
       const cacSanPham = {
         vest: ["Vest xanh", "Vest đen", "Vest kẻ sọc"],
         ghile: ["Ghile nâu", "Ghile xám", "Ghile kẻ"],
@@ -86,7 +97,7 @@
       const themSanPham = document.getElementById("themSanPham");
 
       // Tạo phần chọn sản phẩm mới
-      function createProductSelection() {
+      function taoSanPhamMoi() {
         const divSanPham = document.createElement("div");
         divSanPham.className = "mb-3 product-item";
 
@@ -105,13 +116,14 @@
         const selectMenuList = document.createElement("select");
         selectMenuList.className = "form-select product-list";
         selectMenuList.required = true;
+        selectMenuList.innerHTML = `<option value="" disabled selected>Chọn sản phẩm</option>`; // Đặt mặc định
 
         // Sự kiện thay đổi loại sản phẩm
         selectMenuType.addEventListener("change", function () {
           const selectedType = selectMenuType.value;
 
           // Xóa các tùy chọn sản phẩm cũ
-          selectMenuList.innerHTML = "";
+          selectMenuList.innerHTML = `<option value="" disabled selected>Chọn sản phẩm</option>`; // Đặt lại mặc định
 
           // Thêm các tùy chọn mới dựa trên loại sản phẩm
           cacSanPham[selectedType].forEach((product) => {
@@ -131,7 +143,7 @@
       }
 
       // Sự kiện click vào nút "Thêm sản phẩm"
-      themSanPham.addEventListener("click", createProductSelection);
+      themSanPham.addEventListener("click", taoSanPhamMoi);
     </script>
   </body>
 </html>
