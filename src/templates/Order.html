@@ -144,6 +144,10 @@
 
       // Sự kiện click vào nút "Thêm sản phẩm"
       themSanPham.addEventListener("click", taoSanPhamMoi);
+
+      // xử lý các dữ liệu vào
+
+      // cài đặt api facebook
       (function (d, s, id) {
         var js,
           fjs = d.getElementsByTagName(s)[0];
@@ -155,9 +159,9 @@
         js.src = "//connect.facebook.net/en_US/messenger.Extensions.js";
         fjs.parentNode.insertBefore(js, fjs);
       })(document, "script", "Messenger");
-      alert("hello");
+      // chờ api load
       window.extAsyncInit = function () {
-        // the Messenger Extensions JS SDK is done loading
+        // lấy giá trị của psid gán vào input id psid
         MessengerExtensions.getContext(
           "773997401470202",
           function success(thread_context) {
@@ -169,7 +173,7 @@
           }
         );
       };
-
+      // kiểm tra tính hợp lệ của input
       function checkValidate() {
         let ten = document.getElementById("name").value;
         let sdt = document.getElementById("sdt").value;

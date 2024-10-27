@@ -45,6 +45,8 @@ function handleClickButtonOrder() {
     };
     const url = `${window.location.origin}/handle-order`;
     if (checkValidate) {
+      console.log(data);
+
       MessengerExtensions.requestCloseBrowser(
         function success() {
           // webview closed
