@@ -124,29 +124,6 @@ def setup_persitent_menu():
 # handle_message
 
 
-@app.route("/get-id-image", methods=['POST'])
-def get_id_image():
-    request_body = {
-        "message": {
-            "attachment": {
-                "type": "image"
-            }
-        },
-        "filedata": "D:\laptrinh\Project\ChatBot\src\public\images\anh_san_pham\ao_ghile\id_1\ghile_id1.png",
-        "type": "image/png"
-    }
-    res = requests.post(f"https://graph.facebook.com/v21.0/{PAGE_ID}/message_attachments",
-                        params={
-                            "access_token": PAGE_ACCESS_TOKEN
-                        },
-                        json=request_body)
-    if res.status_code == 200:
-        attachment_id = res.json().get("attachment_id")
-        return {"attachment_id": attachment_id}, 200
-    else:
-        return {"error": res.text}, res.status_code
-
-
 def handle_message(sender_psid, received_message):
     if "text" in received_message:
         # response text cho người dùng
