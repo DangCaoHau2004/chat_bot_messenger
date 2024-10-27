@@ -123,9 +123,9 @@ def setup_persitent_menu():
         return {"error": res.text}, res.status_code
 
 
-@app.route('/order')
+@app.route('/Order')
 def handleOrder():
-    return render_template("/order.html")
+    return render_template("/Order.html")
 
 
 # handle_message
@@ -181,7 +181,7 @@ def handle_postback(sender_psid, received_postback):
                     "buttons": [
                         {
                             "type": "web_url",
-                            "url": "https://www.messenger.com/",
+                            "url": "https://the-gioi-vest-bot-958f3f0beb0a.herokuapp.com/Order",
                             "title": "URL Button",
                             "webview_height_ratio": "full"
                         }
