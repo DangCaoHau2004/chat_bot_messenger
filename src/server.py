@@ -123,7 +123,7 @@ def setup_persitent_menu():
         return {"error": res.text}, res.status_code
 
 
-@app.route('/Order')
+@app.route('/order')
 def handleOrder():
     return render_template("/Order.html")
 
