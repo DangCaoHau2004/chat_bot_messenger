@@ -17,7 +17,6 @@
       <h2 class="text-center">Đặt Hàng</h2>
       <form action="#" class="was-validated" novalidate>
         <!-- psid -->
-
         <input type="text" id="psid" hidden />
 
         <!-- Tên -->
@@ -145,9 +144,7 @@
       // Sự kiện click vào nút "Thêm sản phẩm"
       themSanPham.addEventListener("click", taoSanPhamMoi);
 
-      // xử lý các dữ liệu vào
-
-      // cài đặt api facebook
+      // Cài đặt API Facebook
       (function (d, s, id) {
         var js,
           fjs = d.getElementsByTagName(s)[0];
@@ -159,34 +156,39 @@
         js.src = "//connect.facebook.net/en_US/messenger.Extensions.js";
         fjs.parentNode.insertBefore(js, fjs);
       })(document, "script", "Messenger");
-      // chờ api load
+
+      // Chờ API load
       window.extAsyncInit = function () {
-        // lấy giá trị của psid gán vào input id psid
+        // Lấy giá trị của psid gán vào input id psid
         MessengerExtensions.getContext(
           "773997401470202",
           function success(thread_context) {
             document.getElementById("psid").value = thread_context.psid;
-            handleClickButtonOrder();
+            handleClickButtonOrder(); // Gọi hàm xử lý sự kiện khi đã có psid
           },
           function error(err) {
             console.log("Lỗi đặt hàng: ", err);
           }
         );
       };
-      // kiểm tra tính hợp lệ của input
+
+      // Kiểm tra tính hợp lệ của input
       function checkValidate() {
         let ten = document.getElementById("name").value;
         let sdt = document.getElementById("sdt").value;
         let diachi = document.getElementById("adress").value;
-        if (ten !== "" && sdt.match(/^0\d{9}$/) && diachi != "") {
+        if (ten !== "" && sdt.match(/^0\d{9}$/) && diachi !== "") {
           return true;
         }
         return false;
       }
+
       function handleClickButtonOrder() {
         const orderButton = document.getElementById("Order");
         orderButton.addEventListener("click", function (event) {
-          let checkValidate = checkValidate();
+          event.preventDefault(); // Ngăn chặn hành vi gửi biểu mẫu
+
+          let isValid = checkValidate();
           const data = {
             psid: document.getElementById("psid").value,
             ten: document.getElementById("name").value,
@@ -194,7 +196,8 @@
             diachi: document.getElementById("adress").value,
           };
           const url = `${window.location.origin}/handle-order`;
-          if (checkValidate) {
+
+          if (isValid) {
             MessengerExtensions.requestCloseBrowser(
               function success() {
                 // webview closed
@@ -203,6 +206,7 @@
                 console.log(err);
               }
             );
+
             fetch(url, {
               method: "POST",
               headers: {
@@ -223,7 +227,7 @@
                 console.log(error);
               });
           } else {
-            console.log("Dữ liệu không hợp lệ!");
+            alert("Dữ liệu không hợp lệ! Vui lòng kiểm tra lại thông tin."); // Thêm thông báo cho người dùng
           }
         });
       }
