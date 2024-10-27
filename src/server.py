@@ -151,7 +151,18 @@ def handle_message(sender_psid, received_message):
     if "text" in received_message:
         # response text cho người dùng
         response = {
-            "text": f"Xin Chào '{received_message['text']}'"
+            "attachment": {
+                "type": "template",
+                "payload": {
+                    "template_type": "media",
+                    "elements": [
+                        {
+                            "media_type": "<image|video>",
+                            "attachment_id": "1758508488336033"
+                        }
+                    ]
+                }
+            }
         }
         call_send_api(sender_psid, response)
     else:
