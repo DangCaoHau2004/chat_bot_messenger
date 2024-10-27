@@ -14,6 +14,7 @@ config = {
 
 PAGE_ACCESS_TOKEN = os.getenv("PAGE_ACCESS_TOKEN")
 PAGE_ID = os.getenv("PAGE_ID")
+URL_WEB_ORDER = os.getenv("URL_WEB_ORDER")
 # Route Home
 
 
@@ -181,9 +182,10 @@ def handle_postback(sender_psid, received_postback):
                     "buttons": [
                         {
                             "type": "web_url",
-                            "url": "https://the-gioi-vest-bot-958f3f0beb0a.herokuapp.com/Order",
+                            "url": URL_WEB_ORDER,
                             "title": "URL Button",
-                            "webview_height_ratio": "full"
+                            "webview_height_ratio": "full",
+                            "messenger_extensions": True,  # nếu bằng false sẽ sang một trang khác
                         }
                     ]
                 }
