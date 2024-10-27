@@ -87,7 +87,41 @@ def setup_profile():
         return {"error": res.text}, res.status_code
 
 
+@app.route('/setup-persitent-menu', methods=['POST'])
+def setup_persitent_menu():
+
+    request_body = {
+        "persistent_menu": [
+            {
+                "locale": "default",
+                "composer_input_disabled": False,
+                "call_to_actions": [
+                    {
+                        "type": "postback",
+                        "title": "Gọi nhân viên hỗ trợ",
+                        "payload": "CARE_HELP"
+                    },
+                    {
+                        "type": "postback",
+                        "title": "Xóa cuộc hội thoại",
+                        "payload": "RESTART_BOT"
+                    }
+                ]
+            }
+        ]
+    }
+
+    res = requests.post(
+        f"https://graph.facebook.com/v21.0/me/custom_user_settings",
+        params={"access_token": PAGE_ACCESS_TOKEN},
+    )
+    if res.status_code == 200:
+        return {"message": "Profile setup successful"}, 200
+    else:
+        return {"error": res.text}, res.status_code
 # handle_message
+
+
 def handle_message(sender_psid, received_message):
     if "text" in received_message:
         # response text cho người dùng
