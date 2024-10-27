@@ -121,21 +121,29 @@ def setup_persitent_menu():
         return {"message": "Profile setup successful"}, 200
     else:
         return {"error": res.text}, res.status_code
+
+
+@app.route('/Order')
+def handleOrder():
+    return render_template("/Order.html")
+
+
 # handle_message
 
 
 def handle_message(sender_psid, received_message):
     if "text" in received_message:
-        # response text cho người dùng
         response = {
             "attachment": {
                 "type": "template",
                 "payload": {
-                    "template_type": "media",
-                    "elements": [
+                    "template_type": "button",
+                    "text": "Đặt Hàng",
+                    "buttons": [
                         {
-                            "media_type": "image",
-                            "attachment_id": "1758508488336033"
+                            "type": "postback",
+                            "title": "Đặt Hàng",
+                            "payload": "Order"
                         }
                     ]
                 }
@@ -163,6 +171,25 @@ def handle_postback(sender_psid, received_postback):
             call_send_api(sender_psid=sender_psid, response=response)
         else:
             print("Yêu cầu thất bại:", res.status_code, res.text)
+    elif payload.lower() == 'order':
+        response = {
+            "attachment": {
+                "type": "template",
+                "payload": {
+                    "template_type": "button",
+                    "text": "Try the URL button!",
+                    "buttons": [
+                        {
+                            "type": "web_url",
+                            "url": "https://www.messenger.com/",
+                            "title": "URL Button",
+                            "webview_height_ratio": "full"
+                        }
+                    ]
+                }
+            }
+        }
+        call_send_api(sender_psid=sender_psid, response=response)
 
 
 def call_send_api(sender_psid, response):
