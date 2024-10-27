@@ -126,14 +126,24 @@ def setup_persitent_menu():
 
 @app.route('/Order')
 def Order():
-    return render_template("/Order.html")
+    psid = request.args.get('psid')
+    return render_template("/Order.html", psid=psid)
 
 
 @app.route("/handle-order", methods=['POST'])
 def handleOrder():
-    data = request.get_json()
+    # lấy dữ liệu từ biểu mẫu
+    data = {
+        "psid": request.form.get('psid'),
+        "name": request.form.get('name'),
+        "sdt": request.form.get('sdt'),
+        "adress": request.form.get("adress"),
+    }
+
     call_send_api(
-        sender_psid=data['psid'], response="Cảm ơn quý khách đã tin tưởng đặt hàng bên mình")
+        sender_psid=data['psid'],
+        response="Cảm ơn quý khách đã tin tưởng đặt hàng bên mình"
+    )
 # handle_message
 
 
@@ -187,7 +197,7 @@ def handle_postback(sender_psid, received_postback):
                     "buttons": [
                         {
                             "type": "web_url",
-                            "url": URL_WEB_ORDER,
+                            "url": URL_WEB_ORDER + f"?psid={sender_psid}",
                             "title": "URL Button",
                             "webview_height_ratio": "tall",
                             "messenger_extensions": True,  # nếu bằng false sẽ sang một trang khác

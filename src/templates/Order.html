@@ -15,9 +15,14 @@
   <body>
     <div class="container-fluid mt-5">
       <h2 class="text-center">Đặt Hàng</h2>
-      <form action="#" class="was-validated" novalidate>
+      <form
+        action="/handle-order"
+        method="POST"
+        class="was-validated"
+        novalidate
+      >
         <!-- psid -->
-        <input type="text" id="psid" hidden />
+        <input type="text" id="psid" value="{{psid}}" hidden />
 
         <!-- Tên -->
         <div class="mb-3">
@@ -144,90 +149,24 @@
       // Sự kiện click vào nút "Thêm sản phẩm"
       themSanPham.addEventListener("click", taoSanPhamMoi);
 
-      // Cài đặt API Facebook
-      (function (d, s, id) {
-        var js,
-          fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {
-          return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.net/en_US/messenger.Extensions.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      })(document, "script", "Messenger");
-
-      // Chờ API load
-      window.extAsyncInit = function () {
-        // Lấy giá trị của psid gán vào input id psid
-        MessengerExtensions.getContext(
-          "773997401470202",
-          function success(thread_context) {
-            document.getElementById("psid").value = thread_context.psid;
-            handleClickButtonOrder(); // Gọi hàm xử lý sự kiện khi đã có psid
-          },
-          function error(err) {
-            console.log("Lỗi đặt hàng: ", err);
-          }
-        );
-      };
-
-      // Kiểm tra tính hợp lệ của input
+      // kiểm tra tính hợp lệ của input
       function checkValidate() {
         let ten = document.getElementById("name").value;
         let sdt = document.getElementById("sdt").value;
         let diachi = document.getElementById("adress").value;
-        if (ten !== "" && sdt.match(/^0\d{9}$/) && diachi !== "") {
+        if (ten !== "" && sdt.match(/^0\d{9}$/) && diachi != "") {
           return true;
         }
         return false;
       }
-
       function handleClickButtonOrder() {
         const orderButton = document.getElementById("Order");
         orderButton.addEventListener("click", function (event) {
-          event.preventDefault(); // Ngăn chặn hành vi gửi biểu mẫu
-
-          let isValid = checkValidate();
-          const data = {
-            psid: document.getElementById("psid").value,
-            ten: document.getElementById("name").value,
-            sdt: document.getElementById("sdt").value,
-            diachi: document.getElementById("adress").value,
-          };
-          const url = `${window.location.origin}/handle-order`;
-
-          if (isValid) {
-            MessengerExtensions.requestCloseBrowser(
-              function success() {
-                // webview closed
-              },
-              function error(err) {
-                console.log(err);
-              }
-            );
-
-            fetch(url, {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify(data),
-            })
-              .then((response) => {
-                if (!response.ok) {
-                  throw new Error("Network response was not ok");
-                }
-                return response.json();
-              })
-              .then((data) => {
-                console.log(data);
-              })
-              .catch((error) => {
-                console.log(error);
-              });
+          let checkValidate = checkValidate();
+          if (checkValidate) {
+            alert("Cảm ơn quý khách đã đặt hàng!");
           } else {
-            alert("Dữ liệu không hợp lệ! Vui lòng kiểm tra lại thông tin."); // Thêm thông báo cho người dùng
+            alert("Bạn chưa điền đầy đủ thông tin!");
           }
         });
       }
