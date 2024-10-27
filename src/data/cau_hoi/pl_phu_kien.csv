@@ -1,2 +1,38 @@
 data,id_1,id_2,id_3,id_4,id_5,id_6
 shop mình có các loại phụ kiện nào ạ,1,1,1,1,1,1
+mình muốn mua phụ kiện,1,1,1,1,1,1
+mình muốn mua cà vạt,1,0,0,0,0,0
+mình muốn mua kẹp,0,1,0,0,0,0
+mình muốn mua nơ,0,0,1,1,0,0
+mình muốn mua khăn,0,0,0,0,1,1
+mình muốn mua phụ kiện cổ điển,1,0,1,0,0,1
+mình muốn mua phụ kiện tối màu,1,0,1,0,0,0
+mình muốn mua phụ kiện sáng màu,0,1,0,1,1,1
+mình muốn mua phụ kiện tinh tế,1,1,1,0,0,1
+mình cần mua phụ kiện,1,1,1,1,1,1
+mình cần mua cà vạt,1,0,0,0,0,0
+mình cần mua kẹp,0,1,0,0,0,0
+mình cần mua nơ,0,0,1,1,0,0
+mình cần mua khăn,0,0,0,0,1,1
+mình cần mua phụ kiện cổ điển,1,0,1,0,0,1
+mình cần mua phụ kiện tối màu,1,0,1,0,0,0
+mình cần mua phụ kiện sáng màu,0,1,0,1,1,1
+mình cần mua phụ kiện tinh tế,1,1,1,0,0,1
+tôi muốn mua phụ kiện,1,1,1,1,1,1
+tôi muốn mua cà vạt,1,0,0,0,0,0
+tôi muốn mua kẹp,0,1,0,0,0,0
+tôi muốn mua nơ,0,0,1,1,0,0
+tôi muốn mua khăn,0,0,0,0,1,1
+tôi muốn mua phụ kiện cổ điển,1,0,1,0,0,1
+tôi muốn mua phụ kiện tối màu,1,0,1,0,0,0
+tôi muốn mua phụ kiện sáng màu,0,1,0,1,1,1
+tôi muốn mua phụ kiện tinh tế,1,1,1,0,0,1
+tôi cần mua phụ kiện,1,1,1,1,1,1
+tôi cần mua cà vạt,1,0,0,0,0,0
+tôi cần mua kẹp,0,1,0,0,0,0
+tôi cần mua nơ,0,0,1,1,0,0
+tôi cần mua khăn,0,0,0,0,1,1
+tôi cần mua phụ kiện cổ điển,1,0,1,0,0,1
+tôi cần mua phụ kiện tối màu,1,0,1,0,0,0
+tôi cần mua phụ kiện sáng màu,0,1,0,1,1,1
+tôi cần mua phụ kiện tinh tế,1,1,1,0,0,1

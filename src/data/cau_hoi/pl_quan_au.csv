@@ -1,2 +1,64 @@
 data,id_1,id_2,id_3,id_4
 shop có các loại quần nào nhỉ,1,1,1,1
+mình cần mua quần ,1,1,1,1
+mình cần mua quần màu đen,1,0,0,0
+mình cần mua quần màu xám,0,1,1,0
+mình cần mua quần màu be,0,0,0,1
+mình cần mua quần tối màu,1,1,0,0
+mình cần mua quần sáng màu,0,0,1,1
+mình cần mua quần dáng slim,1,1,1,0
+mình cần mua quần dáng suông,0,0,0,1
+mình cần mua quần đắt nhất,0,1,0,0
+mình cần mua quần rẻ nhất,0,0,1,0
+mình cần mua quần dễ phối đồ,1,1,1,0
+mình cần mua quần lịch sự,1,1,1,0
+mình cần mua quần cá tính,0,0,0,1
+mình cần mua quần trẻ trung,1,0,1,1
+mình muốn mua quần ,1,1,1,1
+mình muốn mua quần màu đen,1,0,0,0
+mình muốn mua quần màu xám,0,1,1,0
+mình muốn mua quần màu be,0,0,0,1
+mình muốn mua quần tối màu,1,1,0,0
+mình muốn mua quần sáng màu,0,0,1,1
+mình muốn mua quần dáng slim,1,1,1,0
+mình muốn mua quần dáng suông,0,0,0,1
+mình muốn mua quần đắt nhất,0,1,0,0
+mình muốn mua quần rẻ nhất,0,0,1,0
+mình muốn mua quần dễ phối đồ,1,1,1,0
+mình muốn mua quần lịch sự,1,1,1,0
+mình muốn mua quần cá tính,0,0,0,1
+mình muốn mua quần trẻ trung,1,0,1,1
+mình gầy nên chọn bộ nào,0,0,0,1
+mình béo nên chọn bộ nào,1,1,1,0
+mình cân đối nên chọn bộ nào,1,1,1,1
+tôi cần mua quần ,1,1,1,1
+tôi cần mua quần màu đen,1,0,0,0
+tôi cần mua quần màu xám,0,1,1,0
+tôi cần mua quần màu be,0,0,0,1
+tôi cần mua quần tối màu,1,1,0,0
+tôi cần mua quần sáng màu,0,0,1,1
+tôi cần mua quần dáng slim,1,1,1,0
+tôi cần mua quần dáng suông,0,0,0,1
+tôi cần mua quần đắt nhất,0,1,0,0
+tôi cần mua quần rẻ nhất,0,0,1,0
+tôi cần mua quần dễ phối đồ,1,1,1,0
+tôi cần mua quần lịch sự,1,1,1,0
+tôi cần mua quần cá tính,0,0,0,1
+tôi cần mua quần trẻ trung,1,0,1,1
+tôi muốn mua quần ,1,1,1,1
+tôi muốn mua quần màu đen,1,0,0,0
+tôi muốn mua quần màu xám,0,1,1,0
+tôi muốn mua quần màu be,0,0,0,1
+tôi muốn mua quần tối màu,1,1,0,0
+tôi muốn mua quần sáng màu,0,0,1,1
+tôi muốn mua quần dáng slim,1,1,1,0
+tôi muốn mua quần dáng suông,0,0,0,1
+tôi muốn mua quần đắt nhất,0,1,0,0
+tôi muốn mua quần rẻ nhất,0,0,1,0
+tôi muốn mua quần dễ phối đồ,1,1,1,0
+tôi muốn mua quần lịch sự,1,1,1,0
+tôi muốn mua quần cá tính,0,0,0,1
+tôi muốn mua quần trẻ trung,1,0,1,1
+tôi gầy nên chọn bộ nào,0,0,0,1
+tôi béo nên chọn bộ nào,1,1,1,0
+tôi cân đối nên chọn bộ nào,1,1,1,1

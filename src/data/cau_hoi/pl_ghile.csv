@@ -1,4 +1,28 @@
 data,id_1,id_2,id_3,id_4,id_5
+tôi muốn mua áo ghile,1,1,1,1,1
+tôi muốn mua áo ghile màu đen,1,0,0,0,0
+tôi muốn mua áo ghile màu ghi,0,1,0,0,0
+tôi muốn mua áo ghile màu xám,0,0,1,0,0
+tôi muốn mua áo ghile màu xanh,0,0,0,1,1
+tôi muốn mua áo ghile sang trọng,1,1,1,0,0
+tôi muốn mua áo ghile nổi bật,0,0,0,1,1
+tôi muốn mua áo ghile hiện đại,0,1,0,1,1
+tôi muốn mua áo ghile đa dụng,1,0,1,0,0
+tôi muốn mua áo ghile rẻ nhất,1,0,1,0,0
+tôi muốn mua áo ghile đắt nhất,0,1,0,0,0
+tôi muốn mua áo ghile giá trung,0,0,0,1,1
+tôi muốn mua áo ghile dễ phối đồ,1,1,0,0,0
+tôi cần mua áo ghile,1,1,1,1,1
+tôi cần mua áo ghile màu đen,1,0,0,0,0
+tôi cần mua áo ghile màu ghi,0,1,0,0,0
+tôi cần mua áo ghile màu xám,0,0,1,0,0
+tôi cần mua áo ghile màu xanh,0,0,0,1,1
+tôi cần mua áo ghile sang trọng,1,1,1,0,0
+tôi cần mua áo ghile nổi bật,0,0,0,1,1
+tôi cần mua áo ghile hiện đại,0,1,0,1,1
+tôi cần mua áo ghile đa dụng,1,0,1,0,0
+tôi cần mua áo ghile dễ phối đồ,1,1,0,0,0
+mình muốn mua áo ghile,1,1,1,1,1
 mình muốn mua áo ghile màu đen,1,0,0,0,0
 mình muốn mua áo ghile màu ghi,0,1,0,0,0
 mình muốn mua áo ghile màu xám,0,0,1,0,0
@@ -11,6 +35,7 @@ mình muốn mua áo ghile rẻ nhất,1,0,1,0,0
 mình muốn mua áo ghile đắt nhất,0,1,0,0,0
 mình muốn mua áo ghile giá trung,0,0,0,1,1
 mình muốn mua áo ghile dễ phối đồ,1,1,0,0,0
+mình cần mua áo ghile,1,1,1,1,1
 mình cần mua áo ghile màu đen,1,0,0,0,0
 mình cần mua áo ghile màu ghi,0,1,0,0,0
 mình cần mua áo ghile màu xám,0,0,1,0,0
