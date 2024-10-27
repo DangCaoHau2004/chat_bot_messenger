@@ -144,7 +144,7 @@ def handleOrder():
         sender_psid=data['psid'],
         response="Cảm ơn quý khách đã tin tưởng đặt hàng bên mình"
     )
-    return {"status": "success"}, 200
+    return {"data": data}, 200
 # handle_message
 
 
