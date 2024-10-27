@@ -142,7 +142,7 @@ def handleOrder():
 
     call_send_api(
         sender_psid=data['psid'],
-        response="Cảm ơn quý khách đã tin tưởng đặt hàng bên mình"
+        response={"text": "Cảm ơn quý khách đã tin tưởng đặt hàng bên mình"}
     )
     return {"data": data}, 200
 # handle_message
