@@ -157,7 +157,7 @@ def handle_message(sender_psid, received_message):
                     "template_type": "media",
                     "elements": [
                         {
-                            "media_type": "<image|video>",
+                            "media_type": "image",
                             "attachment_id": "1758508488336033"
                         }
                     ]
