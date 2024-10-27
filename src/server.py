@@ -125,7 +125,7 @@ def setup_persitent_menu():
 
 @app.route('/order')
 def handleOrder():
-    return render_template("/Order.html")
+    return render_template("/order.html")
 
 
 # handle_message
