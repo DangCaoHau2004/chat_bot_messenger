@@ -112,8 +112,9 @@ def setup_persitent_menu():
     }
 
     res = requests.post(
-        f"https://graph.facebook.com/v21.0/me/custom_user_settings",
+        f"https://graph.facebook.com/v21.0/me/messenger_profile",
         params={"access_token": PAGE_ACCESS_TOKEN},
+        json=request_body
     )
     if res.status_code == 200:
         return {"message": "Profile setup successful"}, 200
