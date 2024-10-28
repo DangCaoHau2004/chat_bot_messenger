@@ -149,6 +149,7 @@ def handleOrder():
     sanPham = np.char.add(sanPham, ': ')
     toanBoSP = ', '.join(np.char.add(sanPham, loaiSanPhan))
     data = [name, sdt, adress, toanBoSP]
+    enterDataToGoogleSheet(data=data)
     # try:
     #     enterDataToGoogleSheet(data=data)
     # except: sẽ thêm khi lỗi điền thì gửi tin nhẵn cho chủ shop
@@ -189,7 +190,8 @@ def handle_postback(sender_psid, received_postback):
     if payload.lower() == "get_started" or payload.lower() == 'restart_bot':
         # đọc dữ liệu từ tên người dùng
         res = requests.get(
-            f"https://graph.facebook.com/{sender_psid}?fields=first_name,last_name,profile_pic",
+            f"https://graph.facebook.com/{
+                sender_psid}?fields=first_name,last_name,profile_pic",
             params={"access_token": PAGE_ACCESS_TOKEN})
         if res.status_code == 200:
             user = res.json()
