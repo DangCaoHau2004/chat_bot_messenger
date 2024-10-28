@@ -200,7 +200,7 @@ def handle_postback(sender_psid, received_postback):
                             "type": "web_url",
                             "url": URL_WEB_ORDER + f"?psid={sender_psid}",
                             "title": "URL Button",
-                            "webview_height_ratio": "tall",
+                            "webview_height_ratio": "full",
                             "messenger_extensions": True,  # nếu bằng false sẽ sang một trang khác
                         }
                     ]
