@@ -41,6 +41,8 @@ client = gspread.authorize(creds)
 # ID của Google Sheet
 sheet = client.open_by_key(SPREADSHEET_ID)
 
-# Đọc giá trị từ hàng đầu tiên
-values_list = sheet.sheet1.row_values(1)
-print(values_list)
+worksheet = sheet.sheet1
+
+
+def enterDataToGoogleSheet(data):
+    worksheet.append_row(data, table_range="A2:D2")

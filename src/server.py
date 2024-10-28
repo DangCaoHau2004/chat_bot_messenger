@@ -2,6 +2,8 @@ from flask import Flask, render_template, request
 from dotenv import load_dotenv
 import os
 import requests
+from enterDataToGoogleSheet import enterDataToGoogleSheet
+import numpy as np
 
 # Kiểm tra đồng bộ giữa git và heroku
 # Tải các biến môi trường từ .env file
@@ -132,19 +134,27 @@ def Order():
 
 @app.route("/handle-order", methods=['POST'])
 def handleOrder():
+    # lấy các dữ liệu từ form Order.html
+    psid = request.form.get('psid')
+    name = request.form.get('name')
+    sdt = request.form.get('sdt')
+    adress = request.form.get("adress")
     # lấy dữ liệu từ biểu mẫu
-    data = {
-        "psid": request.form.get('psid'),
-        "name": request.form.get('name'),
-        "sdt": request.form.get('sdt'),
-        "adress": request.form.get("adress"),
-    }
-
+    sanPham = np.array(request.form.getlist("sanPham"))
+    loaiSanPhan = np.array(request.form.getlist("loaiSanPham"))
     call_send_api(
-        sender_psid=data['psid'],
+        sender_psid=psid,
         response={"text": "Cảm ơn quý khách đã tin tưởng đặt hàng bên mình"}
     )
+    sanPham = np.char.add(sanPham, ': ')
+    toanBoSP = ', '.join(np.char.add(sanPham, loaiSanPhan))
+    data = [name, sdt, adress, toanBoSP]
+    # try:
+    #     enterDataToGoogleSheet(data=data)
+    # except: sẽ thêm khi lỗi điền thì gửi tin nhẵn cho chủ shop
     return {"data": data}, 200
+
+
 # handle_message
 
 

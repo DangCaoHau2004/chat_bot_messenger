@@ -134,9 +134,10 @@
         // Tạo dropdown chọn loại sản phẩm
         const selectMenuType = document.createElement("select");
         selectMenuType.className = "form-select mb-2 product-type";
+        selectMenuType.setAttribute("name", "sanPham");
         selectMenuType.required = true;
         selectMenuType.innerHTML = `
-          <option value="" disabled selected>Chọn Loại sản phẩm</option>
+          <option value="" disabled selected>Chọn sản phẩm</option>
           <option value="ghile">Ghile</option>
           <option value="ao_so_mi">Áo sơ mi</option>
           <option value="giay">Giày</option>
@@ -148,6 +149,7 @@
         // Dropdown chọn sản phẩm
         const selectMenuList = document.createElement("select");
         selectMenuList.className = "form-select product-list";
+        selectMenuList.setAttribute("name", "loaiSanPham");
         selectMenuList.required = true;
         selectMenuList.innerHTML = `<option value="" disabled selected>Chọn sản phẩm</option>`; // Đặt mặc định
 
