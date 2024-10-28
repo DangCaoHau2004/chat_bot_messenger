@@ -22,9 +22,11 @@ URL_WEB_ORDER = os.getenv("URL_WEB_ORDER")
 
 @app.route('/')
 def home():
+    print
     return render_template("HomePage.html")
 
 # route webhook_post
+
 
 
 @app.route('/webhook', methods=['POST'])
