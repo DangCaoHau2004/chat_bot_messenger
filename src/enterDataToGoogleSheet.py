@@ -45,4 +45,4 @@ worksheet = sheet.sheet1
 
 
 def enterDataToGoogleSheet(data):
-    worksheet.append_row(data, table_range="A2:D2")
+    worksheet.append_row(data, table_range="A2:E2")

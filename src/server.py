@@ -25,8 +25,8 @@ def home():
     print
     return render_template("HomePage.html")
 
-# route webhook_post
 
+# route webhook_post
 
 
 @app.route('/webhook', methods=['POST'])
@@ -148,13 +148,22 @@ def handleOrder():
         sender_psid=psid,
         response={"text": "Cảm ơn quý khách đã tin tưởng đặt hàng bên mình"}
     )
+    res = requests.get(
+        f"https://graph.facebook.com/{
+            psid}?fields=first_name,last_name,profile_pic",
+        params={"access_token": PAGE_ACCESS_TOKEN})
+    user = res.json()
+    nameFacebook = user["first_name"] + " " + user["last_name"]
     sanPham = np.char.add(sanPham, ': ')
     toanBoSP = ', '.join(np.char.add(sanPham, loaiSanPhan))
-    data = [name, sdt, adress, toanBoSP]
+    data = [nameFacebook, name, sdt, adress, toanBoSP]
     enterDataToGoogleSheet(data=data)
-    # try:
-    #     enterDataToGoogleSheet(data=data)
-    # except: sẽ thêm khi lỗi điền thì gửi tin nhẵn cho chủ shop
+    try:
+        enterDataToGoogleSheet(data=data)
+    except:
+        # gửi tin nhắn lại cho admin
+        pass
+    # trả về page cảm ơn
     return {"data": data}, 200
 
 
