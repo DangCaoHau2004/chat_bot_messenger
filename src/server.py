@@ -331,4 +331,5 @@ def call_send_api(sender_psid, response):
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
+    threading.Thread(target=check_timeouts).start()
     app.run(host='0.0.0.0', port=port, debug=True)
