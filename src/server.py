@@ -137,39 +137,52 @@ def Order():
 
 @app.route("/handle-order", methods=['POST'])
 def handleOrder():
-    # lấy các dữ liệu từ form Order.html
+    # Lấy các dữ liệu từ form Order.html
     psid = request.form.get('psid')
     name = request.form.get('name')
     sdt = request.form.get('sdt')
-    adress = request.form.get("adress")
-    # lấy dữ liệu từ biểu mẫu
+    address = request.form.get("address")
     sanPham = np.array(request.form.getlist("sanPham"))
-    loaiSanPhan = np.array(request.form.getlist("loaiSanPham"))
+    loaiSanPham = np.array(request.form.getlist("loaiSanPham"))
+
+    # Gửi thông báo xác nhận đơn hàng cho khách
     call_send_api(
         sender_psid=psid,
-        response={"text": "Cảm ơn quý khách đã tin tưởng đặt hàng bên mình. Bên mình sẽ gọi xác nhận đơn hàng trong khoảng 15 phút tới bạn để ý máy giúp shop nha.", }
+        response={
+            "text": (
+                "Cảm ơn quý khách đã tin tưởng đặt hàng bên mình. "
+                "Bên mình sẽ gọi xác nhận đơn hàng trong khoảng 15 phút tới. "
+                "Bạn để ý máy giúp shop nha."
+            )
+        }
     )
+
     thoiGianDat = datetime.datetime.now()
     res = requests.get(
         f"https://graph.facebook.com/{
             psid}?fields=first_name,last_name,profile_pic",
-        params={"access_token": PAGE_ACCESS_TOKEN})
-
+        params={"access_token": PAGE_ACCESS_TOKEN}
+    )
     user = res.json()
-    nameFacebook = user["first_name"] + " " + user["last_name"]
+    nameFacebook = f"{user['first_name']} {user['last_name']}"
 
     sanPham = np.char.add(sanPham, ': ')
-    toanBoSP = ', '.join(np.char.add(sanPham, loaiSanPhan))
-    data = [thoiGianDat, nameFacebook, name, sdt, adress, toanBoSP]
-    enterDataToGoogleSheet(data=data)
+    toanBoSP = ', '.join(np.char.add(sanPham, loaiSanPham))
+
+    # Chuẩn bị dữ liệu để ghi vào Google Sheets
+    data = [thoiGianDat, nameFacebook, name, sdt, address, toanBoSP]
+
     try:
         enterDataToGoogleSheet(data=data)
-    except:
-        # gửi thông báo nếu lỗi ghi vào goole sheet
-        call_send_api(sender_psid=ADMIN_PSID, response={
-                      "text": f"Lỗi khi đặt đơn hàng của {nameFacebook}"})
+    except Exception as e:
+        # Gửi thông báo lỗi nếu ghi vào Google Sheets thất bại
+        call_send_api(
+            sender_psid=ADMIN_PSID,
+            response={"text": f"Lỗi khi đặt đơn hàng của {
+                nameFacebook}: {str(e)}"}
+        )
 
-    # gửi thông báo cho admin
+    # Gửi thông báo đơn hàng cho admin về thông tin đơn hàng
     call_send_api(
         sender_psid=ADMIN_PSID,
         response={
@@ -177,13 +190,14 @@ def handleOrder():
                 f"Tên Facebook: {nameFacebook}\n"
                 f"Họ Tên: {name}\n"
                 f"SĐT: {sdt}\n"
+                f"Địa chỉ: {address}\n"
                 f"Sản phẩm: {toanBoSP}\n"
                 f"Thời gian đặt: {thoiGianDat}"
-            ),
+            )
         }
     )
 
-    return {"data": data}, 200
+    return render_template("HomePage.html")
 
 
 # handle_message
