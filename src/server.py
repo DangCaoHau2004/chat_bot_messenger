@@ -23,9 +23,6 @@ URL_WEB_ORDER = os.getenv("URL_WEB_ORDER")
 ADMIN_PSID = os.getenv("ADMIN_PSID")
 
 
-# Danh sách người dùng đang được hỗ trợ
-support_users = {}
-
 # Route Home
 
 
@@ -52,10 +49,6 @@ def webhook_post():
         print("Webhook Event:", webhook_event)
         sender_psid = webhook_event["sender"]["id"]
         print("Sender PSID:", sender_psid)
-        if sender_psid in support_users:
-            support_users[sender_psid] = time.time()
-            return "Người dùng đang được hỗ trợ", 200
-            # nếu message tồn tại gọi handle_message
         if "message" in webhook_event:
             handle_message(sender_psid, webhook_event["message"])
         # nếu postback tồn tại gọi handle_postback
@@ -211,19 +204,6 @@ def handleOrder():
 
     return render_template("thankForOrder.html")
 
-# check_timeout khi user đã quá 3 phút mà chưa phản hồi lại sẽ kết thúc cuộc trò chuyện
-
-
-def check_timeouts():
-    while True:
-        time.sleep(60)  # kiểm tra mỗi phút
-        current_time = time.time()
-        to_remove = [psid for psid, timestamp in support_users.items(
-        ) if current_time - timestamp > 120]  # Kiểm tra nếu đã quá 2 phút
-        for psid in to_remove:
-            del support_users[psid]  # Xóa người dùng khỏi danh sách
-            call_send_api(sender_psid=psid, response={
-                          "text": "Đã quá 3 phút mà bạn chưa trả lời shop xin phép dừng cuộc trò chuyện tại đây nhé."})
 
 # handle_message
 
@@ -290,23 +270,6 @@ def handle_postback(sender_psid, received_postback):
             }
         }
         call_send_api(sender_psid=sender_psid, response=response)
-    elif payload.lower() == "care_help":
-        if sender_psid in support_users:
-            print(f"Người dùng với id: {sender_psid}")
-            support_users[sender_psid] = time.time()
-            response = {"text": "Bạn chờ chút nhé sẽ có nhân viên hỗ trợ bạn!"}
-            call_send_api(sender_psid=sender_psid, response=response)
-            # lấy tên người dùng
-            res = requests.get(
-                f"https://graph.facebook.com/{
-                    sender_psid}?fields=first_name,last_name,profile_pic",
-                params={"access_token": PAGE_ACCESS_TOKEN})
-            if res.status_code == 200:
-                user = res.json()
-                name = user["first_name"] + " " + user["last_name"]
-            # thông báo cho admin
-            call_send_api(sender_psid=ADMIN_PSID, response={
-                          "text": f"{name} cần được hỗ trợ"})
 
 
 def call_send_api(sender_psid, response):
@@ -332,5 +295,4 @@ def call_send_api(sender_psid, response):
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
-    threading.Thread(target=check_timeouts).start()
     app.run(host='0.0.0.0', port=port, debug=True)
