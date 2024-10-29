@@ -1,6 +1,6 @@
 data,id_1,id_2,id_3,id_4
 shop có các loại quần nào nhỉ,1,1,1,1
-mình cần mua quần ,1,1,1,1
+mình cần mua quần,1,1,1,1
 mình cần mua quần màu đen,1,0,0,0
 mình cần mua quần màu xám,0,1,1,0
 mình cần mua quần màu be,0,0,0,1
@@ -14,7 +14,7 @@ mình cần mua quần dễ phối đồ,1,1,1,0
 mình cần mua quần lịch sự,1,1,1,0
 mình cần mua quần cá tính,0,0,0,1
 mình cần mua quần trẻ trung,1,0,1,1
-mình muốn mua quần ,1,1,1,1
+mình muốn mua quần,1,1,1,1
 mình muốn mua quần màu đen,1,0,0,0
 mình muốn mua quần màu xám,0,1,1,0
 mình muốn mua quần màu be,0,0,0,1
@@ -31,7 +31,7 @@ mình muốn mua quần trẻ trung,1,0,1,1
 mình gầy nên chọn bộ nào,0,0,0,1
 mình béo nên chọn bộ nào,1,1,1,0
 mình cân đối nên chọn bộ nào,1,1,1,1
-tôi cần mua quần ,1,1,1,1
+tôi cần mua quần,1,1,1,1
 tôi cần mua quần màu đen,1,0,0,0
 tôi cần mua quần màu xám,0,1,1,0
 tôi cần mua quần màu be,0,0,0,1
@@ -45,7 +45,7 @@ tôi cần mua quần dễ phối đồ,1,1,1,0
 tôi cần mua quần lịch sự,1,1,1,0
 tôi cần mua quần cá tính,0,0,0,1
 tôi cần mua quần trẻ trung,1,0,1,1
-tôi muốn mua quần ,1,1,1,1
+tôi muốn mua quần,1,1,1,1
 tôi muốn mua quần màu đen,1,0,0,0
 tôi muốn mua quần màu xám,0,1,1,0
 tôi muốn mua quần màu be,0,0,0,1
@@ -62,3 +62,21 @@ tôi muốn mua quần trẻ trung,1,0,1,1
 tôi gầy nên chọn bộ nào,0,0,0,1
 tôi béo nên chọn bộ nào,1,1,1,0
 tôi cân đối nên chọn bộ nào,1,1,1,1
+mình cần quần cho buổi tiệc,1,1,1,0
+mình muốn tìm quần mặc đi làm,1,1,0,1
+mình cần quần lưng cao,1,0,0,0
+tôi muốn quần lưng thấp,0,1,1,1
+tôi cần quần có túi lớn,1,1,0,0
+mình muốn quần trơn,1,0,1,1
+mình cần quần có thể phối với áo phông,1,1,1,1
+mình cần quần màu trắng,0,0,0,0
+mình cần quần cho buổi hẹn hò,1,1,1,0
+mình muốn quần mỏng,1,0,0,1
+mình cần quần có chất liệu thoáng khí,0,1,1,0
+mình muốn tìm quần theo xu hướng mới,1,1,0,0
+tôi cần quần làm việc thoải mái,1,1,1,0
+tôi cần quần có thể mang hàng ngày,1,0,1,1
+tôi muốn mua quần không co giãn,0,1,0,0
+mình cần quần có độ bền cao,1,1,0,1
+mình cần quần cho sự kiện đặc biệt,1,1,1,1
+mình muốn quần dễ bảo quản,1,1,1,0
