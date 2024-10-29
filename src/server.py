@@ -4,7 +4,7 @@ import os
 import requests
 from enterDataToGoogleSheet import enterDataToGoogleSheet
 import numpy as np
-
+import datetime
 # Kiểm tra đồng bộ giữa git và heroku
 # Tải các biến môi trường từ .env file
 load_dotenv()
@@ -17,6 +17,7 @@ config = {
 PAGE_ACCESS_TOKEN = os.getenv("PAGE_ACCESS_TOKEN")
 PAGE_ID = os.getenv("PAGE_ID")
 URL_WEB_ORDER = os.getenv("URL_WEB_ORDER")
+ADMIN_PSID = os.getenv("ADMIN_PSID")
 # Route Home
 
 
@@ -146,24 +147,42 @@ def handleOrder():
     loaiSanPhan = np.array(request.form.getlist("loaiSanPham"))
     call_send_api(
         sender_psid=psid,
-        response={"text": "Cảm ơn quý khách đã tin tưởng đặt hàng bên mình"}
+        response={"text": "Cảm ơn quý khách đã tin tưởng đặt hàng bên mình. Bên mình sẽ gọi xác nhận đơn hàng trong khoảng 15 phút tới bạn để ý máy giúp shop nha.", }
     )
+    thoiGianDat = datetime.datetime.now()
     res = requests.get(
         f"https://graph.facebook.com/{
             psid}?fields=first_name,last_name,profile_pic",
         params={"access_token": PAGE_ACCESS_TOKEN})
+
     user = res.json()
     nameFacebook = user["first_name"] + " " + user["last_name"]
+
     sanPham = np.char.add(sanPham, ': ')
     toanBoSP = ', '.join(np.char.add(sanPham, loaiSanPhan))
-    data = [nameFacebook, name, sdt, adress, toanBoSP]
+    data = [thoiGianDat, nameFacebook, name, sdt, adress, toanBoSP]
     enterDataToGoogleSheet(data=data)
     try:
         enterDataToGoogleSheet(data=data)
     except:
-        # gửi tin nhắn lại cho admin
-        pass
-    # trả về page cảm ơn
+        # gửi thông báo nếu lỗi ghi vào goole sheet
+        call_send_api(sender_psid=ADMIN_PSID, response={
+                      "text": f"Lỗi khi đặt đơn hàng của {nameFacebook}"})
+
+    # gửi thông báo cho admin
+    call_send_api(
+        sender_psid=ADMIN_PSID,
+        response={
+            "text": (
+                f"Tên Facebook: {nameFacebook}\n"
+                f"Họ Tên: {name}\n"
+                f"SĐT: {sdt}\n"
+                f"Sản phẩm: {toanBoSP}\n"
+                f"Thời gian đặt: {thoiGianDat}"
+            ),
+        }
+    )
+
     return {"data": data}, 200
 
 
