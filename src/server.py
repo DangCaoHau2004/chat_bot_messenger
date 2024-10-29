@@ -157,7 +157,7 @@ def handleOrder():
         }
     )
 
-    thoiGianDat = ''.join(datetime.datetime.now())
+    thoiGianDat = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     res = requests.get(
         f"https://graph.facebook.com/{
             psid}?fields=first_name,last_name,profile_pic",
@@ -197,7 +197,7 @@ def handleOrder():
         }
     )
 
-    return render_template("HomePage.html")
+    return render_template("thankForOrder.html")
 
 
 # handle_message
