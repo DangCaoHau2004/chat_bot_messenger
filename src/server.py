@@ -219,7 +219,7 @@ def check_timeouts():
         time.sleep(60)  # kiểm tra mỗi phút
         current_time = time.time()
         to_remove = [psid for psid, timestamp in support_users.items(
-        ) if current_time - timestamp > 60]  # Kiểm tra nếu đã quá 1 phút
+        ) if current_time - timestamp > 120]  # Kiểm tra nếu đã quá 2 phút
         for psid in to_remove:
             del support_users[psid]  # Xóa người dùng khỏi danh sách
             call_send_api(sender_psid=psid, response={
