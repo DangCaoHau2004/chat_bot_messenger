@@ -157,7 +157,7 @@ def handleOrder():
         }
     )
 
-    thoiGianDat = datetime.datetime.now()
+    thoiGianDat = ''.join(datetime.datetime.now())
     res = requests.get(
         f"https://graph.facebook.com/{
             psid}?fields=first_name,last_name,profile_pic",
