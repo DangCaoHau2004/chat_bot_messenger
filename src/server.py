@@ -292,6 +292,7 @@ def handle_postback(sender_psid, received_postback):
         call_send_api(sender_psid=sender_psid, response=response)
     elif payload.lower() == "care_help":
         if sender_psid in support_users:
+            print(f"Người dùng với id: {sender_psid}")
             support_users[sender_psid] = time.time()
             response = {"text": "Bạn chờ chút nhé sẽ có nhân viên hỗ trợ bạn!"}
             call_send_api(sender_psid=sender_psid, response=response)
