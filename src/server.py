@@ -6,9 +6,7 @@ from enterDataToGoogleSheet import enterDataToGoogleSheet
 import numpy as np
 import datetime
 import pytz
-import time
-import threading
-# Kiểm tra đồng bộ giữa git và heroku
+
 # Tải các biến môi trường từ .env file
 load_dotenv()
 
