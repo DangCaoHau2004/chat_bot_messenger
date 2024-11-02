@@ -1,6 +1,8 @@
-data,id_1,id_2,id_3
+data,1233268104465017,3818294515127025,1631364917815050
 mình cần xem một vài mẫu giày,1,1,1
 mình cần mua giày,1,1,1
+toàn bộ mẫu giày của shop,1,1,1
+tất cả mẫu giày của shop,1,1,1
 mình cần mua giày màu đen,1,1,0
 mình cần mua giày màu nâu,0,0,1
 mình cần mua giày tối giản,1,1,0
@@ -91,4 +93,29 @@ mình cần mua giày đi biển,1,0,0
 tôi muốn mua giày có đế chống sốc,1,1,1
 mình cần mua giày đơn giản và bền,1,1,0
 mình muốn giày dễ phối với đồ công sở,1,1,0
-tôi muốn mua giày phong cách hiện đại,0,1,1
+tôi muốn mua giày phong cách hiện đại,1,1,1
+tôi muốn mua giày đang trend hiện tại,1,1,1
+tôi muốn mua giày màu đỏ,0,0,0
+tôi muốn mua giày màu trắng,0,0,0
+tôi muốn mua giày màu xanh,0,0,0
+tôi muốn mua giày màu hồng,0,0,0
+tôi muốn mua giày màu vàng,0,0,0
+tôi muốn mua giày màu xanh dương,0,0,0
+tôi muốn mua giày màu xám,0,0,0
+tôi muốn mua giày màu tím,0,0,0
+tôi muốn mua giày màu cam,0,0,0
+tôi muốn mua giày màu ghi,0,0,0
+mình muốn mua giày màu đỏ,0,0,0
+mình muốn mua giày màu trắng,0,0,0
+mình muốn mua giày màu xanh,0,0,0
+mình muốn mua giày màu hồng,0,0,0
+mình muốn mua giày màu vàng,0,0,0
+mình muốn mua giày màu xanh dương,0,0,0
+mình muốn mua giày màu xám,0,0,0
+mình muốn mua giày màu tím,0,0,0
+mình muốn mua giày màu cam,0,0,0
+mình muốn mua giày màu ghi,0,0,0
+mình cần mua giày hợp với vest màu đen,1,1,1
+mình cần mua giày phù hợp với vest màu trắng,1,1,0
+mình cần mua giày phù hợp với vest màu xanh,1,1,1
+mình cần mua giày phù hợp với vest màu be,1,1,1
