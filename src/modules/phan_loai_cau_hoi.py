@@ -31,14 +31,3 @@ new_vector = vectorizer.transform(new_text)
 prediction = model.predict(new_vector)
 print(f"Dự đoán: {prediction[0]}")
 
-def load_yaml_by_label(label):
-    yaml_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'cau_tra_loi', f"{label}.yml")
-    if os.path.exists(yaml_path):
-        with open(yaml_path, 'r', encoding='utf-8') as file:
-            yaml_data = yaml.safe_load(file)
-            return yaml_data
-    else:
-        print(f"No YAML file found for label: {label}")
-        return None
-yaml_content = load_yaml_by_label(prediction[0])
-print("Dữ liệu từ file YAML:", yaml_content)
