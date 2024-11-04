@@ -4,7 +4,6 @@ import os
 import requests
 from enterDataToGoogleSheet import enterDataToGoogleSheet
 import numpy as np
-import datetime
 import pytz
 from apscheduler.schedulers.background import BackgroundScheduler
 from datetime import datetime
@@ -180,7 +179,7 @@ def handleOrder():
     )
 
     vietnam_tz = pytz.timezone('Asia/Ho_Chi_Minh')
-    thoiGianDat = datetime.datetime.now(
+    thoiGianDat = datetime.now(
         vietnam_tz).strftime("%Y-%m-%d %H:%M:%S")
     res = requests.get(
         f"https://graph.facebook.com/{
