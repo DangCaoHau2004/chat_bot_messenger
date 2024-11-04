@@ -62,7 +62,7 @@ def webhook_post():
 
         print("Webhook Event:", webhook_event)
         sender_psid = webhook_event["sender"]["id"]
-        if sender_psid in support_users():
+        if sender_psid in support_users:
             return ""
         print("Sender PSID:", sender_psid)
         if "message" in webhook_event:
