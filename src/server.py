@@ -14,7 +14,7 @@ sched = BackgroundScheduler()
 # Định nghĩa một tác vụ
 
 
-@sched.scheduled_job('interval', minutes=3)
+@sched.scheduled_job('interval', minutes=5)
 def timed_job():
     removeUser()
 
@@ -63,7 +63,10 @@ def webhook_post():
         print("Webhook Event:", webhook_event)
         sender_psid = webhook_event["sender"]["id"]
         if sender_psid in support_users:
-            return ""
+            handle_postback(sender_psid=sender_psid,
+                            received_postback={"payload": "care_help"})
+            return "Người dùng đang được hỗ trợ", 200
+
         print("Sender PSID:", sender_psid)
         if "message" in webhook_event:
             handle_message(sender_psid, webhook_event["message"])
@@ -291,6 +294,17 @@ def handle_postback(sender_psid, received_postback):
         support_users[sender_psid] = datetime.now()
         print(support_users)
         call_send_api(sender_psid=sender_psid, response=response)
+        # lấy tên người dùng
+        res = requests.get(
+            f"https://graph.facebook.com/{
+                sender_psid}?fields=first_name,last_name,profile_pic",
+            params={"access_token": PAGE_ACCESS_TOKEN})
+        if res.status_code == 200:
+            user = res.json()
+            name = user["first_name"] + " " + user["last_name"]
+            # thông báo cho admin
+        call_send_api(sender_psid=ADMIN_PSID, response={
+            "text": f"{name} cần được hỗ trợ"})
 
 
 def call_send_api(sender_psid, response):
@@ -315,12 +329,11 @@ def call_send_api(sender_psid, response):
 
 
 def removeUser():
-    for user in support_users:
-        difference = datetime.now() - support_users[user]
-        if difference.total_seconds() / 60 > 3.0:
-            print(support_users)
+    temp = support_users
+    for user in temp:
+        difference = datetime.now() - temp[user]
+        if difference.total_seconds() / 60 >= 5.0:
             support_users.pop(user)
-            print(support_users)
 
 
 if __name__ == "__main__":
