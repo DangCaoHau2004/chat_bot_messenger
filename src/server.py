@@ -289,6 +289,7 @@ def handle_postback(sender_psid, received_postback):
     elif payload.lower() == "care_help":
         response = {"text": "Bạn chờ chút nhé sẽ có nhân viên hỗ trợ bạn ngay!"}
         support_users[sender_psid] = datetime.now()
+        print(support_users)
         call_send_api(sender_psid=sender_psid, response=response)
 
 
@@ -317,7 +318,9 @@ def removeUser():
     for user in support_users:
         difference = datetime.now() - support_users[user]
         if difference.total_seconds() / 60 > 3.0:
+            print(support_users)
             support_users.pop(user)
+            print(support_users)
 
 
 if __name__ == "__main__":
