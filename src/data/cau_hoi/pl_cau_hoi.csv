@@ -34,6 +34,8 @@ sản phẩm,san_pham
 giày nào đẹp,san_pham
 áo nào đẹp,san_pham
 phụ kiện nào hợp,san_pham
+đẹp nhất,san_pham
+đồ giá rẻ,san_pham
 shop có những loại vest nào vậy,san_pham
 tôi cần được tư vấn về bảo hành,bao_hanh
 Tôi muốn hỏi về bảo hành,bao_hanh
@@ -57,6 +59,7 @@ Tôi muốn hỏi về ưu đãi,uu_dai
 ưu đãi,uu_dai
 khuyến mãi,uu_dai
 khuyến mại,uu_dai
+giảm giá,uu_dai
 hiện tại shop có những chương trình ưu đãi nào nhỉ,uu_dai
 tôi cần được tư vấn về thông tin shop,thong_tin_shop
 Tôi muốn hỏi về thông tin shop,thong_tin_shop
