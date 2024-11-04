@@ -289,7 +289,7 @@ def handle_postback(sender_psid, received_postback):
     elif payload.lower() == "care_help":
         response = {"text": "Bạn chờ chút nhé sẽ có nhân viên hỗ trợ bạn ngay!"}
         support_users[sender_psid] = datetime.now()
-        call_send_api(sender_psid=sender_psid, responser=response)
+        call_send_api(sender_psid=sender_psid, response=response)
 
 
 def call_send_api(sender_psid, response):
