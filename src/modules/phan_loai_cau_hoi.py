@@ -24,17 +24,25 @@ def phan_loai_cau_hoi(new_text):
 
     #kiểm tra độ chính xác
     accuracy = model.score(X_test, y_test)
-    print(f"Độ chính xác: {accuracy * 100:.2f}%")
+    # print(f"Độ chính xác: {accuracy * 100:.2f}%")
+
     new_vector = vectorizer.transform([new_text])
     prediction = model.predict(new_vector)[0]
-    with open('../data/cau_tra_loi/tu_van.yml','r', encoding='utf-8') as file_yml:
-        cau_tra_loi = yaml.safe_load(file_yml)
-        print(cau_tra_loi[prediction])
-    return cau_tra_loi[prediction]
+    with open('../data/cau_tra_loi/tu_van.yml','r', encoding='utf-8') as file_tuvan_yml:
+        cau_tra_loi = yaml.safe_load(file_tuvan_yml)
+        
+    if prediction in cau_tra_loi:
+        response = cau_tra_loi[prediction]
+    else:
+        with open('../data/cau_tra_loi/san_pham.yml','r', encoding='utf-8') as file_sanpham_yml:
+            cau_tra_loi = yaml.safe_load(file_sanpham_yml)
+            response = cau_tra_loi[prediction]
+    print(response)
+    return response
 
 # #ví dụ dự đoán
 # new_text = ["áo đẹp nhất "]
 # du_doan = phan_loai_cau_hoi(new_text)
 # print(du_doan)
 
-phan_loai_cau_hoi("Ưu đãi")
+phan_loai_cau_hoi("sản phẩm")
