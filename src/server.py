@@ -63,8 +63,8 @@ def webhook_post():
         print("Webhook Event:", webhook_event)
         sender_psid = webhook_event["sender"]["id"]
         if sender_psid in support_users:
-            handle_postback(sender_psid=sender_psid,
-                            received_postback={"payload": "care_help"})
+            support_users[sender_psid] = datetime.now()
+            call_admin(sender_psid=sender_psid)
             return "Người dùng đang được hỗ trợ", 200
 
         print("Sender PSID:", sender_psid)
@@ -295,16 +295,7 @@ def handle_postback(sender_psid, received_postback):
         print(support_users)
         call_send_api(sender_psid=sender_psid, response=response)
         # lấy tên người dùng
-        res = requests.get(
-            f"https://graph.facebook.com/{
-                sender_psid}?fields=first_name,last_name,profile_pic",
-            params={"access_token": PAGE_ACCESS_TOKEN})
-        if res.status_code == 200:
-            user = res.json()
-            name = user["first_name"] + " " + user["last_name"]
-            # thông báo cho admin
-        call_send_api(sender_psid=ADMIN_PSID, response={
-            "text": f"{name} cần được hỗ trợ"})
+        call_admin(sender_psid=sender_psid)
 
 
 def call_send_api(sender_psid, response):
@@ -336,6 +327,19 @@ def removeUser():
             support_users.pop(user)
             call_send_api(sender_psid=user, response={
                           "text": "Đã quá 5 phút mà bạn không nhắn lại bọn mình xin phép kết thúc cuộc trò chuyện tại đây nhé, cảm ơn bạn và chúc bạn một ngày tốt lành"})
+
+
+def call_admin(sender_psid):
+    res = requests.get(
+        f"https://graph.facebook.com/{
+            sender_psid}?fields=first_name,last_name,profile_pic",
+        params={"access_token": PAGE_ACCESS_TOKEN})
+    if res.status_code == 200:
+        user = res.json()
+        name = user["first_name"] + " " + user["last_name"]
+        # thông báo cho admin
+    call_send_api(sender_psid=ADMIN_PSID, response={
+        "text": f"{name} cần được hỗ trợ"})
 
 
 if __name__ == "__main__":
