@@ -6,6 +6,20 @@ from enterDataToGoogleSheet import enterDataToGoogleSheet
 import numpy as np
 import datetime
 import pytz
+from apscheduler.schedulers.background import BackgroundScheduler
+from datetime import datetime
+
+sched = BackgroundScheduler()
+
+# Định nghĩa một tác vụ
+
+
+@sched.scheduled_job('interval', minutes=3)
+def timed_job():
+    removeUser()
+
+
+sched.start()
 
 # Tải các biến môi trường từ .env file
 load_dotenv()
@@ -22,6 +36,8 @@ ADMIN_PSID = os.getenv("ADMIN_PSID")
 
 
 # Route Home
+
+support_users = {}
 
 
 @app.route('/')
@@ -46,6 +62,8 @@ def webhook_post():
 
         print("Webhook Event:", webhook_event)
         sender_psid = webhook_event["sender"]["id"]
+        if sender_psid in support_users():
+            return ""
         print("Sender PSID:", sender_psid)
         if "message" in webhook_event:
             handle_message(sender_psid, webhook_event["message"])
@@ -268,6 +286,10 @@ def handle_postback(sender_psid, received_postback):
             }
         }
         call_send_api(sender_psid=sender_psid, response=response)
+    elif payload.lower() == "care_help":
+        response = {"text": "Bạn chờ chút nhé sẽ có nhân viên hỗ trợ bạn ngay!"}
+        support_users[sender_psid] = datetime.now()
+        call_send_api(sender_psid=sender_psid, responser=response)
 
 
 def call_send_api(sender_psid, response):
@@ -289,6 +311,13 @@ def call_send_api(sender_psid, response):
         print('Message sent!')
     else:
         print(f"Unable to send message: {res.status_code} - {res.text}")
+
+
+def removeUser():
+    for user in support_users:
+        difference = datetime.now() - support_users[user]
+        if difference.total_seconds() / 60 > 3.0:
+            support_users.pop(user)
 
 
 if __name__ == "__main__":
