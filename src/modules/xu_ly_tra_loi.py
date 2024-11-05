@@ -36,9 +36,10 @@ def tra_loi_sp(du_doan, id_sp, loai_sp):
     return thong_tin_cac_san_pham
 
 
-def tra_loi_cau_hoi():
-    pass
-
+def tra_loi_tu_van(du_doan):
+    with open('../data/cau_tra_loi/tu_van.yml','r', encoding='utf-8') as file_tuvan_yml:
+        cau_tra_loi = yaml.safe_load(file_tuvan_yml)
+    return cau_tra_loi[du_doan]
 
 def tra_loi_dat_hang():
     pass

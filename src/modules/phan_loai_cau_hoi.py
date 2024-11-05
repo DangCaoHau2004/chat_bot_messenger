@@ -5,7 +5,7 @@ import yaml
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import SVC
 from sklearn.model_selection import train_test_split
-
+from xu_ly_tra_loi import tra_loi_tu_van
 def phan_loai_cau_hoi(new_text):
     csv_path = os.path.join(os.path.dirname(__file__), '..','data', 'cau_hoi', 'pl_cau_hoi.csv')
     data_cau_hoi = pd.read_csv(csv_path)
@@ -32,7 +32,7 @@ def phan_loai_cau_hoi(new_text):
         cau_tra_loi = yaml.safe_load(file_tuvan_yml)
         
     if prediction in cau_tra_loi:
-        response = cau_tra_loi[prediction]
+        print(tra_loi_tu_van(du_doan=prediction))
     else:
         csv_path = os.path.join(os.path.dirname(__file__), '..','data', 'cau_hoi', 'pl_san_pham.csv')
         data_cau_hoi = pd.read_csv(csv_path)
@@ -51,16 +51,11 @@ def phan_loai_cau_hoi(new_text):
 
         new_vector = vectorizer.transform([new_text])
         prediction = model.predict(new_vector)[0]
-        with open('../data/cau_tra_loi/san_pham.yml','r', encoding='utf-8') as file_sanpham_yml:
-            cau_tra_loi = yaml.safe_load(file_sanpham_yml)
-            response = cau_tra_loi[prediction]
     print("Dự đoán: " + prediction)
-    print(response)
-    return response
 
 # #ví dụ dự đoán
 # new_text = ["áo đẹp nhất "]
 # du_doan = phan_loai_cau_hoi(new_text)
 # print(du_doan)
 
-phan_loai_cau_hoi("tôi muốn xem áo đẹp")
+phan_loai_cau_hoi("Ưu đãi")
