@@ -24,7 +24,7 @@ def phan_loai_cau_hoi(new_text):
 
     #kiểm tra độ chính xác
     accuracy = model.score(X_test, y_test)
-    # print(f"Độ chính xác: {accuracy * 100:.2f}%")
+    print(f"Độ chính xác: {accuracy * 100:.2f}%")
 
     new_vector = vectorizer.transform([new_text])
     prediction = model.predict(new_vector)[0]
@@ -54,6 +54,7 @@ def phan_loai_cau_hoi(new_text):
         with open('../data/cau_tra_loi/san_pham.yml','r', encoding='utf-8') as file_sanpham_yml:
             cau_tra_loi = yaml.safe_load(file_sanpham_yml)
             response = cau_tra_loi[prediction]
+    print("Dự đoán: " + prediction)
     print(response)
     return response
 
@@ -62,4 +63,4 @@ def phan_loai_cau_hoi(new_text):
 # du_doan = phan_loai_cau_hoi(new_text)
 # print(du_doan)
 
-phan_loai_cau_hoi("vest")
+phan_loai_cau_hoi("tôi muốn xem áo đẹp")
