@@ -1,0 +1,56 @@
+data,label
+vest,suit_vest
+suitvest,suit_vest
+tối muốn mua bộ vest,suit_vest
+tôi cần xem vest,suit_vest
+shop có những loại vest nào,suit_vest
+vest nào đẹp,suit_vest
+vest giá rẻ,suit_vest
+vest đi tiệc,suit_vest
+suit thời trang,suit_vest
+ghile,ghile
+gile,ghile
+tôi muốn mua áo gile,ghile
+tôi cần xem áo ghile,ghile
+tôi quan tâm áo ghile,ghile
+shop có những loại áo ghile nào,ghile
+áo ghile nào đẹp,ghile
+gile giá rẻ,ghile
+ghile phù hợp phối đồ,ghile
+sơ mi,ao_so_mi
+tôi muốn mua áo sơ mi, ao_so_mi
+tôi cần xem áo sơ mi,ao_so_mi
+shop có những loại sơ mi nào,ao_so_mi
+sơ mi đẹp nhất,ao_so_mi
+sơ mi giá rẻ,ao_so_mi
+sơ mi phối đồ,ao_so_mi
+giày,giay
+tôi muốn mua giày,giay
+tôi cần xem giày,giay
+shop có những loại giày nào,giay
+giày đẹp,giay
+giày thời trang,giay
+giày giá rẻ,giay
+phối đồ với giày,giay
+quần âu,quan_au
+tôi muốn mua quần,quan_au
+tôi cần xem quần,quan_au
+quần giá rẻ,quan_au
+quần đẹp,quan_au
+tôi xin tư vấn về quần âu,quan_au
+shop có những loại quần nào,quan_au
+quần phối với áo,quan_au
+phụ kiện,phu_kien
+cà vạt,phu_kien
+nơ,phu_kien
+khăn,phu_kien
+kẹp,phu_kien
+tôi muốn mua cà vạt,phu_kien
+tôi muốn mua nơ,phu_kien
+tôi muốn mua khăn,phu_kien
+tôi muốn mua kẹp,phu_kien
+tôi cần xem cà vạt,phu_kien
+tôi cần xem nơ,phu_kien
+tôi cần xem khăn,phu_kien
+tôi cần xem kẹp,phu_kien
+phụ kiện nào đẹp,phu_kien
