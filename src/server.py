@@ -132,6 +132,16 @@ def setup_persitent_menu():
                         "type": "postback",
                         "title": "Khởi động lại bot",
                         "payload": "RESTART_BOT"
+                    },
+                    {
+                        "type": "postback",
+                        "title": "Đặt hàng",
+                        "payload": "ORDER"
+                    },
+                    {
+                        "type": "postback",
+                        "title": "Cách sử dụng bot",
+                        "payload": "HOW_TO_USE"
                     }
                 ]
             }
@@ -279,6 +289,10 @@ def handle_postback(sender_psid, received_postback):
         call_send_api(sender_psid=sender_psid, response=response)
         # lấy tên người dùng
         call_admin(sender_psid=sender_psid)
+    elif payload.lower() == "how_to_use":
+        with open("./src/data/cau_tra_loi/cach_sd.yml", "r", encoding="utf-8") as f:
+            how_to_use = yaml.safe_load(f)
+        call_send_api(sender_psid=sender_psid, response=how_to_use)
 
 
 def call_send_api(sender_psid, response):
