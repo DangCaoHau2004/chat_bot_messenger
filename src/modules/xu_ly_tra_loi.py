@@ -12,7 +12,8 @@ def tra_loi_sp(du_doan, id_sp, loai_sp, psid):
     if not danh_sach_sp_mua:
         return "Không tồn tại sản phẩm!"
 
-    thong_tin_cac_san_pham = "Shop có một vài mẫu theo yêu cầu của bạn tham khảo nha\n\n"
+    thong_tin_cac_san_pham = [
+        {"text": "Shop có một vài mẫu theo yêu cầu của bạn, bạn tham khảo nhé"}]
 
     # Đọc dữ liệu từ file YAML
     with open("./src/data/cau_tra_loi/san_pham.yml", "r", encoding="utf-8") as f:
@@ -23,22 +24,58 @@ def tra_loi_sp(du_doan, id_sp, loai_sp, psid):
             for product in san_pham[loai_sp]:
                 if product["id"] == int(label_id):
                     if loai_sp != "phu_kien":
-                        thong_tin_cac_san_pham += (
-                            f"\nTên: {product['ten']}\n"
-                            f"Màu sắc: {product['mau_sac']}\n"
-                            f"Kích cỡ: {product['kich_co']}\n"
-                            f"Giá: {product['gia']} VND\n"
-                            f"Mô tả: {product['mo_ta']}\n\n"
+                        thong_tin_cac_san_pham.append({
+                            "text":
+                            (
+                                f"\nTên: {product['ten']}\n"
+                                f"Màu sắc: {product['mau_sac']}\n"
+                                f"Kích cỡ: {product['kich_co']}\n"
+                                f"Giá: {product['gia']} VND\n"
+                                f"Mô tả: {product['mo_ta']}\n\n"
+                            )
+                        }
                         )
+                        thong_tin_cac_san_pham.append({
+                            "attachment": {
+                                "type": "template",
+                                "payload": {
+                                    "template_type": "media",
+                                    "elements": [
+                                        {
+                                            "media_type": "image",
+                                            "attachment_id": product["id"]
+                                        }
+                                    ]
+                                }
+                            }
+                        })
                     else:
-                        thong_tin_cac_san_pham += (
-                            f"\nTên: {product['ten']}\n"
-                            f"Màu sắc: {product['mau_sac']}\n"
-                            f"Giá: {product['gia']} VND\n"
-                            f"Mô tả: {product['mo_ta']}\n\n"
+                        thong_tin_cac_san_pham.append({
+                            "text":
+                            (
+                                f"\nTên: {product['ten']}\n"
+                                f"Màu sắc: {product['mau_sac']}\n"
+                                f"Giá: {product['gia']} VND\n"
+                                f"Mô tả: {product['mo_ta']}\n\n"
+                            )
+                        }
                         )
+                        thong_tin_cac_san_pham.append({
+                            "attachment": {
+                                "type": "template",
+                                "payload": {
+                                    "template_type": "media",
+                                    "elements": [
+                                        {
+                                            "media_type": "image",
+                                            "attachment_id": product["id"]
+                                        }
+                                    ]
+                                }
+                            }
+                        })
 
-    return {"text": thong_tin_cac_san_pham}
+    return thong_tin_cac_san_pham
 
 
 def tra_loi_tu_van(du_doan, psid):
@@ -46,11 +83,11 @@ def tra_loi_tu_van(du_doan, psid):
         cau_tra_loi = yaml.safe_load(file_tuvan_yml)
         if du_doan == "dat_hang":
             return tra_loi_dat_hang(cau_tra_loi=cau_tra_loi[du_doan]["tra_loi"], psid=psid)
-    return {"text": cau_tra_loi[du_doan]}
+    return [{"text": cau_tra_loi[du_doan]}]
 
 
 def tra_loi_dat_hang(cau_tra_loi, psid, title="Đặt Hàng"):
-    return {
+    return [{
         "attachment": {
             "type": "template",
             "payload": {
@@ -67,4 +104,4 @@ def tra_loi_dat_hang(cau_tra_loi, psid, title="Đặt Hàng"):
                     ]
             }
         }
-    }
+    }]
