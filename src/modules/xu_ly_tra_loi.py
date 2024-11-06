@@ -58,9 +58,9 @@ def tra_loi_dat_hang(cau_tra_loi, psid):
                     "text": cau_tra_loi,
                     "buttons": [
                         {
-                            "type": "Đặt hàng",
+                            "type": "web_url",
                             "url": URL_WEB_ORDER + f"?psid={psid}",
-                            "title": "URL Button",
+                            "title": "Đặt hàng",
                             "webview_height_ratio": "full",
                             "messenger_extensions": True,
                         }
