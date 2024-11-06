@@ -1,3 +1,4 @@
+import yaml
 from flask import Flask, render_template, request
 from dotenv import load_dotenv
 import os
@@ -9,7 +10,6 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from datetime import datetime
 from modules.phan_loai_cau_hoi import phan_loai_cau_hoi
 sched = BackgroundScheduler()
-
 # Định nghĩa một tác vụ
 
 
@@ -166,14 +166,13 @@ def handleOrder():
     loaiSanPham = np.array(request.form.getlist("loaiSanPham"))
 
     # Gửi thông báo xác nhận đơn hàng cho khách
+    with open("./src/data/cau_tra_loi/tu_van.yml", "r", encoding="utf-8") as f:
+        san_pham = yaml.safe_load(f)
+    camon = san_pham["dat_hang"]["cam_on"]
     call_send_api(
         sender_psid=psid,
         response={
-            "text": (
-                "Cảm ơn quý khách đã tin tưởng đặt hàng bên mình. "
-                "Bên mình sẽ gọi xác nhận đơn hàng trong khoảng 15 phút tới. "
-                "Bạn để ý máy giúp shop nha."
-            )
+            "text": camon
         }
     )
 

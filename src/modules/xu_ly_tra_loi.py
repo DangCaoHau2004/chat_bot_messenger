@@ -12,7 +12,7 @@ def tra_loi_sp(du_doan, id_sp, loai_sp, psid):
     if not danh_sach_sp_mua:
         return "Không tồn tại sản phẩm!"
 
-    thong_tin_cac_san_pham = ""
+    thong_tin_cac_san_pham = "Shop có một vài mẫu theo yêu cầu của bạn tham khảo nha\n\n"
 
     # Đọc dữ liệu từ file YAML
     with open("./src/data/cau_tra_loi/san_pham.yml", "r", encoding="utf-8") as f:
