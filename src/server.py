@@ -9,6 +9,7 @@ import pytz
 from apscheduler.schedulers.background import BackgroundScheduler
 from datetime import datetime
 from modules.phan_loai_cau_hoi import phan_loai_cau_hoi
+from modules.xu_ly_tra_loi import tra_loi_tu_van
 sched = BackgroundScheduler()
 # Định nghĩa một tác vụ
 
@@ -263,24 +264,7 @@ def handle_postback(sender_psid, received_postback):
         else:
             print("Yêu cầu thất bại:", res.status_code, res.text)
     elif payload.lower() == 'order':
-        response = {
-            "attachment": {
-                "type": "template",
-                "payload": {
-                    "template_type": "button",
-                    "text": "Try the URL button!",
-                    "buttons": [
-                        {
-                            "type": "web_url",
-                            "url": URL_WEB_ORDER + f"?psid={sender_psid}",
-                            "title": "URL Button",
-                            "webview_height_ratio": "full",
-                            "messenger_extensions": True,  # nếu bằng false sẽ sang một trang khác
-                        }
-                    ]
-                }
-            }
-        }
+        response = tra_loi_tu_van(du_doan="dat_hang", psid=sender_psid)
         call_send_api(sender_psid=sender_psid, response=response)
     elif payload.lower() == "care_help":
         response = {"text": "Bạn chờ chút nhé sẽ có nhân viên hỗ trợ bạn ngay!"}
