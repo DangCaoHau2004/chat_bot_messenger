@@ -10,7 +10,7 @@ from modules.goi_y_san_pham import goi_y_san_pham
 
 def phan_loai_cau_hoi(new_text):
     # Load và xử lý dữ liệu câu hỏi tư vấn
-    data_cau_hoi = pd.read_csv('./data/cau_hoi/pl_cau_hoi.csv')
+    data_cau_hoi = pd.read_csv('./src/data/cau_hoi/pl_cau_hoi.csv')
     data_list = np.array(data_cau_hoi['data'])
     label_list = np.array(data_cau_hoi['label'])
 
@@ -33,13 +33,13 @@ def phan_loai_cau_hoi(new_text):
     prediction = model.predict(new_vector)[0]
 
     # Kiểm tra trong câu trả lời tư vấn
-    with open('./data/cau_tra_loi/tu_van.yml', 'r', encoding='utf-8') as file_tuvan_yml:
+    with open('./src/data/cau_tra_loi/tu_van.yml', 'r', encoding='utf-8') as file_tuvan_yml:
         cau_tra_loi = yaml.safe_load(file_tuvan_yml)
 
     if prediction in cau_tra_loi:
         return tra_loi_tu_van(du_doan=prediction)
     else:
-        data_san_pham = pd.read_csv('./data/cau_hoi/pl_san_pham.csv')
+        data_san_pham = pd.read_csv('./src/data/cau_hoi/pl_san_pham.csv')
         data_list_sp = np.array(data_san_pham['data'])
         label_list_sp = np.array(data_san_pham['label'])
 
