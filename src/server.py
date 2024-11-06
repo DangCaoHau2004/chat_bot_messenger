@@ -227,7 +227,8 @@ def handleOrder():
 
 def handle_message(sender_psid, received_message):
     if "text" in received_message:
-        response = phan_loai_cau_hoi(new_text=received_message["text"])
+        response = phan_loai_cau_hoi(
+            new_text=received_message["text"], psid=sender_psid)
         call_send_api(sender_psid, response)
     else:
         print("No text found in the message")

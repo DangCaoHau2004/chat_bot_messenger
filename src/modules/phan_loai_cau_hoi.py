@@ -8,7 +8,7 @@ from modules.xu_ly_tra_loi import tra_loi_tu_van
 from modules.goi_y_san_pham import goi_y_san_pham
 
 
-def phan_loai_cau_hoi(new_text):
+def phan_loai_cau_hoi(new_text, psid):
     # Load và xử lý dữ liệu câu hỏi tư vấn
     data_cau_hoi = pd.read_csv('./src/data/cau_hoi/pl_cau_hoi.csv')
     data_list = np.array(data_cau_hoi['data'])
@@ -37,7 +37,7 @@ def phan_loai_cau_hoi(new_text):
         cau_tra_loi = yaml.safe_load(file_tuvan_yml)
 
     if prediction in cau_tra_loi:
-        return tra_loi_tu_van(du_doan=prediction)
+        return tra_loi_tu_van(du_doan=prediction, psid=psid)
     else:
         data_san_pham = pd.read_csv('./src/data/cau_hoi/pl_san_pham.csv')
         data_list_sp = np.array(data_san_pham['data'])
@@ -56,4 +56,4 @@ def phan_loai_cau_hoi(new_text):
         new_vector_sp = vectorizer_sp.transform([new_text])
         prediction_sp = model_sp.predict(new_vector_sp)[0]
 
-        return goi_y_san_pham(loai_sp=prediction_sp, cau_hoi=new_text)
+        return goi_y_san_pham(loai_sp=prediction_sp, cau_hoi=new_text, psid=psid)

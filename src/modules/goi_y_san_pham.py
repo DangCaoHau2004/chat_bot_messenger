@@ -38,7 +38,7 @@ def tien_xu_ly_vb(text):
     return text
 
 
-def goi_y_san_pham(loai_sp, cau_hoi):
+def goi_y_san_pham(loai_sp, cau_hoi, psid):
     danh_sach_sp = []
 
     # Điền id sản phẩm vào danh_sach_sp
@@ -76,4 +76,4 @@ def goi_y_san_pham(loai_sp, cau_hoi):
 
     du_doan = new_y_pred.toarray()[0]
     print(du_doan)
-    return tra_loi_sp(du_doan=du_doan, id_sp=danh_sach_sp, loai_sp=loai_sp)
+    return tra_loi_sp(du_doan=du_doan, id_sp=danh_sach_sp, loai_sp=loai_sp, psid=psid)

@@ -1,7 +1,12 @@
 import yaml
+import os
+from dotenv import load_dotenv
+URL_WEB_ORDER = os.getenv("URL_WEB_ORDER")
+
+load_dotenv()
 
 
-def tra_loi_sp(du_doan, id_sp, loai_sp):
+def tra_loi_sp(du_doan, id_sp, loai_sp, psid):
     danh_sach_sp_mua = [id_sp[i] for i in range(len(du_doan)) if du_doan[i]]
 
     if not danh_sach_sp_mua:
@@ -36,9 +41,30 @@ def tra_loi_sp(du_doan, id_sp, loai_sp):
     return {"text": thong_tin_cac_san_pham}
 
 
-def tra_loi_tu_van(du_doan):
+def tra_loi_tu_van(du_doan, psid):
     with open('./src/data/cau_tra_loi/tu_van.yml', 'r', encoding='utf-8') as file_tuvan_yml:
         cau_tra_loi = yaml.safe_load(file_tuvan_yml)
         if du_doan == "dat_hang":
-            return {"text": cau_tra_loi[du_doan]["tra_loi"]}
+            return tra_loi_dat_hang(cau_tra_loi=cau_tra_loi[du_doan]["tra_loi"], psid=psid)
     return {"text": cau_tra_loi[du_doan]}
+
+
+def tra_loi_dat_hang(cau_tra_loi, psid):
+    return {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                    "template_type": "button",
+                    "text": cau_tra_loi,
+                    "buttons": [
+                        {
+                            "type": "Đặt hàng",
+                            "url": URL_WEB_ORDER + f"?psid={psid}",
+                            "title": "URL Button",
+                            "webview_height_ratio": "full",
+                            "messenger_extensions": True,
+                        }
+                    ]
+            }
+        }
+    }
