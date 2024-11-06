@@ -303,12 +303,16 @@ def call_send_api(sender_psid, response):
 
 def removeUser():
     temp = support_users
+    users_to_remove = []
     for user in temp:
         difference = datetime.now() - temp[user]
         if difference.total_seconds() / 60 >= 5.0:
-            support_users.pop(user)
-            call_send_api(sender_psid=user, response={
-                          "text": "Đã quá 5 phút mà bạn không nhắn lại bọn mình xin phép kết thúc cuộc trò chuyện tại đây nhé, cảm ơn bạn và chúc bạn một ngày tốt lành"})
+            users_to_remove.append(user)
+
+    for user in users_to_remove:
+        support_users.pop(user)
+        call_send_api(sender_psid=user, response={
+                      "text": "Đã quá 5 phút mà bạn không nhắn lại bọn mình xin phép kết thúc cuộc trò chuyện tại đây nhé, cảm ơn bạn và chúc bạn một ngày tốt lành"})
 
 
 def call_admin(sender_psid):
