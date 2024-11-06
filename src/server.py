@@ -240,7 +240,7 @@ def handle_message(sender_psid, received_message):
         result = phan_loai_cau_hoi(
             new_text=received_message["text"], psid=sender_psid)
         for response in result:
-            call_send_api(sender_psid, response)
+            call_send_api(sender_psid=sender_psid, response=response)
     else:
         print("No text found in the message")
 
@@ -265,8 +265,9 @@ def handle_postback(sender_psid, received_postback):
         else:
             print("Yêu cầu thất bại:", res.status_code, res.text)
     elif payload.lower() == 'order':
-        response = tra_loi_tu_van(du_doan="dat_hang", psid=sender_psid)
-        call_send_api(sender_psid=sender_psid, response=response)
+        result = tra_loi_tu_van(du_doan="dat_hang", psid=sender_psid)
+        for response in result:
+            call_send_api(sender_psid=sender_psid, response=response)
     elif payload.lower() == "care_help":
         response = {"text": "Bạn chờ chút nhé sẽ có nhân viên hỗ trợ bạn ngay!"}
         support_users[sender_psid] = datetime.now()
