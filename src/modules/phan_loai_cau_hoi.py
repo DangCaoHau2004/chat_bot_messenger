@@ -11,7 +11,7 @@ from modules.goi_y_san_pham import goi_y_san_pham
 
 def phan_loai_cau_hoi(new_text):
     csv_path = os.path.join(os.path.dirname(__file__),
-                            '..', 'data', 'cau_hoi', 'pl_cau_hoi.csv')
+                            '.', 'data', 'cau_hoi', 'pl_cau_hoi.csv')
     data_cau_hoi = pd.read_csv(csv_path)
 
     data_list = np.array(data_cau_hoi['data'])
@@ -32,14 +32,14 @@ def phan_loai_cau_hoi(new_text):
 
     new_vector = vectorizer.transform([new_text])
     prediction = model.predict(new_vector)[0]
-    with open('../data/cau_tra_loi/tu_van.yml', 'r', encoding='utf-8') as file_tuvan_yml:
+    with open('./data/cau_tra_loi/tu_van.yml', 'r', encoding='utf-8') as file_tuvan_yml:
         cau_tra_loi = yaml.safe_load(file_tuvan_yml)
 
     if prediction in cau_tra_loi:
         print(tra_loi_tu_van(du_doan=prediction))
     else:
         csv_path = os.path.join(os.path.dirname(
-            __file__), '..', 'data', 'cau_hoi', 'pl_san_pham.csv')
+            __file__), '.', 'data', 'cau_hoi', 'pl_san_pham.csv')
         data_cau_hoi = pd.read_csv(csv_path)
 
         data_list = np.array(data_cau_hoi['data'])
