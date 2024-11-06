@@ -76,4 +76,4 @@ def goi_y_san_pham(loai_sp, cau_hoi):
 
     du_doan = new_y_pred.toarray()[0]
     print(du_doan)
-    print(tra_loi_sp(du_doan=du_doan, id_sp=danh_sach_sp, loai_sp=loai_sp))
+    return tra_loi_sp(du_doan=du_doan, id_sp=danh_sach_sp, loai_sp=loai_sp)
