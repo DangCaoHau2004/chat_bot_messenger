@@ -5,8 +5,8 @@ import yaml
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import SVC
 from sklearn.model_selection import train_test_split
-from xu_ly_tra_loi import tra_loi_tu_van
-from goi_y_san_pham import goi_y_san_pham
+from modules.xu_ly_tra_loi import tra_loi_tu_van
+from modules.goi_y_san_pham import goi_y_san_pham
 
 
 def phan_loai_cau_hoi(new_text):

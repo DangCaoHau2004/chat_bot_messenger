@@ -5,7 +5,7 @@ from sklearn.metrics import accuracy_score, hamming_loss
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 import pandas as pd
-from xu_ly_tra_loi import tra_loi_sp
+from modules.xu_ly_tra_loi import tra_loi_sp
 import yaml
 import re
 # từ viết tắt
