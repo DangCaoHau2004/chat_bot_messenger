@@ -49,7 +49,7 @@ def tra_loi_tu_van(du_doan, psid):
     return {"text": cau_tra_loi[du_doan]}
 
 
-def tra_loi_dat_hang(cau_tra_loi, psid):
+def tra_loi_dat_hang(cau_tra_loi, psid, title="Đặt Hàng"):
     return {
         "attachment": {
             "type": "template",
@@ -60,7 +60,7 @@ def tra_loi_dat_hang(cau_tra_loi, psid):
                         {
                             "type": "web_url",
                             "url": URL_WEB_ORDER + f"?psid={psid}",
-                            "title": "Đặt hàng",
+                            "title": title,
                             "webview_height_ratio": "full",
                             "messenger_extensions": True,
                         }

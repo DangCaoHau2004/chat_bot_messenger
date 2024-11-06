@@ -8,6 +8,7 @@ import pandas as pd
 from modules.xu_ly_tra_loi import tra_loi_sp
 import yaml
 import re
+from modules.xu_ly_tra_loi import tra_loi_dat_hang
 # từ viết tắt
 tu_viet_tat = {
     "k": "không",
@@ -75,5 +76,6 @@ def goi_y_san_pham(loai_sp, cau_hoi, psid):
     new_y_pred = br_clf.predict(new_X_tfidf.toarray())
 
     du_doan = new_y_pred.toarray()[0]
-    print(du_doan)
+    if set(du_doan) == {0}:
+        return tra_loi_dat_hang(cau_tra_loi="Sản phẩm bạn hỏi hiện tại, shop chưa có bạn có thể tham khảo một vài sản phẩm dưới đây!", psid=psid, title="Các sản Phẩm")
     return tra_loi_sp(du_doan=du_doan, id_sp=danh_sach_sp, loai_sp=loai_sp, psid=psid)
