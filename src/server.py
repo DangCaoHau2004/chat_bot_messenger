@@ -7,7 +7,7 @@ import numpy as np
 import pytz
 from apscheduler.schedulers.background import BackgroundScheduler
 from datetime import datetime
-
+from modules.phan_loai_cau_hoi import phan_loai_cau_hoi
 sched = BackgroundScheduler()
 
 # Định nghĩa một tác vụ
@@ -41,7 +41,6 @@ support_users = {}
 
 @app.route('/')
 def home():
-    print
     return render_template("HomePage.html")
 
 
@@ -228,22 +227,7 @@ def handleOrder():
 
 def handle_message(sender_psid, received_message):
     if "text" in received_message:
-        response = {
-            "attachment": {
-                "type": "template",
-                "payload": {
-                    "template_type": "button",
-                    "text": "Đặt Hàng",
-                    "buttons": [
-                        {
-                            "type": "postback",
-                            "title": "Đặt Hàng",
-                            "payload": "Order"
-                        }
-                    ]
-                }
-            }
-        }
+        response = phan_loai_cau_hoi[received_message["text"]]
         call_send_api(sender_psid, response)
     else:
         print("No text found in the message")

@@ -10,7 +10,7 @@ def tra_loi_sp(du_doan, id_sp, loai_sp):
     thong_tin_cac_san_pham = ""
 
     # Đọc dữ liệu từ file YAML
-    with open("./data/cau_tra_loi/san_pham.yml", "r", encoding="utf-8") as f:
+    with open("../data/cau_tra_loi/san_pham.yml", "r", encoding="utf-8") as f:
         san_pham = yaml.safe_load(f)
 
         # Tìm và ghép thông tin sản phẩm
@@ -33,13 +33,12 @@ def tra_loi_sp(du_doan, id_sp, loai_sp):
                             f"Mô tả: {product['mo_ta']}\n\n"
                         )
 
-    return thong_tin_cac_san_pham
+    return {"text": thong_tin_cac_san_pham}
 
 
 def tra_loi_tu_van(du_doan):
-    with open('../data/cau_tra_loi/tu_van.yml','r', encoding='utf-8') as file_tuvan_yml:
+    with open('../data/cau_tra_loi/tu_van.yml', 'r', encoding='utf-8') as file_tuvan_yml:
         cau_tra_loi = yaml.safe_load(file_tuvan_yml)
-    return cau_tra_loi[du_doan]
-
-def tra_loi_dat_hang():
-    pass
+        if du_doan == "dat_hang":
+            return {"text": cau_tra_loi[du_doan]["tra_loi"]}
+    return {"text": cau_tra_loi[du_doan]}
