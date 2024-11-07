@@ -112,7 +112,7 @@ def tra_loi_dat_hang(cau_tra_loi, psid, title="Đặt Hàng"):
 def tra_loi_kich_co(psid):
     with open('./src/data/cau_tra_loi/tu_van.yml', 'r', encoding='utf-8') as file_tuvan_yml:
         cau_tra_loi = yaml.safe_load(file_tuvan_yml)
-    phan_hoi = [{"text": cau_tra_loi["kich_co"]["tra_loi"]}, {
+    phan_hoi = [{"text": cau_tra_loi["kich_co"]}, {
         "attachment": {
             "type": "template",
             "payload": {
