@@ -13,7 +13,6 @@ from modules.xu_ly_tra_loi import tra_loi_tu_van
 sched = BackgroundScheduler()
 # Định nghĩa một tác vụ
 
-
 @sched.scheduled_job('interval', minutes=5)
 def timed_job():
     removeUser()

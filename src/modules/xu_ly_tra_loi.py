@@ -83,6 +83,8 @@ def tra_loi_tu_van(du_doan, psid):
         cau_tra_loi = yaml.safe_load(file_tuvan_yml)
         if du_doan == "dat_hang":
             return tra_loi_dat_hang(cau_tra_loi=cau_tra_loi[du_doan]["tra_loi"], psid=psid)
+        elif du_doan == "kich_co":
+            return tra_loi_kich_co(psid=psid)
     return [{"text": cau_tra_loi[du_doan]}]
 
 
@@ -105,3 +107,23 @@ def tra_loi_dat_hang(cau_tra_loi, psid, title="Đặt Hàng"):
             }
         }
     }]
+
+
+def tra_loi_kich_co(psid):
+    with open('./src/data/cau_tra_loi/tu_van.yml', 'r', encoding='utf-8') as file_tuvan_yml:
+        cau_tra_loi = yaml.safe_load(file_tuvan_yml)
+    phan_hoi = [{"text": cau_tra_loi["kich_co"]["tra_loi"]}, {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "media",
+                "elements": [
+                    {
+                        "media_type": "image",
+                        "attachment_id": 520059254173736
+                    }
+                ]
+            }
+        }
+    }]
+    return phan_hoi
