@@ -13,6 +13,7 @@ from modules.xu_ly_tra_loi import tra_loi_tu_van
 sched = BackgroundScheduler()
 # Định nghĩa một tác vụ
 
+
 @sched.scheduled_job('interval', minutes=5)
 def timed_job():
     removeUser()
@@ -62,7 +63,6 @@ def webhook_post():
         sender_psid = webhook_event["sender"]["id"]
         if sender_psid in support_users:
             support_users[sender_psid] = datetime.now()
-            call_admin(sender_psid=sender_psid)
             return "Người dùng đang được hỗ trợ", 200
 
         print("Sender PSID:", sender_psid)
