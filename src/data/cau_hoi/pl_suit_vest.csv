@@ -124,7 +124,7 @@ mình muốn bộ vest có túi ngoài rộng,0,0,0,0,0,0
 bạn có bộ vest theo phong cách tối giản không,1,1,1,1,0,0
 bộ vest nào thích hợp cho buổi gặp đối tác,1,1,1,1,1,0
 mình muốn bộ vest dễ là ủi,1,1,1,1,1,1
-mình cần vest để chụp ảnh kỷ yếu,0,1,1,0,1,0
+mình cần vest để chụp ảnh kỷ yếu,1,1,1,1,1,1
 bạn có bộ vest nào không cần ủi không,0,0,0,1,1,0
 mình cần mua áo vest đẹp của shop,1,1,1,1,1,1
 mình cần bộ suit hai mảnh,1,1,1,0,0,0
@@ -134,11 +134,13 @@ mình cần bộ vest ba mảnh,0,0,0,1,1,1
 mình cần bộ suit có kèm áo ghile,0,0,0,1,1,1
 mình chưa mua vest bao giờ thì nên chọn bộ nào,1,1,1,1,1,0
 tôi muốn mua vest,1,1,1,1,1,1
-tôi cần mua vest,1,1,1,1,1,1
+mình cần mua vest,1,1,1,1,1,1
 các mẫu vest đẹp,1,1,1,1,1,1
 mình cần mua vest cổ điển,1,1,1,0,0,0
 vest cổ điển,1,1,1,0,0,0
+vest classic,1,1,1,0,0,0
 vest hiện đại,0,0,0,1,1,1
+vest mordern,0,0,0,1,1,1
 vest ba mảnh,0,0,0,1,1,1
 vest hai mảnh,1,1,1,0,0,0
 vest màu be,0,0,0,0,0,0
@@ -155,12 +157,19 @@ bạn có vest màu hồng không,0,0,0,0,0,0
 bạn có vest màu tím không,0,0,0,0,0,0
 bạn có vest màu nâu không,0,0,0,0,0,0
 bạn có vest màu xanh lá không,0,0,0,0,0,0
-mình cần mua vest màu be không,0,0,0,0,0,0
-mình cần mua vest màu đỏ không,0,0,0,0,0,0
-mình cần mua vest màu vàng không,0,0,0,0,0,0
-mình cần mua vest màu hồng không,0,0,0,0,0,0
-mình cần mua vest màu tím không,0,0,0,0,0,0
-mình cần mua vest màu nâu không,0,0,0,0,0,0
-mình cần mua vest màu xanh lá không,0,0,0,0,0,0
 mình cần mua bộ vest xấu,0,0,0,0,0,0
 vest xấu,0,0,0,0,0,0
+mình cần mua vest màu be,0,0,0,0,0,0
+mình cần mua vest màu đỏ,0,0,0,0,0,0
+mình cần mua vest màu vàng,0,0,0,0,0,0
+mình cần mua vest màu hồng,0,0,0,0,0,0
+mình cần mua vest màu tím,0,0,0,0,0,0
+mình cần mua vest màu nâu,0,0,0,0,0,0
+mình cần mua vest màu xanh lá,0,0,0,0,0,0
+tôi muốn mua vest màu be,0,0,0,0,0,0
+tôi muốn mua vest màu đỏ,0,0,0,0,0,0
+tôi muốn mua vest màu vàng,0,0,0,0,0,0
+tôi muốn mua vest màu hồng,0,0,0,0,0,0
+tôi muốn mua vest màu tím,0,0,0,0,0,0
+tôi muốn mua vest màu nâu,0,0,0,0,0,0
+tôi muốn mua vest màu xanh lá,0,0,0,0,0,0

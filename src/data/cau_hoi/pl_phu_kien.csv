@@ -18,11 +18,11 @@ mình cần mua nơ,0,0,0,0,1,1
 mình cần mua khăn,0,0,1,1,0,0
 mình cần mua caravat,1,0,0,0,0,0
 mình cần mua kẹp caravat,0,1,0,0,0,0
-toàn bộ cần mua cà vạt,1,0,0,0,0,0
-toàn bộ cần mua kẹp,0,1,0,0,0,0
-toàn bộ cần mua kẹp cà vạt,0,1,0,0,0,0
-toàn bộ cần mua nơ,0,0,0,0,1,1
-toàn bộ cần mua khăn,0,0,1,1,0,0
+toàn bộ cà vạt,1,0,0,0,0,0
+toàn bộ kẹp,0,1,0,0,0,0
+toàn bộ kẹp cà vạt,0,1,0,0,0,0
+toàn bộ nơ,0,0,0,0,1,1
+toàn bộ khăn,0,0,1,1,0,0
 mình cần mua phụ kiện cổ điển,1,0,1,0,0,1
 mình cần mua phụ kiện tối màu,1,0,1,0,0,0
 mình cần mua phụ kiện sáng màu,0,1,0,1,1,1
@@ -157,7 +157,6 @@ tôi cần mua nơ màu xám,0,0,0,0,0,0
 tôi cần mua nơ màu be,0,0,0,0,0,0
 mình cần mua nơ màu đen,0,0,0,0,1,1
 mình muốn mua nơ màu đen,0,0,0,0,1,1
-nơ màu đen,0,0,0,0,1,1
 mình cần mua nơ màu đỏ,0,0,0,0,0,0
 mình cần mua nơ màu xanh,0,0,0,0,0,0
 mình cần mua nơ màu vàng,0,0,0,0,0,0

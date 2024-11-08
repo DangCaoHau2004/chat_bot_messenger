@@ -1,9 +1,10 @@
+from sklearn.linear_model import LogisticRegression
 from skmultilearn.problem_transform import BinaryRelevance
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, hamming_loss
 import numpy as np
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.svm import SVC
 import pandas as pd
 from modules.xu_ly_tra_loi import tra_loi_sp
 import yaml
@@ -21,7 +22,10 @@ tu_viet_tat = {
     "a": "anh",
     "2": "hai",
     "3": "ba",
-    "1": "một"
+    "1": "một",
+    "ghil": "ghile",
+    "ghi lê": "ghile",
+    "gil": "ghile"
 }
 
 
@@ -59,8 +63,8 @@ def goi_y_san_pham(loai_sp, cau_hoi, psid):
     X_train, X_test, y_train, y_test = train_test_split(
         X_tfidf, label_list, test_size=0.2, random_state=42)
 
-    # Giải thuật BR
-    br_clf = BinaryRelevance(RandomForestClassifier(n_estimators=100))
+    # Giải thuật BR với SVM
+    br_clf = BinaryRelevance(SVC(kernel='linear', probability=True))
     br_clf.fit(X_train.toarray(), y_train)
 
     y_pred = br_clf.predict(X_test.toarray())
