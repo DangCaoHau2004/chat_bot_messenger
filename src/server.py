@@ -68,6 +68,9 @@ def webhook_post():
                     # Xử lý trường hợp payload không phải là 'order', 'get_started' hoặc 'restart_bot'
                     support_users[sender_psid] = datetime.now()
                     return "Người dùng đang được hỗ trợ", 200
+            elif "message" in webhook_event:
+                support_users[sender_psid] = datetime.now()
+                return "Người dùng đang được hỗ trợ", 200
 
         print("Sender PSID:", sender_psid)
         if "message" in webhook_event:
