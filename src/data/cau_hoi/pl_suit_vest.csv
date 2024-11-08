@@ -66,6 +66,8 @@ sản phẩm nào đang là best seller của shop ạ,1,1,0,1,0,0
 sản phẩm nào là bán chạy nhất của shop ạ,1,1,0,1,0,0
 bộ nào có thể dùng để đi đám cưới,1,1,1,1,1,1
 bộ vest này có phù hợp mùa hè không,1,1,1,0,0,0
+bộ vest phù hợp cho mùa hè không,1,1,1,0,0,0
+bộ vest để mặc mùa hè không,1,1,1,0,0,0
 mình cần bộ vest có túi trong,1,1,1,1,1,1
 bạn có bộ vest nào dành cho người lớn tuổi không,1,0,1,0,0,1
 mình muốn mua bộ vest dành cho dân công sở,1,1,1,0,0,1
@@ -85,11 +87,10 @@ shop có vest phong cách Hàn Quốc không,0,1,1,1,0,0
 mình cần bộ vest có nhiều màu lựa chọn,1,1,1,1,1,1
 bộ vest nào thích hợp làm quà tặng,1,1,1,1,1,1
 mình muốn tìm bộ vest có cổ áo đặc biệt,0,1,0,1,1,0
-bạn có bộ vest phù hợp với trang phục tiệc cưới không,1,1,1,1,0,0
+bạn có bộ vest phù hợp với trang phục tiệc cưới không,1,1,1,1,1,1
 bộ vest này có khuyến mãi không,0,0,1,1,0,0
 mình cần mua bộ vest có chất liệu mềm mại,1,1,1,0,0,0
 bạn có vest nào cho mùa thu không,1,1,1,1,1,1
-bộ vest này có thể đặt may theo số đo không,0,0,1,1,1,0
 bộ vest nào có thiết kế cổ điển,1,1,1,0,0,0
 mình cần mua vest có nhiều kích cỡ,1,1,1,1,1,1
 bộ vest này có đủ phụ kiện đi kèm không,1,1,1,1,1,1
@@ -97,6 +98,7 @@ shop có vest nào theo xu hướng mới không,0,0,0,1,1,1
 mình muốn bộ vest phù hợp với da ngăm,1,1,1,1,1,1
 bạn có bộ vest nào theo phong cách cổ điển không,1,1,1,0,0,0
 mình cần bộ vest cho người tập gym,1,1,1,1,1,0
+mình cần bộ vest cho gymer,1,1,1,1,1,0
 shop có vest cho học sinh không,1,1,1,1,1,0
 mình cần tìm bộ vest mặc dự tiệc đêm,1,1,1,1,1,1
 bạn có sản phẩm nào giảm giá hôm nay không,0,0,1,1,0,0
@@ -107,7 +109,7 @@ mình muốn mua bộ vest có hoạ tiết kẻ,0,0,0,0,0,0
 bạn có sản phẩm nào giới hạn số lượng không,0,0,0,1,1,1
 mình cần tìm vest cho đội nhóm,1,1,1,1,1,0
 mình muốn bộ vest có thiết kế sáng tạo,0,0,0,1,1,1
-shop có vest nào phù hợp cho sinh viên không,1,1,0,1,0,1
+shop có vest nào phù hợp cho sinh viên không,1,1,1,1,1,1
 bộ vest nào dễ gấp gọn để du lịch,1,1,1,1,1,1
 bạn có bộ vest màu be không,0,0,0,0,0,0
 bạn có bộ vest màu đỏ không,0,0,0,0,0,0
@@ -131,3 +133,34 @@ mình cần bộ suit ba mảnh,0,0,0,1,1,1
 mình cần bộ vest ba mảnh,0,0,0,1,1,1
 mình cần bộ suit có kèm áo ghile,0,0,0,1,1,1
 mình chưa mua vest bao giờ thì nên chọn bộ nào,1,1,1,1,1,0
+tôi muốn mua vest,1,1,1,1,1,1
+tôi cần mua vest,1,1,1,1,1,1
+các mẫu vest đẹp,1,1,1,1,1,1
+mình cần mua vest cổ điển,1,1,1,0,0,0
+vest cổ điển,1,1,1,0,0,0
+vest hiện đại,0,0,0,1,1,1
+vest ba mảnh,0,0,0,1,1,1
+vest hai mảnh,1,1,1,0,0,0
+vest màu be,0,0,0,0,0,0
+vest màu đỏ,0,0,0,0,0,0
+vest màu vàng,0,0,0,0,0,0
+vest màu hồng,0,0,0,0,0,0
+vest màu tím,0,0,0,0,0,0
+vest màu nâu,0,0,0,0,0,0
+vest màu xanh lá,0,0,0,0,0,0
+bạn có vest màu be không,0,0,0,0,0,0
+bạn có vest màu đỏ không,0,0,0,0,0,0
+bạn có vest màu vàng không,0,0,0,0,0,0
+bạn có vest màu hồng không,0,0,0,0,0,0
+bạn có vest màu tím không,0,0,0,0,0,0
+bạn có vest màu nâu không,0,0,0,0,0,0
+bạn có vest màu xanh lá không,0,0,0,0,0,0
+mình cần mua vest màu be không,0,0,0,0,0,0
+mình cần mua vest màu đỏ không,0,0,0,0,0,0
+mình cần mua vest màu vàng không,0,0,0,0,0,0
+mình cần mua vest màu hồng không,0,0,0,0,0,0
+mình cần mua vest màu tím không,0,0,0,0,0,0
+mình cần mua vest màu nâu không,0,0,0,0,0,0
+mình cần mua vest màu xanh lá không,0,0,0,0,0,0
+mình cần mua bộ vest xấu,0,0,0,0,0,0
+vest xấu,0,0,0,0,0,0

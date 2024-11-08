@@ -8,7 +8,7 @@ load_dotenv()
 
 def tra_loi_sp(du_doan, id_sp, loai_sp, psid):
     danh_sach_sp_mua = [id_sp[i] for i in range(len(du_doan)) if du_doan[i]]
-
+    print(danh_sach_sp_mua)
     if not danh_sach_sp_mua:
         return "Không tồn tại sản phẩm!"
 

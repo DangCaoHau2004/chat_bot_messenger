@@ -46,7 +46,6 @@ def goi_y_san_pham(loai_sp, cau_hoi, psid):
     with open("./src/data/cau_tra_loi/san_pham.yml", "r", encoding="utf-8") as f:
         san_pham = yaml.safe_load(f)
         danh_sach_sp = [str(sp["id"]) for sp in san_pham[loai_sp]]
-        print(danh_sach_sp)
 
     # Đọc file csv
     data_csv = pd.read_csv(f'./src/data/cau_hoi/pl_{loai_sp}.csv')
