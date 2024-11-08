@@ -61,7 +61,7 @@ def webhook_post():
 
         print("Webhook Event:", webhook_event)
         sender_psid = webhook_event["sender"]["id"]
-        if sender_psid in support_users:
+        if sender_psid not in support_users and (webhook_event["postback"]["payload"].lower() in ['order', 'get_started', 'restart_bot']):
             support_users[sender_psid] = datetime.now()
             return "Người dùng đang được hỗ trợ", 200
 
