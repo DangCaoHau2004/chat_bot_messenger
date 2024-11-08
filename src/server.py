@@ -261,6 +261,8 @@ def handle_postback(sender_psid, received_postback):
             name = user["first_name"] + " " + user["last_name"]
             response = {"text": f"Chào {name} đến với shop Thế Giới Vest"}
             call_send_api(sender_psid=sender_psid, response=response)
+            if sender_psid in support_users:
+                support_users.pop(sender_psid)
         else:
             print("Yêu cầu thất bại:", res.status_code, res.text)
     elif payload.lower() == 'order':
