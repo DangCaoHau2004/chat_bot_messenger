@@ -61,9 +61,13 @@ def webhook_post():
 
         print("Webhook Event:", webhook_event)
         sender_psid = webhook_event["sender"]["id"]
-        if sender_psid in support_users and (webhook_event["postback"]["payload"].lower() not in ['order', 'get_started', 'restart_bot']):
-            support_users[sender_psid] = datetime.now()
-            return "Người dùng đang được hỗ trợ", 200
+        if sender_psid in support_users:
+            if "postback" in webhook_event and "payload" in webhook_event["postback"]:
+                payload = webhook_event["postback"]["payload"].lower()
+                if payload not in ['order', 'get_started', 'restart_bot']:
+                    # Xử lý trường hợp payload không phải là 'order', 'get_started' hoặc 'restart_bot'
+                    support_users[sender_psid] = datetime.now()
+                    return "Người dùng đang được hỗ trợ", 200
 
         print("Sender PSID:", sender_psid)
         if "message" in webhook_event:
