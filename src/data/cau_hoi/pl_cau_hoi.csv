@@ -59,11 +59,12 @@ bảo hành,bao_hanh
 bảo hành bên mình sẽ được trong bao lâu ạ,bao_hanh
 chính sách bảo hành bên mình là sao ạ,bao_hanh
 tôi cần được tư vấn về vận chuyển,van_chuyen
-Tôi muốn hỏi về vận chuyển,van_chuyen
+tôi muốn hỏi về vận chuyển,van_chuyen
 vận chuyển,van_chuyen
 mình ở Hồ Chí Minh thì sẽ được giao trong bao lâu ạ,van_chuyen
 mình ở miền trung sẽ được giao trong bao lâu ạ,van_chuyen
-mình ở miền bắc sẽ được giao trong bao lây ạ,van_chuyen
+mình ở miền bắc sẽ được giao trong bao lâu ạ,van_chuyen
+mình ở Hà Nội sẽ được giao trong bao lâu,van_chuyen
 shop có hỗ trợ giao hỏa tốc không?,van_chuyen
 mình đang cần rất gấp shop có thể giao cho mình sớm nhất có thể được không,van_chuyen
 tôi cần được tư vấn về ưu đãi,uu_dai
@@ -78,7 +79,9 @@ tôi cần được tư vấn về thông tin shop,thong_tin_shop
 Tôi muốn hỏi về thông tin shop,thong_tin_shop
 thông tin shop,thong_tin_shop
 shop mình ở đâu ạ,thong_tin_shop
+địa chỉ shop,thong_tin_shop
 shop có chi nhánh ở miền Nam không, thong_tin_shop
+shop bán ở đâu ạ,thong_tin_shop
 mình cần bộ suit 2 mảnh,san_pham
 mình muốn Đặt hàng, dat_hang
 đặt hàng bên shop làm thế nào vậy, dat_hang
