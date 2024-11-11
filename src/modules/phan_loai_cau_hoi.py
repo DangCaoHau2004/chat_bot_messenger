@@ -6,6 +6,7 @@ from sklearn.svm import SVC
 from sklearn.model_selection import train_test_split
 from modules.xu_ly_tra_loi import tra_loi_tu_van
 from modules.goi_y_san_pham import goi_y_san_pham
+from modules.goi_y_san_pham import tien_xu_ly_vb
 
 
 def phan_loai_cau_hoi(new_text, psid):
@@ -29,7 +30,7 @@ def phan_loai_cau_hoi(new_text, psid):
     accuracy = model.score(X_test, y_test)
     print(f"Độ chính xác: {accuracy * 100:.2f}%")
 
-    new_vector = vectorizer.transform([new_text])
+    new_vector = vectorizer.transform(tien_xu_ly_vb(new_text))
     prediction = model.predict(new_vector)[0]
 
     # Kiểm tra trong câu trả lời tư vấn

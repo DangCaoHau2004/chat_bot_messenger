@@ -3,8 +3,11 @@ mình cần xem một vài mẫu giày,1,1,1
 mình cần mua giày,1,1,1
 toàn bộ mẫu giày của shop,1,1,1
 tất cả mẫu giày của shop,1,1,1
+các mẫu giày,1,1,1
+các sản phẩm giày màu đen,1,1,0
 mình cần mua giày màu đen,1,1,0
 mình cần mua giày màu nâu,0,0,1
+các sản phẩm giày màu nâu,0,0,1
 mình cần mua giày tối giản,1,1,0
 mình cần mua giày dễ phối đồ,1,1,1
 mình cần mua giày thanh lịch,1,1,1
@@ -119,3 +122,5 @@ mình cần mua giày hợp với vest màu đen,1,1,1
 mình cần mua giày phù hợp với vest màu trắng,1,1,0
 mình cần mua giày phù hợp với vest màu xanh,1,1,1
 mình cần mua giày phù hợp với vest màu be,1,1,1
+tôi cần mua giày sáng màu,0,0,0
+mình muốn mua giày sáng màu,0,0,0

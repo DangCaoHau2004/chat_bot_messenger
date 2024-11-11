@@ -1,14 +1,19 @@
 data,531991522936731,537217678919225,1624132905189814,441561441905563
 shop có các loại quần nào nhỉ,1,1,1,1
 các loại quần âu của shop,1,1,1,1
+các loại quần,1,1,1,1
 toàn bộ quần âu của shop,1,1,1,1
 tất cả quần âu của shop,1,1,1,1
 mình cần mua quần,1,1,1,1
 mình cần mua quần màu đen,1,0,0,0
 mình cần mua quần màu xám,0,1,1,0
 mình cần mua quần màu be,0,0,0,1
+các sản phẩm quần màu đen,1,0,0,0
+các sản phẩm quần màu xám,0,1,1,0
+các sản phẩm quần màu be,0,0,0,1
 mình cần mua quần tối màu,1,1,0,0
 mình cần mua quần sáng màu,0,0,1,1
+mình cần mua quần tối màu,1,1,0,0
 mình cần mua quần dáng slim,1,1,1,0
 mình cần mua quần dáng suông,0,0,0,1
 mình cần mua quần đắt nhất,0,1,0,0
@@ -55,6 +60,7 @@ tôi muốn mua quần màu xám,0,1,1,0
 tôi muốn mua quần màu be,0,0,0,1
 tôi muốn mua quần tối màu,1,1,0,0
 tôi muốn mua quần sáng màu,0,0,1,1
+tôi muốn mua quần tối màu,1,1,0,0
 tôi muốn mua quần dáng slim,1,1,1,0
 tôi muốn mua quần dáng suông,0,0,0,1
 tôi muốn mua quần đắt nhất,0,1,0,0

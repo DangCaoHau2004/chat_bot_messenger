@@ -136,6 +136,11 @@ các loại áo ghile màu đen,1,0,0,0,0
 các loại áo ghile màu ghi,0,1,0,0,0
 các loại áo ghile màu xám,0,0,1,0,0
 các loại áo ghile màu xanh,0,0,0,1,1
+các sản phẩm ghile màu đen,1,0,0,0,0
+các sản phẩm ghile màu ghi,0,1,0,0,0
+các sản phẩm ghile màu xám,0,0,1,0,0
+các sản phẩm ghile màu xanh,0,0,0,1,1
+các loại áo ghile,1,1,1,1,1
 mình cần mua áo ghile màu đỏ,0,0,0,0,0
 mình cần mua áo ghile màu trắng,0,0,0,0,0
 mình cần mua áo ghile màu be,0,0,0,0,0
@@ -157,3 +162,9 @@ shop có bán áo ghile nào đẹp không,1,1,1,1,1
 tất cả sản phẩm áo ghile,1,1,1,1,1
 toàn bộ sản phẩm áo ghile,1,1,1,1,1
 toàn bộ áo ghile,1,1,1,1,1
+tôi cần mua ghile sáng màu,0,0,1,0,0
+ghile sáng màu,0,0,1,0,0
+mình muốn mua ghile sáng màu,0,0,1,0,0
+mình muốn mua ghile tối màu,0,0,1,0,0
+ghile tối màu,0,0,1,0,0
+tôi cần mua ghile tối màu,0,0,1,0,0

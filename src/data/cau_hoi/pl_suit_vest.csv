@@ -7,6 +7,11 @@ tất cả vest của shop,1,1,1,1,1,1
 mình cần mua bộ vest màu xanh,0,0,0,1,0,1
 mình cần mua bộ vest màu đen,1,0,0,1,0,0
 mình cần mua bộ vest màu xám,0,1,1,0,1,0
+mình cần mua bộ vest màu trắng,0,1,0,0,0,0
+các sản phẩm vest màu xanh,0,0,0,1,0,1
+các sản phẩm vest màu đen,1,0,0,1,0,0
+các sản phẩm vest màu xám,0,1,1,0,1,0
+các sản phẩm vest màu trắng,0,1,0,0,0,0
 mình muốn mua bộ vest màu xanh,0,0,0,1,0,1
 mình muốn mua bộ vest màu đen,1,0,0,1,0,0
 mình muốn mua bộ vest màu xám,0,1,1,0,1,0
@@ -35,6 +40,7 @@ mình muốn mua bộ vest giá trung,1,0,0,1,0,0
 tôi cần mua bộ vest màu xanh,0,0,0,1,0,1
 tôi cần mua bộ vest màu đen,1,0,0,1,0,0
 tôi cần mua bộ vest màu xám,0,1,1,0,1,0
+tôi muốn mua bộ vest màu trắng,0,1,0,0,0,0
 tôi muốn mua bộ vest màu xanh,0,0,0,1,0,1
 tôi muốn mua bộ vest màu đen,1,0,0,1,0,0
 tôi muốn mua bộ vest màu xám,0,1,1,0,1,0
@@ -139,6 +145,7 @@ mình chưa mua vest bao giờ thì nên chọn bộ nào,1,1,1,1,1,0
 tôi muốn mua vest,1,1,1,1,1,1
 mình cần mua vest,1,1,1,1,1,1
 các mẫu vest đẹp,1,1,1,1,1,1
+các loại vest,1,1,1,1,1,1
 mình cần mua vest cổ điển,1,1,1,0,0,0
 vest cổ điển,1,1,1,0,0,0
 vest classic,1,1,1,0,0,0
@@ -176,3 +183,9 @@ tôi muốn mua vest màu hồng,0,0,0,0,0,0
 tôi muốn mua vest màu tím,0,0,0,0,0,0
 tôi muốn mua vest màu nâu,0,0,0,0,0,0
 tôi muốn mua vest màu xanh lá,0,0,0,0,0,0
+các loại vest sáng màu,0,1,0,0,1,0
+vest sáng màu,0,1,0,0,1,0
+toàn bộ vest sáng màu,0,1,0,0,1,0
+vest tối màu,1,0,1,1,0,1
+các loại vest tối màu,1,0,1,1,0,1
+toàn bộ vest tối màu,1,0,1,1,0,1
