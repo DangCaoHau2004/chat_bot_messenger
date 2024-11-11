@@ -141,6 +141,8 @@ mình cần bộ vest hai mảnh,1,1,1,0,0,0
 mình cần bộ suit ba mảnh,0,0,0,1,1,1
 mình cần bộ vest ba mảnh,0,0,0,1,1,1
 mình cần bộ suit có kèm áo ghile,0,0,0,1,1,1
+tôi cần mua suit,1,1,1,1,1,1
+mình cần mua suit,1,1,1,1,1,1
 mình chưa mua vest bao giờ thì nên chọn bộ nào,1,1,1,1,1,0
 tôi muốn mua vest,1,1,1,1,1,1
 mình cần mua vest,1,1,1,1,1,1
@@ -190,3 +192,4 @@ vest tối màu,1,0,1,1,0,1
 các loại vest tối màu,1,0,1,1,0,1
 toàn bộ vest tối màu,1,0,1,1,0,1
 sản phẩm vest,1,1,1,1,1,1
+các sản phẩm vest,1,1,1,1,1,1

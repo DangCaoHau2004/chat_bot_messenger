@@ -29,8 +29,8 @@ def phan_loai_cau_hoi(new_text, psid):
     # Kiểm tra độ chính xác
     accuracy = model.score(X_test, y_test)
     print(f"Độ chính xác: {accuracy * 100:.2f}%")
-
-    new_vector = vectorizer.transform(tien_xu_ly_vb(new_text))
+    new_text = tien_xu_ly_vb(new_text)
+    new_vector = vectorizer.transform(new_text)
     prediction = model.predict(new_vector)[0]
 
     # Kiểm tra trong câu trả lời tư vấn
@@ -54,7 +54,7 @@ def phan_loai_cau_hoi(new_text, psid):
         model_sp = SVC(kernel="linear")
         model_sp.fit(X_train_sp, y_train_sp)
 
-        new_vector_sp = vectorizer_sp.transform([new_text])
+        new_vector_sp = vectorizer_sp.transform(new_text)
         prediction_sp = model_sp.predict(new_vector_sp)[0]
 
         return goi_y_san_pham(loai_sp=prediction_sp, cau_hoi=new_text, psid=psid)
