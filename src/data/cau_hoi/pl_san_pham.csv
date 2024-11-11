@@ -3,6 +3,7 @@ vest,suit_vest
 suitvest,suit_vest
 tối muốn mua bộ vest,suit_vest
 tôi cần xem vest,suit_vest
+vest bán chạy,suit_vest
 shop có những loại vest nào,suit_vest
 vest nào đẹp,suit_vest
 vest giá rẻ,suit_vest
@@ -10,6 +11,7 @@ vest đi tiệc,suit_vest
 suit thời trang,suit_vest
 ghile,ghile
 gile,ghile
+gile bán chạy,ghile
 áo đẹp,ghile
 tôi muốn mua áo gile,ghile
 tôi cần xem áo ghile,ghile
@@ -25,6 +27,7 @@ shop có những loại sơ mi nào,ao_so_mi
 sơ mi đẹp nhất,ao_so_mi
 sơ mi giá rẻ,ao_so_mi
 sơ mi phối đồ,ao_so_mi
+sơ mi bán chạy,ao_so_mi
 giày,giay
 tôi muốn mua giày,giay
 tôi cần xem giày,giay
@@ -33,6 +36,7 @@ giày đẹp,giay
 giày thời trang,giay
 giày giá rẻ,giay
 phối đồ với giày,giay
+giày bán chạy,giay
 quần âu,quan_au
 tôi muốn mua quần,quan_au
 tôi cần xem quần,quan_au
@@ -41,11 +45,13 @@ quần đẹp,quan_au
 tôi xin tư vấn về quần âu,quan_au
 shop có những loại quần nào,quan_au
 quần phối với áo,quan_au
+quần bán chạy,quan_au
 phụ kiện,phu_kien
 cà vạt,phu_kien
 nơ,phu_kien
 khăn,phu_kien
 kẹp,phu_kien
+phụ kiện bán chạy,phu_kien
 tôi muốn mua cà vạt,phu_kien
 tôi muốn mua nơ,phu_kien
 tôi muốn mua khăn,phu_kien

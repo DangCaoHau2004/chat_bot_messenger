@@ -16,6 +16,8 @@ hế lu,chao_hoi
 chào buổi sáng,chao_hoi
 2,chao_hoi
 hai,chao_hoi
+yo,chao_hoi
+ê,chao_hoi
 tôi cần được tư vấn về kích cỡ,kich_co
 tôi muốn hỏi về kích cỡ,kich_co
 cho mình xin bảng giá size của shop ạ,kich_co
@@ -42,6 +44,10 @@ mình cần bộ suit 2 mảnh,san_pham
 khăn nào nhìn sang trọng,san_pham
 vest,san_pham
 suitvest,san_pham
+quần,san_pham
+áo,san_pham
+sơ mi,san_pham
+gile,san_pham
 ghile,san_pham
 cà vạt,san_pham
 nơ,san_pham
@@ -53,6 +59,9 @@ giày nào đẹp,san_pham
 phụ kiện nào hợp,san_pham
 đẹp nhất,san_pham
 đồ giá rẻ,san_pham
+mẫu bán chạy,san_pham
+mua nhiều nhất,san_pham
+sản phẩm chính hãng,san_pham
 shop có những loại vest nào vậy,san_pham
 tôi cần được tư vấn về bảo hành,bao_hanh
 tôi muốn hỏi về bảo hành,bao_hanh
@@ -105,6 +114,7 @@ tôi ở tây hồ shop có cơ sở nào ở gần không,thong_tin_shop
 tôi ở long biên shop có cơ sở nào ở gần không,thong_tin_shop
 tôi ở hà đông shop có cơ sở nào ở gần không,thong_tin_shop
 tôi ở nam từ liêm shop có cơ sở nào ở gần không,thong_tin_shop
+t ở đây có shop nào không,thong_tin_shop
 đặt hàng bên shop làm thế nào vậy,dat_hang
 mình cần đặt hàng,dat_hang
 đặt hàng,dat_hang
