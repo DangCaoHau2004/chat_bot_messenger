@@ -54,7 +54,7 @@ def phan_loai_cau_hoi(new_text, psid):
         model_sp = SVC(kernel="linear")
         model_sp.fit(X_train_sp, y_train_sp)
 
-        new_vector_sp = vectorizer_sp.transform(new_text)
+        new_vector_sp = vectorizer_sp.transform([new_text])
         prediction_sp = model_sp.predict(new_vector_sp)[0]
 
         return goi_y_san_pham(loai_sp=prediction_sp, cau_hoi=new_text, psid=psid)

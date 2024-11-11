@@ -72,9 +72,6 @@ def goi_y_san_pham(loai_sp, cau_hoi, psid):
     print("Accuracy Score:", accuracy_score(y_test, y_pred.toarray()))
 
     new_text = cau_hoi
-    print(new_text)
-    new_text = tien_xu_ly_vb(new_text)
-    print(new_text)
     new_X_tfidf = vectorizer.transform(new_text)
     new_y_pred = br_clf.predict(new_X_tfidf.toarray())
 
