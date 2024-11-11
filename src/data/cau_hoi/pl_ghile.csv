@@ -124,6 +124,7 @@ các sản phẩm áo ghile đẹp,1,1,1,1,1
 cho mình xem một vài mẫu áo ghile cho người trung niên,1,0,0,1,1
 gợi ý cho mình một vài mẫu áo ghile bán chạy của shop,1,1,1,0,0
 một vài mẫu áo ghile bán chạy của shop,1,1,1,0,0
+một vài mẫu áo ghile best seller của shop,1,1,1,0,0
 người lớn tuổi nên chọn áo ghile nào,1,1,1,1,1
 các loại áo ghile già dặn một chút,0,0,0,1,1
 áo lót trong cho vest,1,1,1,1,1
@@ -165,6 +166,7 @@ toàn bộ áo ghile,1,1,1,1,1
 tôi cần mua ghile sáng màu,0,0,1,0,0
 ghile sáng màu,0,0,1,0,0
 mình muốn mua ghile sáng màu,0,0,1,0,0
-mình muốn mua ghile tối màu,0,0,1,0,0
-ghile tối màu,0,0,1,0,0
-tôi cần mua ghile tối màu,0,0,1,0,0
+mình muốn mua ghile tối màu,1,1,0,1,1
+ghile tối màu,1,1,0,1,1
+tôi cần mua ghile tối màu,1,1,0,1,1
+sản phẩm áo ghile,1,1,1,1,1
