@@ -16,8 +16,8 @@ hế lu,chao_hoi
 chào buổi sáng,chao_hoi
 2,chao_hoi
 hai,chao_hoi
-Tôi cần được tư vấn về kích cỡ,kich_co
-Tôi muốn hỏi về kích cỡ,kich_co
+tôi cần được tư vấn về kích cỡ,kich_co
+tôi muốn hỏi về kích cỡ,kich_co
 cho mình xin bảng giá size của shop ạ,kich_co
 mình 1m7 mặc size nào ạ,kich_co
 mình thấp lắm shop có size S không,kich_co
@@ -29,7 +29,7 @@ tôi mua,san_pham
 giá của cái này,san_pham
 tôi muốn mua đồ giá hợp lí,san_pham
 tôi cần được tư vấn về sản phẩm,san_pham
-Tôi muốn hỏi về sản phẩm,san_pham
+tôi muốn hỏi về sản phẩm,san_pham
 tôi cần xem áo sơ mi,san_pham
 shop có những loại sơ mi nào,san_pham
 áo gile thì sao?,san_pham
@@ -38,6 +38,7 @@ chọn cho tôi áo sơ mi ,san_pham
 cà vạt nào hợp với áo, san_pham
 nơ nào nên thắt với áo,san_pham
 xem kẹp nào đẹp,san_pham
+mình cần bộ suit 2 mảnh,san_pham
 khăn nào nhìn sang trọng,san_pham
 cà vạt,san_pham
 nơ,san_pham
@@ -51,7 +52,7 @@ phụ kiện nào hợp,san_pham
 đồ giá rẻ,san_pham
 shop có những loại vest nào vậy,san_pham
 tôi cần được tư vấn về bảo hành,bao_hanh
-Tôi muốn hỏi về bảo hành,bao_hanh
+tôi muốn hỏi về bảo hành,bao_hanh
 bị rách,bao_hanh
 bị thủng,bao_hanh
 vừa nhận hàng thì phát hiện áo thủng lỗ chỗ,bao_hanh
@@ -80,15 +81,27 @@ khuyến mãi,uu_dai
 khuyến mại,uu_dai
 giảm giá,uu_dai
 hiện tại shop có những chương trình ưu đãi nào nhỉ,uu_dai
+shop bán ở đâu,thong_tin_shop
+chủ shop tên là gì,thong_tin_shop
 tôi cần được tư vấn về thông tin shop,thong_tin_shop
 Tôi muốn hỏi về thông tin shop,thong_tin_shop
 thông tin shop,thong_tin_shop
 shop mình ở đâu ạ,thong_tin_shop
 địa chỉ shop,thong_tin_shop
-shop có chi nhánh ở miền Nam không, thong_tin_shop
-shop bán ở đâu ạ,thong_tin_shop
-mình cần bộ suit 2 mảnh,san_pham
-mình muốn Đặt hàng,dat_hang
+shop có chi nhánh ở miền nam không, thong_tin_shop
+shop có chi nhánh ở miền bắc không, thong_tin_shop
+shop có chi nhánh ở miền trung không, thong_tin_shop
+các cơ sở của shop,thong_tin_shop
+mình ở bắc từ liêm shop có cơ sở nào ở gần không,thong_tin_shop
+mình ở tây hồ shop có cơ sở nào ở gần không,thong_tin_shop
+mình ở long biên shop có cơ sở nào ở gần không,thong_tin_shop
+mình ở hà đông shop có cơ sở nào ở gần không,thong_tin_shop
+mình ở nam từ liêm shop có cơ sở nào ở gần không,thong_tin_shop
+tôi ở bắc từ liêm shop có cơ sở nào ở gần không,thong_tin_shop
+tôi ở tây hồ shop có cơ sở nào ở gần không,thong_tin_shop
+tôi ở long biên shop có cơ sở nào ở gần không,thong_tin_shop
+tôi ở hà đông shop có cơ sở nào ở gần không,thong_tin_shop
+tôi ở nam từ liêm shop có cơ sở nào ở gần không,thong_tin_shop
 đặt hàng bên shop làm thế nào vậy,dat_hang
 mình cần đặt hàng,dat_hang
 đặt hàng,dat_hang
