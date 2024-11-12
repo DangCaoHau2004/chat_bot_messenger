@@ -11,6 +11,8 @@ import yaml
 import re
 from modules.xu_ly_tra_loi import tra_loi_dat_hang
 # từ viết tắt
+import re
+
 tu_viet_tat = {
     "k": "không",
     "ko": "không",
@@ -31,16 +33,15 @@ tu_viet_tat = {
 
 def tien_xu_ly_vb(text):
     text = text.lower()
-    text = text.split()
-    # Thay từ viết tắt
-    for index in range(len(text)):
-        if text[index] in tu_viet_tat:
-            text[index] = tu_viet_tat[text[index]]
+    # Thay thế các từ viết tắt
+    text = re.sub(r'[^\w\s]', '', text)
+
+    for tu_viet_tat_key, tu_viet_tat_value in tu_viet_tat.items():
+        text = re.sub(r'\b' + tu_viet_tat_key +
+                      r'\b', tu_viet_tat_value, text)
 
     # Loại bỏ dấu câu
-    text = re.sub(r'[^\w\s]', '', ' '.join(text))
-    text = [text]
-    return text
+    return [text]
 
 
 def goi_y_san_pham(loai_sp, cau_hoi, psid):

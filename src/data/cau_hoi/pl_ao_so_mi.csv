@@ -9,7 +9,7 @@ tôi cần mua áo sơ mi dáng dễ phối đồ,0,1,0
 tôi cần mua áo sơ mi dáng hiện đại,1,1,1
 tôi cần mua áo sơ mi trẻ trung,1,1,1
 tôi gầy nên chọn bộ nào,0,1,0
-tôi béo nên chọn bộ nào,1,0,1
+tôi béo nên chọn bộ nào,1,1,1
 tôi cân đối nên chọn bộ nào,1,1,1
 tôi thích màu đơn giản nên chọn bộ nào,1,1,0
 tôi thích có họa tiết nên chọn bộ nào,1,0,1
@@ -34,7 +34,7 @@ mình cần mua áo sơ mi dễ phối đồ,0,1,0
 mình cần mua áo sơ mi hiện đại,1,1,1
 mình cần mua áo sơ mi trẻ trung,1,1,1
 mình gầy nên chọn bộ nào,0,1,0
-mình béo nên chọn bộ nào,1,0,1
+mình béo nên chọn bộ nào,1,1,1
 mình cân đối nên chọn bộ nào,1,1,1
 mình thích màu đơn giản nên chọn bộ nào,1,1,0
 mình thích có họa tiết nên chọn bộ nào,1,0,1
