@@ -67,7 +67,9 @@ mình có dáng khá thon mua áo sơ mi nào thì tôn dáng ạ,0,1,1
 mình cần mua áo sơ mi xanh,1,0,0  
 mình cần mua áo sơ mi trắng,0,1,1  
 mình cần mua áo sơ mi trắng kẻ,0,0,1
-mình cần mua áo sơ mi có kẻ của shop,1,0,1  
+mình cần mua áo sơ mi có kẻ của shop,1,0,1
+tôi cần mua áo sơ mi không kẻ,0,1,0
+mình muốn mua áo sơ mi không kẻ,0,1,0
 mình cần mua áo sơ mi màu đỏ,0,0,0  
 mình cần mua áo sơ mi màu đen,0,0,0  
 mình cần mua áo sơ mi màu xám,0,0,0  
@@ -111,7 +113,7 @@ tôi cần áo sơ mi màu cà phê,0,0,0
 tôi cần áo sơ mi màu rượu vang,0,0,0  
 tôi cần áo sơ mi màu hồng phấn,0,0,0  
 tôi cần áo sơ mi màu xanh dương đậm,0,0,0  
-tôi cần áo sơ mi màu xám khói,0,0,0  
+tôi cần áo sơ mi màu xám khói,0,0,0 
 các loại áo sơ mi của shop,1,1,1
 các loại áo sơ mi,1,1,1
 áo sơ mi đẹp,1,1,1

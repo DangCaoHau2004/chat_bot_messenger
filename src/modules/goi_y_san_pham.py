@@ -27,7 +27,8 @@ tu_viet_tat = {
     "1": "một",
     "ghil": "ghile",
     "ghi lê": "ghile",
-    "gil": "ghile"
+    "gil": "ghile",
+    "sm": "sơ mi"
 }
 
 
