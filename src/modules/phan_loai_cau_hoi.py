@@ -30,6 +30,7 @@ def phan_loai_cau_hoi(new_text, psid):
     accuracy = model.score(X_test, y_test)
     print(f"Độ chính xác: {accuracy * 100:.2f}%")
     new_text = tien_xu_ly_vb(new_text)
+    print(new_text)
     new_vector = vectorizer.transform(new_text)
     prediction = model.predict(new_vector)[0]
 
