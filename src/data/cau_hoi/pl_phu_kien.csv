@@ -2,6 +2,7 @@ data,540184378743929,534814996030886,1001737701719736,1218114126085233,122438573
 shop mình có các loại phụ kiện nào ạ,1,1,1,1,1,1
 mình muốn mua phụ kiện,1,1,1,1,1,1
 toàn bộ phụ kiện của shop,1,1,1,1,1,1
+tôi muốn mua phụ kiện bền,1,1,1,1,1,1
 tất cả phụ kiện của shop,1,1,1,1,1,1
 mình muốn mua cà vạt,1,0,0,0,0,0
 mình muốn mua kẹp,0,1,0,0,0,0
@@ -16,6 +17,7 @@ mình cần mua phụ kiện,1,1,1,1,1,1
 mình cần mua cà vạt,1,0,0,0,0,0
 mình cần mua kẹp,0,1,0,0,0,0
 mình cần mua kẹp cà vạt,0,1,0,0,0,0
+mình muốn mua phụ kiện bền,1,1,1,1,1,1
 mình cần mua nơ,0,0,0,0,1,1
 mình cần mua khăn,0,0,1,1,0,0
 mình cần mua caravat,1,0,0,0,0,0
