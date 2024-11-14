@@ -14,6 +14,7 @@ ghile,ghile
 gile,ghile
 gile bán chạy,ghile
 áo đẹp,ghile
+các sản phẩm ghile,ghile
 tôi muốn mua áo gile,ghile
 tôi cần xem áo ghile,ghile
 tôi quan tâm áo ghile,ghile
@@ -22,6 +23,7 @@ shop có những loại áo ghile nào,ghile
 gile giá rẻ,ghile
 ghile phù hợp phối đồ,ghile
 sơ mi,ao_so_mi
+các sản phẩm áo sơ mi,ao_so_mi
 tôi muốn mua áo sơ mi, ao_so_mi
 tôi cần xem áo sơ mi,ao_so_mi
 shop có những loại sơ mi nào,ao_so_mi
@@ -30,6 +32,7 @@ sơ mi giá rẻ,ao_so_mi
 sơ mi phối đồ,ao_so_mi
 sơ mi bán chạy,ao_so_mi
 giày,giay
+các sản phẩm giày,giay
 tôi muốn mua giày,giay
 tôi cần xem giày,giay
 shop có những loại giày nào,giay
@@ -39,6 +42,7 @@ giày giá rẻ,giay
 phối đồ với giày,giay
 giày bán chạy,giay
 quần âu,quan_au
+các sản phẩm quần âu,quan_au
 tôi muốn mua quần,quan_au
 tôi cần xem quần,quan_au
 quần giá rẻ,quan_au
@@ -50,6 +54,11 @@ quần bán chạy,quan_au
 phụ kiện,phu_kien
 cà vạt,phu_kien
 nơ,phu_kien
+các sản phẩm khăn,phu_kien
+các sản phẩm nơ,phu_kien
+các sản phẩm kẹp cà vạt,phu_kien
+các sản phẩm cà vạt,phu_kien
+các sản phẩm caravat,phu_kien
 khăn,phu_kien
 kẹp,phu_kien
 phụ kiện bán chạy,phu_kien
