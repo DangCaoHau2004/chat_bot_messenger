@@ -18,7 +18,7 @@ mình cần mua cà vạt,1,0,0,0,0,0
 mình cần mua kẹp,0,1,0,0,0,0
 mình cần mua kẹp cà vạt,0,1,0,0,0,0
 mình muốn mua phụ kiện bền,1,1,1,1,1,1
-mình cần mua nơ,0,0,0,0,1,1
+tôi cần mua nơ,0,0,0,0,1,1
 mình cần mua khăn,0,0,1,1,0,0
 mình cần mua caravat,1,0,0,0,0,0
 mình cần mua kẹp caravat,0,1,0,0,0,0
@@ -70,46 +70,23 @@ mình muốn mua phụ kiện để đi chụp ảnh,1,1,1,1,1,1
 mình muốn mua cà vạt màu đen,1,0,0,0,0,0
 mình cần mua cà vạt màu đen,1,0,0,0,0,0
 mình muốn mua cà vạt màu đỏ,0,0,0,0,0,0
-mình muốn mua cà vạt màu xanh,0,0,0,0,0,0
-mình muốn mua cà vạt màu vàng,0,0,0,0,0,0
 mình muốn mua cà vạt màu hồng,0,0,0,0,0,0
 mình muốn mua cà vạt màu xanh lá,0,0,0,0,0,0
 mình muốn mua cà vạt màu tím,0,0,0,0,0,0
-mình muốn mua cà vạt màu nâu,0,0,0,0,0,0
 tôi cần mua cà vạt màu đen,1,0,0,0,0,0
 cà vạt màu đen,1,0,0,0,0,0
-tôi cần mua cà vạt màu đỏ,0,0,0,0,0,0
-tôi cần mua cà vạt màu xanh,0,0,0,0,0,0
-tôi cần mua cà vạt màu vàng,0,0,0,0,0,0
-tôi cần mua cà vạt màu hồng,0,0,0,0,0,0
-tôi cần mua cà vạt màu xanh lá,0,0,0,0,0,0
-tôi cần mua cà vạt màu tím,0,0,0,0,0,0
-tôi cần mua cà vạt màu nâu,0,0,0,0,0,0
 tôi cần mua cà vạt màu xanh,0,0,0,0,0,0
 tôi cần mua cà vạt màu trắng,0,0,0,0,0,0
 tôi cần mua cà vạt màu xám,0,0,0,0,0,0
 tôi cần mua cà vạt màu be,0,0,0,0,0,0
 tôi cần mua kẹp cà vạt màu đen,0,0,0,0,0,0
 tôi cần mua kẹp cà vạt màu đỏ,0,0,0,0,0,0
-tôi cần mua kẹp cà vạt màu xanh,0,0,0,0,0,0
-tôi cần mua kẹp cà vạt màu vàng,0,0,0,0,0,0
 tôi cần mua kẹp cà vạt màu hồng,0,0,0,0,0,0
-tôi cần mua kẹp cà vạt màu xanh lá,0,0,0,0,0,0
-tôi cần mua kẹp cà vạt màu tím,0,0,0,0,0,0
-tôi cần mua kẹp cà vạt màu nâu,0,0,0,0,0,0
 tôi cần mua kẹp cà vạt màu xanh,0,0,0,0,0,0
 tôi cần mua kẹp cà vạt màu trắng,1,0,0,0,0,0
 tôi cần mua kẹp cà vạt màu xám,0,0,0,0,0,0
 tôi cần mua kẹp cà vạt màu be,0,0,0,0,0,0
-mình cần mua kẹp cà vạt màu đen,0,0,0,0,0,0
-mình cần mua kẹp cà vạt màu đỏ,0,0,0,0,0,0
-mình cần mua kẹp cà vạt màu xanh,0,0,0,0,0,0
-mình cần mua kẹp cà vạt màu vàng,0,0,0,0,0,0
-mình cần mua kẹp cà vạt màu hồng,0,0,0,0,0,0
-mình cần mua kẹp cà vạt màu xanh lá,0,0,0,0,0,0
 mình cần mua kẹp cà vạt màu trắng,1,0,0,0,0,0
-mình cần mua kẹp cà vạt màu xám,0,0,0,0,0,0
-mình cần mua kẹp cà vạt màu be,0,0,0,0,0,0
 tôi cần mua kẹp cà vạt không mạ,0,1,0,0,0,0
 mình cần mua kẹp cà vạt bằng nhôm,0,1,0,0,0,0
 mình cần mua kẹp cà vạt bằng trơn,0,1,0,0,0,0
@@ -121,11 +98,8 @@ mình muốn mua nơ để đi chụp ảnh,0,0,0,0,1,1
 mình cần mua khăn để đi chụp ảnh,0,0,1,1,0,0
 mình muốn mua cà vạt để đi chụp ảnh,1,0,0,0,0,0
 mình cần mua các phụ kiện liên quan đến cà vạt,1,1,0,0,0,0
-tôi cần mua khăn màu đen,0,0,0,0,0,0
-tôi cần mua khăn màu đỏ,0,0,0,0,0,0
-tôi cần mua khăn màu xanh,0,0,0,0,0,0
-tôi cần mua khăn màu vàng,0,0,0,0,0,0
 tôi cần mua khăn màu hồng,0,0,0,0,0,0
+tôi cần mua khăn màu đỏ,0,0,0,0,0,0
 tôi cần mua khăn màu xanh lá,0,0,0,0,0,0
 tôi cần mua khăn màu tím,0,0,0,0,0,0
 tôi cần mua khăn màu nâu,0,0,0,0,0,0
@@ -140,39 +114,16 @@ mình cần mua khăn màu đỏ,0,0,0,0,0,0
 mình cần mua khăn màu xanh,0,0,0,0,0,0
 mình cần mua khăn màu vàng,0,0,0,0,0,0
 mình cần mua khăn màu hồng,0,0,0,0,0,0
-mình cần mua khăn màu xanh lá,0,0,0,0,0,0
-mình cần mua khăn màu tím,0,0,0,0,0,0
-mình cần mua khăn màu nâu,0,0,0,0,0,0
 mình cần mua khăn màu xanh,0,0,1,1,0,0
-mình cần mua khăn màu trắng,0,0,0,0,0,0
-mình cần mua khăn màu xám,0,0,0,0,0,0
-mình cần mua khăn màu be,0,0,0,0,0,0
 tôi cần mua nơ màu đen,0,0,0,0,1,1
 tôi cần mua nơ màu đỏ,0,0,0,0,0,0
 tôi cần mua nơ màu xanh,0,0,0,0,0,0
 tôi cần mua nơ màu vàng,0,0,0,0,0,0
 tôi cần mua nơ màu hồng,0,0,0,0,0,0
 tôi cần mua nơ màu xanh lá,0,0,0,0,0,0
-tôi cần mua nơ màu tím,0,0,0,0,0,0
-tôi cần mua nơ màu nâu,0,0,0,0,0,0
-tôi cần mua nơ màu xanh,0,0,0,0,0,0
-tôi cần mua nơ màu trắng,0,0,0,0,0,0
-tôi cần mua nơ màu xám,0,0,0,0,0,0
-tôi cần mua nơ màu be,0,0,0,0,0,0
 mình cần mua nơ màu đen,0,0,0,0,1,1
 mình muốn mua nơ màu đen,0,0,0,0,1,1
-mình cần mua nơ màu đỏ,0,0,0,0,0,0
-mình cần mua nơ màu xanh,0,0,0,0,0,0
-mình cần mua nơ màu vàng,0,0,0,0,0,0
-mình cần mua nơ màu hồng,0,0,0,0,0,0
-mình cần mua nơ màu xanh lá,0,0,0,0,0,0
-mình cần mua nơ màu tím,0,0,0,0,0,0
-mình cần mua nơ màu nâu,0,0,0,0,0,0
-mình cần mua nơ màu xanh,0,0,0,0,0,0
-mình cần mua nơ màu trắng,0,0,0,0,0,0
-mình cần mua nơ màu xám,0,0,0,0,0,0
-mình cần mua nơ màu be,0,0,0,0,0,0
-mình cần mua nơ tự thắt,0,0,0,0,0,1
+mình muốn mua nơ tự thắt,0,0,0,0,0,1
 tôi muốn mua nơ tự thắt,0,0,0,0,0,1
 tôi cần mua nơ thắt sẵn,0,0,0,0,1,0
 mình muốn mua nơ thắt sẵn,0,0,0,0,1,0
