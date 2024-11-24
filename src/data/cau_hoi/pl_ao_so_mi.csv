@@ -13,6 +13,7 @@ tôi gầy nên chọn bộ nào,0,1,0
 tôi béo nên chọn bộ nào,1,1,1
 tôi cân đối nên chọn bộ nào,1,1,1
 tôi thích màu đơn giản nên chọn bộ nào,1,1,0
+tôi thích áo sơ mi ít họa tiết,0,1,0
 tôi thích có họa tiết nên chọn bộ nào,1,0,1
 tôi muốn mua áo sơ mi rẻ nhất,0,1,0
 tôi muốn mua áo sơ mi đắt nhất,1,0,0
@@ -39,6 +40,7 @@ mình gầy nên chọn bộ nào,0,1,0
 mình béo nên chọn bộ nào,1,1,1
 mình cân đối nên chọn bộ nào,1,1,1
 mình thích màu đơn giản nên chọn bộ nào,1,1,0
+mình thích áo sơ mi ít họa tiết
 mình thích có họa tiết nên chọn bộ nào,1,0,1
 mình muốn mua áo sơ mi rẻ nhất,0,1,0
 mình muốn mua áo sơ mi đắt nhất,1,0,0
@@ -79,18 +81,6 @@ mình cần mua áo sơ mi màu vàng,0,0,0
 mình cần mua áo sơ mi màu cam,0,0,0  
 mình cần mua áo sơ mi màu hồng,0,0,0  
 mình cần mua áo sơ mi màu tím,0,0,0  
-mình cần mua áo sơ mi màu nâu,0,0,0  
-mình cần mua áo sơ mi màu bạc,0,0,0  
-mình cần mua áo sơ mi màu xanh lá,0,0,0  
-mình cần mua áo sơ mi màu xanh ngọc,0,0,0  
-mình cần mua áo sơ mi màu xanh rêu,0,0,0  
-mình cần mua áo sơ mi màu vàng chanh,0,0,0  
-mình cần mua áo sơ mi màu đồng,0,0,0  
-mình cần mua áo sơ mi màu be,0,0,0  
-mình cần mua áo sơ mi màu cà phê,0,0,0  
-mình cần mua áo sơ mi màu rượu vang,0,0,0  
-mình cần mua áo sơ mi màu hồng phấn,0,0,0  
-mình cần mua áo sơ mi màu xanh dương đậm,0,0,0  
 mình cần mua áo sơ mi màu xám khói,0,0,0  
 tôi cần áo sơ mi xanh,1,0,0  
 tôi cần áo sơ mi trắng,0,1,1  
@@ -98,23 +88,14 @@ tôi cần áo sơ mi trắng kẻ,0,0,1
 tôi cần áo sơ mi có kẻ của shop,1,0,1  
 tôi cần áo sơ mi màu đỏ,0,0,0  
 tôi cần áo sơ mi màu đen,0,0,0  
-tôi cần áo sơ mi màu xám,0,0,0  
-tôi cần áo sơ mi màu vàng,0,0,0  
-tôi cần áo sơ mi màu cam,0,0,0  
-tôi cần áo sơ mi màu hồng,0,0,0  
-tôi cần áo sơ mi màu tím,0,0,0  
 tôi cần áo sơ mi màu nâu,0,0,0  
-tôi cần áo sơ mi màu bạc,0,0,0  
-tôi cần áo sơ mi màu xanh lá,0,0,0  
-tôi cần áo sơ mi màu xanh ngọc,0,0,0  
-tôi cần áo sơ mi màu xanh rêu,0,0,0  
+tôi cần áo sơ mi màu bạc,0,0,0   
 tôi cần áo sơ mi màu vàng chanh,0,0,0  
 tôi cần áo sơ mi màu đồng,0,0,0  
 tôi cần áo sơ mi màu be,0,0,0  
 tôi cần áo sơ mi màu cà phê,0,0,0  
 tôi cần áo sơ mi màu rượu vang,0,0,0  
 tôi cần áo sơ mi màu hồng phấn,0,0,0  
-tôi cần áo sơ mi màu xanh dương đậm,0,0,0  
 tôi cần áo sơ mi màu xám khói,0,0,0 
 các loại áo sơ mi của shop,1,1,1
 các loại áo sơ mi,1,1,1
