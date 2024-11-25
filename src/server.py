@@ -263,7 +263,7 @@ def handle_postback(sender_psid, received_postback):
             f"https://graph.facebook.com/{
                 sender_psid}?fields=first_name,last_name,profile_pic",
             params={"access_token": PAGE_ACCESS_TOKEN})
-        if res.status_code == 200:
+        if res.status_code == 200: #mã trạng thái HTTP, 200 -> thành công
             user = res.json()
             name = user["first_name"] + " " + user["last_name"]
             response = {"text": f"Chào {name} đến với shop Thế Giới Vest"}
