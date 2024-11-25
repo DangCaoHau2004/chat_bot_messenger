@@ -13,3 +13,4 @@ def tienXuLyDuLieu():
         data = data.drop_duplicates(subset="data", keep="first")
         # lưu giá trị
         data.to_csv(file_path, index=False)
+        print("succes update data")
