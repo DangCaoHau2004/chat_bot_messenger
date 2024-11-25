@@ -10,8 +10,11 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from datetime import datetime
 from modules.phan_loai_cau_hoi import phan_loai_cau_hoi
 from modules.xu_ly_tra_loi import tra_loi_tu_van
+from tienXuLyDuLieu import tienXuLyDuLieu
 sched = BackgroundScheduler()
 # Định nghĩa một tác vụ
+
+tienXuLyDuLieu()
 
 
 @sched.scheduled_job('interval', minutes=5)
