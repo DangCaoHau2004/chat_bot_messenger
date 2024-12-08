@@ -38,14 +38,16 @@ tu_viet_tat = {
 
 def tien_xu_ly_vb(text):
     text = text.lower()
-    # Thay thế các từ viết tắt
+    # Loại bỏ dấu câu
+
     text = re.sub(r'[^\w\s]', '', text)
+
+    # Thay thế các từ viết tắt
 
     for tu_viet_tat_key, tu_viet_tat_value in tu_viet_tat.items():
         text = re.sub(r'\b' + tu_viet_tat_key +
                       r'\b', tu_viet_tat_value, text)
 
-    # Loại bỏ dấu câu
     return [text]
 
 
