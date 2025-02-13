@@ -72,7 +72,7 @@ def goi_y_san_pham(loai_sp, cau_hoi, psid):
         X_tfidf, label_list, test_size=0.2, random_state=42)
 
     # Giải thuật BR với SVM
-    br_clf = BinaryRelevance(SVC(kernel='linear', probability=True))
+    br_clf = BinaryRelevance(SVC(kernel='linear'))
     br_clf.fit(X_train.toarray(), y_train)
 
     y_pred = br_clf.predict(X_test.toarray())
